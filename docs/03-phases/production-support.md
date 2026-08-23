@@ -1,5 +1,7 @@
 # Phase: Production Support & Maintenance
 
+> Related deep-dives: [human-in-the-loop gating](../practices/human-in-the-loop-gating.md), [multi-agent orchestration](../practices/multi-agent-orchestration.md), [memory/state persistence](../practices/memory-state-persistence.md)
+
 ## How to
 
 1. Let agents triage first: correlate logs/metrics, draft a root-cause hypothesis, propose — not execute — a runbook action.

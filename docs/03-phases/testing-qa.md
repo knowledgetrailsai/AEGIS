@@ -1,5 +1,7 @@
 # Phase: Testing & QA
 
+> Full deep-dive: [docs/practices/evals.md](../practices/evals.md)
+
 ## How to
 
 1. Build an evals suite before trusting agent autonomy on a code path: input/expected-output pairs, automated scoring, wired into CI as a hard gate (see [.github/workflows/ci-eval-gate.yml](../../.github/workflows/ci-eval-gate.yml)).

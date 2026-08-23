@@ -1,5 +1,7 @@
 # Phase: Deployment & Release
 
+> Full deep-dive: [docs/practices/human-in-the-loop-gating.md](../practices/human-in-the-loop-gating.md)
+
 ## How to
 
 1. Run a deploy checklist gate before any agent-initiated release: CI status green, migration safety reviewed, rollback plan documented and tested.

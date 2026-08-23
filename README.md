@@ -18,6 +18,7 @@ This repo is that method, in docs, templates, and CI scaffolding you can adopt d
 | Set up risk gating / approvals | [docs/04-governance-risk-tiers.md](docs/04-governance-risk-tiers.md) |
 | Know what to actually expect in time saved | [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md) |
 | Track whether it's working | [docs/06-metrics.md](docs/06-metrics.md) |
+| Go deep on a specific practice (spec-driven dev, evals, orchestration, etc.) | [docs/practices/](docs/practices/) |
 | Write a spec, ADR, or PR an agent can act on | [templates/](templates/) |
 | See tooling/role mapping across 40 domains | [domains/domains.csv](domains/domains.csv) |
 | Wire this into your repo's CI | [.github/](.github/) |
@@ -29,6 +30,10 @@ This repo is that method, in docs, templates, and CI scaffolding you can adopt d
 3. **Spec is the contract** — the spec is what the agent is graded against, not the conversation that produced it.
 4. **Context is engineered, not assumed** — what an agent can see is curated deliberately.
 5. **Humans move up the stack** — less typing, more specifying, reviewing, and deciding.
+
+## Practices deep-dives ([docs/practices/](docs/practices/))
+
+Each of these gets a full how-to, not just a mention: [spec-driven development](docs/practices/spec-driven-development.md), [context engineering](docs/practices/context-engineering.md), [plan-then-execute](docs/practices/plan-then-execute.md), [human-in-the-loop gating](docs/practices/human-in-the-loop-gating.md), [evals](docs/practices/evals.md), [prompt/agent versioning](docs/practices/prompt-agent-versioning.md), [worktree/sandbox isolation](docs/practices/worktree-sandbox-isolation.md), [multi-agent orchestration](docs/practices/multi-agent-orchestration.md), [tool/function-calling design](docs/practices/tool-function-calling-design.md), [memory/state persistence](docs/practices/memory-state-persistence.md).
 
 ## Status
 

@@ -1,5 +1,7 @@
 # Phase: Development
 
+> Deep-dives: [plan-then-execute](../practices/plan-then-execute.md), [context engineering](../practices/context-engineering.md), [worktree/sandbox isolation](../practices/worktree-sandbox-isolation.md), [prompt/agent versioning](../practices/prompt-agent-versioning.md), [tool/function-calling design](../practices/tool-function-calling-design.md)
+
 ## How to
 
 1. Use plan-then-execute: the agent proposes a plan, a human approves it, only then does execution start. Reserve unreviewed autonomous execution for Tier 1 code paths (see [governance](../04-governance-risk-tiers.md)).

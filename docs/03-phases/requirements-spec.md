@@ -1,5 +1,7 @@
 # Phase: Requirements & Spec
 
+> Full deep-dive: [docs/practices/spec-driven-development.md](../practices/spec-driven-development.md)
+
 ## How to
 
 1. Write the spec agents will act on, not just what humans will read: goal/context, functional requirements, explicit constraints (performance, security, style), testable acceptance criteria, and an explicit out-of-scope list.
