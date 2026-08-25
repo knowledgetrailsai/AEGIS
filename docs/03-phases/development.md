@@ -1,16 +1,30 @@
 # Phase: Development
 
-> Deep-dives: [plan-then-execute](../practices/plan-then-execute.md), [context engineering](../practices/context-engineering.md), [worktree/sandbox isolation](../practices/worktree-sandbox-isolation.md), [prompt/agent versioning](../practices/prompt-agent-versioning.md), [tool/function-calling design](../practices/tool-function-calling-design.md)
+> Deep dives: [plan-then-execute](../practices/plan-then-execute.md), [context engineering](../practices/context-engineering.md), [worktree/sandbox isolation](../practices/worktree-sandbox-isolation.md), [prompt/agent versioning](../practices/prompt-agent-versioning.md), [tool/function-calling design](../practices/tool-function-calling-design.md)
 
-## How to
+## What this phase does
 
-1. Use plan-then-execute: the agent proposes a plan, a human approves it, only then does execution start. Reserve unreviewed autonomous execution for Tier 1 code paths (see [governance](../04-governance-risk-tiers.md)).
-2. Isolate agent work in worktrees/sandboxes so parallel agents — or an agent and a human — never collide on the same branch.
-3. Maintain a repo-level context file (CLAUDE.md / AGENTS.md-style) with conventions, an architecture map, and do's/don'ts. Assign an owner and a review cadence — a stale context file actively misleads agents.
-4. Version prompts and agent configs like code: diffed, reviewed, rollback-able.
+This phase is where the change gets built. The main goal is to keep the agent productive without letting it drift outside the agreed scope.
 
-## Anti-patterns
+## Method
 
-- Letting an agent execute a multi-file, cross-module change with no plan review step, "because it's usually right."
-- A context file nobody owns, written once at project kickoff and never updated as the architecture drifts.
-- Treating a prompt/config change as a "just try it" edit instead of a reviewed change with a rollback path.
+1. Start from the spec and design.
+2. Have the agent propose a plan before execution.
+3. Give the agent only the context it needs.
+4. Work in an isolated branch, worktree, or sandbox.
+5. Keep prompts and agent configs versioned like code.
+
+## Best practices
+
+- Use plan-then-execute for anything beyond simple Tier 1 work.
+- Keep a repo context file with conventions, architecture notes, and do's and don'ts.
+- Give that context file an owner and a review cadence.
+- Keep agent work isolated so parallel tasks do not collide.
+- Treat prompt and config changes like reviewed code changes.
+
+## Common mistakes
+
+- Starting implementation before the plan is reviewed
+- Giving the agent too much repo context
+- Letting context files drift out of date
+- Changing prompts without review or rollback

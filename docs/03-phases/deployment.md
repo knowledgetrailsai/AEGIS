@@ -1,14 +1,30 @@
 # Phase: Deployment & Release
 
-> Full deep-dive: [docs/practices/human-in-the-loop-gating.md](../practices/human-in-the-loop-gating.md)
+> Deep dive: [human-in-the-loop gating](../practices/human-in-the-loop-gating.md)
 
-## How to
+## What this phase does
 
-1. Run a deploy checklist gate before any agent-initiated release: CI status green, migration safety reviewed, rollback plan documented and tested.
-2. Irreversible production actions (schema migrations, force-pushes, financial postings, physical/OT actuation) require an explicit human approval step — no exceptions, regardless of how routine the agent judges the action to be. This is Tier 3–4 by definition; see [governance](../04-governance-risk-tiers.md).
-3. Let agents draft changelogs and manage version bumps/branching (low risk, high mechanical value) — but keep the actual deploy trigger behind the same gate as any other Tier 3–4 action.
+This phase moves the change into production. The job is to make safe releases repeatable and risky releases gated.
 
-## Anti-patterns
+## Method
 
-- An agent with standing credentials to push to production without a per-action approval step.
-- Treating "the agent has done this deploy type before successfully" as a substitute for verifying rollback still works.
+1. Confirm tests and evals are green.
+2. Check migration safety and rollback options.
+3. Decide whether the release is Tier 1, 2, 3, or 4.
+4. Require human approval for irreversible or high-blast-radius actions.
+5. Release only after the gate is satisfied.
+
+## Best practices
+
+- Keep deploy triggers behind an approval gate.
+- Let agents draft changelogs, version bumps, and branch updates.
+- Test rollback as part of the release process.
+- Treat schema, financial, and physical control changes as high risk.
+- Use the governance doc to set the approval level.
+
+## Common mistakes
+
+- Letting an agent deploy with standing production access
+- Assuming a previous successful deploy proves this one is safe
+- Skipping rollback validation
+- Treating release automation as a substitute for review

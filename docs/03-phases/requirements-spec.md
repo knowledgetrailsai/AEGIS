@@ -1,20 +1,35 @@
 # Phase: Requirements & Spec
 
-> Full deep-dive: [docs/practices/spec-driven-development.md](../practices/spec-driven-development.md)
+> Deep dive: [spec-driven development](../practices/spec-driven-development.md)
 
-## How to
+## What this phase does
 
-1. Write the spec agents will act on, not just what humans will read: goal/context, functional requirements, explicit constraints (performance, security, style), testable acceptance criteria, and an explicit out-of-scope list.
-2. Apply the **verifiable done** test — rewrite vague criteria ("improve search") into measurable ones ("p95 query latency < 200ms; relevance eval score ≥ 0.85 on the labeled test set").
-3. Version the spec alongside the code. Spec changes are reviewable diffs, since the spec is what future agent tasks and regenerations are graded against.
-4. Use [templates/spec-template.md](../../templates/spec-template.md) as the starting structure; don't skip the out-of-scope section — it's what stops agent scope creep.
+This phase turns a request into a clear contract. A good spec removes guesswork for both the agent and the reviewer.
 
-## Anti-patterns
+## Method
 
-- A spec that's really just the original feature request, unedited — ambiguity in the request becomes ambiguity in the output.
-- Acceptance criteria that require human judgment to evaluate ("looks good", "feels fast") instead of a measurable threshold.
-- No out-of-scope section — the agent will "helpfully" touch adjacent code you didn't ask it to.
+1. Write the goal in plain language.
+2. List the functional requirements.
+3. Add explicit constraints for performance, security, style, and compatibility.
+4. Define acceptance criteria that can be checked.
+5. State what is out of scope.
+6. Assign a risk tier.
 
-## Signal you're doing this right
+## Best practices
 
-A reviewer unfamiliar with the request can read the spec alone and know exactly what "done" looks like — same bar the agent is held to.
+- Start from [templates/spec-template.md](../../templates/spec-template.md).
+- Make acceptance criteria measurable.
+- Include examples when they reduce ambiguity.
+- Keep the spec close to the code so changes stay reviewable.
+- Treat the spec as the source of truth for the work.
+
+## Common mistakes
+
+- Copying the original request without clarifying it
+- Using subjective criteria like “make it better”
+- Leaving out non-goals
+- Writing a spec that only the original requester can interpret
+
+## Done means
+
+A reviewer who did not write the request can read the spec and know exactly what success looks like.

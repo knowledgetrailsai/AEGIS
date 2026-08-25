@@ -1,15 +1,30 @@
 # Phase: Production Support & Maintenance
 
-> Related deep-dives: [human-in-the-loop gating](../practices/human-in-the-loop-gating.md), [multi-agent orchestration](../practices/multi-agent-orchestration.md), [memory/state persistence](../practices/memory-state-persistence.md)
+> Related deep dives: [human-in-the-loop gating](../practices/human-in-the-loop-gating.md), [multi-agent orchestration](../practices/multi-agent-orchestration.md), [memory/state persistence](../practices/memory-state-persistence.md)
 
-## How to
+## What this phase does
 
-1. Let agents triage first: correlate logs/metrics, draft a root-cause hypothesis, propose — not execute — a runbook action.
-2. Gate remediation execution by blast radius: restart-a-pod-level actions can be autonomous; anything touching customer data or money needs sign-off.
-3. Run periodic agent-assisted tech-debt scans, but let humans set remediation priority against business context the agent doesn't have.
-4. Apply the [patch-vs-regenerate rubric](../02-patch-vs-regenerate.md) to legacy modernization work — most legacy systems are patch-territory by default (high history value, incomplete specs).
+This phase keeps the system healthy after release. The agent can help with triage and proposals, but risky actions should stay gated.
 
-## Anti-patterns
+## Method
 
-- An on-call agent with autonomous remediation rights on anything beyond Tier 1–2 actions.
-- Tech-debt backlogs generated but never prioritized against real business context — becomes noise instead of a queue.
+1. Triage the issue using logs, metrics, traces, and recent changes.
+2. Ask the agent for a root-cause hypothesis.
+3. Have the agent propose a runbook action before it executes anything.
+4. Gate remediation by blast radius.
+5. Prioritize technical debt with human business context.
+
+## Best practices
+
+- Let agents handle the first pass on incident triage.
+- Keep remediation autonomy limited to low-risk actions.
+- Use the patch-vs-regenerate rule for modernization work.
+- Review recurring incidents for patterns, not just individual fixes.
+- Keep ownership clear for maintenance decisions.
+
+## Common mistakes
+
+- Giving on-call agents broad remediation rights
+- Letting tech-debt reports pile up without prioritization
+- Executing a runbook step automatically when the blast radius is unclear
+- Treating one incident as proof the system is healthy

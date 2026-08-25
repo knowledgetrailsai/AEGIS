@@ -1,14 +1,28 @@
 # Phase: Architecture & Design
 
-## How to
+## What this phase does
 
-1. Produce an ADR ([templates/adr-template.md](../../templates/adr-template.md)) for any agent-impacting design choice — module boundaries, data contracts, tool/API surface — so agents and humans share the same reasoning trail.
-2. Design for "agent legibility": strong typing, descriptive errors, small well-named modules. The same properties that help a new hire onboard help an agent reason correctly.
-3. Apply the [patch-vs-regenerate rubric](../02-patch-vs-regenerate.md) per component during design, not after — it changes how you draw module boundaries (isolate the regenerate-friendly pieces behind a clean interface).
-4. Design the tool/function-calling surface an agent will use like an API: clear names, strict schemas, error messages that tell the agent what to do differently — not just that it failed.
+This phase decides how the system should be shaped before implementation starts. The goal is to make the change easy to build, easy to review, and safe to evolve later.
 
-## Anti-patterns
+## Method
 
-- Monolithic modules with implicit cross-cutting state — agents (and humans) can't reason locally about them.
-- Tool interfaces with vague error messages ("something went wrong") that give an agent nothing to act on.
-- Skipping the ADR because "it's obvious" — it's obvious to you today, not to the agent six months from now with no memory of this conversation.
+1. Identify the boundary of the change.
+2. Decide what belongs together and what should be isolated.
+3. Record major decisions in an ADR.
+4. Define interfaces, contracts, and failure modes.
+5. Decide which pieces should be patched and which can be regenerated.
+
+## Best practices
+
+- Write an ADR for any decision that changes behavior, ownership, contracts, or risk.
+- Favor small modules with clear names and clear inputs and outputs.
+- Use strong typing and descriptive errors when possible.
+- Design tool and API surfaces so an agent can recover from a failed call.
+- Apply [patch-vs-regenerate](../02-patch-vs-regenerate.md) early, not after implementation starts.
+
+## Common mistakes
+
+- Large modules with hidden shared state
+- Interfaces that are easy for humans to improvise around but hard for agents to use safely
+- Treating design notes as optional
+- Designing for implementation speed only, not long-term maintenance

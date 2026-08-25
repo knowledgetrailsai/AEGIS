@@ -1,18 +1,30 @@
 # Phase: Testing & QA
 
-> Full deep-dive: [docs/practices/evals.md](../practices/evals.md)
+> Deep dive: [evals](../practices/evals.md)
 
-## How to
+## What this phase does
 
-1. Build an evals suite before trusting agent autonomy on a code path: input/expected-output pairs, automated scoring, wired into CI as a hard gate (see [ci-eval-gate.yml](../../.github/workflows/ci-eval-gate.yml)).
-2. Use agents to generate and self-heal tests, but require human approval on any *new* acceptance criteria the agent proposes — don't let the agent grade its own homework unsupervised.
-3. For higher-stakes changes, use adversarial verification: a second agent instance tries to disprove the first agent's claim of correctness before it ships.
+This phase proves the change works. Tests verify the code. Evals verify the agent behavior. Both matter.
 
-## Anti-patterns
+## Method
 
-- Treating "the agent wrote tests" as equivalent to "the behavior is verified" — tests an agent wrote to match its own implementation can encode the same bug twice.
-- No eval coverage gate in CI — autonomy granted on vibes instead of measured pass rate.
+1. Add tests for the changed behavior.
+2. Add or update evals for the agent workflow when the work is agent-assisted.
+3. Put the checks into CI.
+4. Review any new acceptance criteria before they become official.
+5. Use a second pass or second agent for higher-risk changes.
 
-## Signal you're doing this right
+## Best practices
 
-Rejection/override rate (see [metrics](../06-metrics.md)) is tracked per agent workflow, and a rising rate triggers a spec or context fix — not just more manual review.
+- Build the eval suite before increasing autonomy on a code path.
+- Use input and expected-output pairs when the behavior can be described clearly.
+- Automate scoring where possible.
+- Require human approval for new acceptance criteria.
+- Add adversarial verification when the change is high stakes.
+
+## Common mistakes
+
+- Treating “the agent wrote tests” as proof of correctness
+- Letting evals stay manual when they should be automated
+- Moving autonomy ahead of coverage
+- Ignoring repeated review or QA failures

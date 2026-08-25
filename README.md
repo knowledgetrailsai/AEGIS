@@ -19,7 +19,7 @@ This repo gives you:
 |---|---|
 | Understand the core ideas | [docs/01-principles.md](docs/01-principles.md) |
 | Decide patch vs. regenerate | [docs/02-patch-vs-regenerate.md](docs/02-patch-vs-regenerate.md) |
-| Follow the SDLC flow | [docs/03-phases/](docs/03-phases/) |
+| Follow the SDLC flow | [docs/03-phases/README.md](docs/03-phases/README.md) |
 | Set up risk gates | [docs/04-governance-risk-tiers.md](docs/04-governance-risk-tiers.md) |
 | Check effort-savings evidence | [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md) |
 | Track whether the process works | [docs/06-metrics.md](docs/06-metrics.md) |
