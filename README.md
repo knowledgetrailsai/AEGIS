@@ -1,29 +1,34 @@
-# Agentic Engineering SDLC
+# Agentic Engineering Guide
 
-A prescriptive framework for running software delivery — dev, data, API, integration, ERP, QA, ops, and OT — when AI agents are active participants in the lifecycle, not just autocomplete.
+A practical guide for using AI agents across software delivery — from requirements and design through development, review, testing, deployment, and support.
 
-## Why this exists
+## What this guide covers
 
-Agentic tools (Claude Code, Copilot, Cursor, Kiro, and similar) can now plan, write, test, and ship changes with real autonomy. The gap most teams hit isn't the tooling — it's the absence of a method: what to let an agent do unsupervised, how to spec work so an agent can act on it, how to gate risk, and how to tell if it's actually saving effort or just moving the work into review.
+Modern agent tools can plan, write, test, and review work. The hard part is deciding what to delegate, what to gate, and how to prove the work is actually correct.
 
-This repo is that method, in docs, templates, and CI scaffolding you can adopt directly.
+This repo gives you:
 
-## How to use this repo
+- a simple SDLC flow for agent-assisted work
+- templates for specs, ADRs, and risk checks
+- governance rules for autonomy and approval
+- a comparison page for current tools
+
+## Start here
 
 | If you want to... | Start here |
 |---|---|
 | Understand the core ideas | [docs/01-principles.md](docs/01-principles.md) |
-| Decide patch vs. full regeneration for a component | [docs/02-patch-vs-regenerate.md](docs/02-patch-vs-regenerate.md) |
-| Run a specific SDLC phase with agents | [docs/03-phases/](docs/03-phases/) |
-| Set up risk gating / approvals | [docs/04-governance-risk-tiers.md](docs/04-governance-risk-tiers.md) |
-| Know what to actually expect in time saved | [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md) |
-| Track whether it's working | [docs/06-metrics.md](docs/06-metrics.md) |
-| Go deep on a specific practice (spec-driven dev, evals, orchestration, etc.) | [docs/practices/](docs/practices/) |
-| Write a spec, ADR, or PR an agent can act on | [templates/](templates/) |
-| See tooling/role mapping across 40 domains | [domains/domains.csv](domains/domains.csv) |
+| Decide patch vs. regenerate | [docs/02-patch-vs-regenerate.md](docs/02-patch-vs-regenerate.md) |
+| Follow the SDLC flow | [docs/03-phases/](docs/03-phases/) |
+| Set up risk gates | [docs/04-governance-risk-tiers.md](docs/04-governance-risk-tiers.md) |
+| Check effort-savings evidence | [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md) |
+| Track whether the process works | [docs/06-metrics.md](docs/06-metrics.md) |
+| Read a tool comparison | [docs/07-tools-comparison.md](docs/07-tools-comparison.md) |
+| Use a template | [templates/](templates/) |
+| See domain mapping | [domains/domains.csv](domains/domains.csv) |
 | Wire this into your repo's CI | [.github/](.github/) |
 
-## Core principles (detail in [docs/01-principles.md](docs/01-principles.md))
+## Core principles
 
 1. **Verifiability over trust** — accept agent output because it passed a test/eval/diff review, never because it "looks right."
 2. **Reversibility gates autonomy** — the more reversible and low-blast-radius an action, the more autonomy it gets.
@@ -31,13 +36,13 @@ This repo is that method, in docs, templates, and CI scaffolding you can adopt d
 4. **Context is engineered, not assumed** — what an agent can see is curated deliberately.
 5. **Humans move up the stack** — less typing, more specifying, reviewing, and deciding.
 
-## Practices deep-dives ([docs/practices/](docs/practices/))
+## Deep dives
 
 Each of these gets a full how-to, not just a mention: [spec-driven development](docs/practices/spec-driven-development.md), [context engineering](docs/practices/context-engineering.md), [plan-then-execute](docs/practices/plan-then-execute.md), [human-in-the-loop gating](docs/practices/human-in-the-loop-gating.md), [evals](docs/practices/evals.md), [prompt/agent versioning](docs/practices/prompt-agent-versioning.md), [worktree/sandbox isolation](docs/practices/worktree-sandbox-isolation.md), [multi-agent orchestration](docs/practices/multi-agent-orchestration.md), [tool/function-calling design](docs/practices/tool-function-calling-design.md), [memory/state persistence](docs/practices/memory-state-persistence.md).
 
 ## Status
 
-Living document. Principles and governance in `docs/` are meant to change only through deliberate review (see [CONTRIBUTING.md](CONTRIBUTING.md)). The tooling references in `domains/domains.csv` go stale fast — check dates before trusting them and refresh on a schedule.
+Living guide. Principles and governance in `docs/` should change only through deliberate review (see [CONTRIBUTING.md](CONTRIBUTING.md)). Tooling references in `domains/domains.csv` go stale fast, so check dates before trusting them and refresh on a schedule.
 
 ## License
 
