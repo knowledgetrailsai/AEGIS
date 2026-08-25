@@ -10,6 +10,7 @@ This repo gives you:
 
 - a requirements-first and architecture-first planning flow
 - a simple SDLC flow for agent-assisted work
+- a workflow that shows where agent tools help at each step
 - templates for specs, ADRs, and risk checks
 - governance rules for autonomy and approval
 - a comparison page for current tools

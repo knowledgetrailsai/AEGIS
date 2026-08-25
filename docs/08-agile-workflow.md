@@ -9,6 +9,22 @@ This guide uses a simple agile flow to organize agent-assisted work:
 - each feature is refined into a small, testable slice
 - the slice moves through spec, design, build, review, test, and release
 
+## Tool support
+
+Use the tools in this repo as helpers for the workflow, not as a replacement for the workflow itself.
+
+| Workflow step | Useful tools |
+|---|---|
+| Requirements | Claude Code, Cursor, Kiro, OpenAI Codex CLI |
+| Architecture | Cursor, Claude Code, Kiro, Windsurf |
+| Backlog and feature slicing | GitHub Copilot app / agents, Kiro, Cursor |
+| Spec writing | Claude Code, Cursor, Kiro |
+| Development | Claude Code, Cursor, OpenAI Codex CLI, Windsurf |
+| Review | GitHub Copilot app / agents, Cursor |
+| Testing and QA | Claude Code, Cursor, GitHub Copilot app / agents |
+| Deployment and release | GitHub Copilot app / agents, Claude Code, Kiro |
+| Production support | Claude Code, Cursor, GitHub Copilot app / agents, Kiro |
+
 ## Core terms
 
 | Term | Meaning in this guide |
@@ -57,6 +73,8 @@ This guide uses a simple agile flow to organize agent-assisted work:
 - Break work into slices that fit one clear review cycle.
 - Use the spec template for each slice.
 - Track status with simple states such as `backlog`, `ready`, `in progress`, `review`, `done`.
+- Use the comparison page to pick the right agent tool for the current step.
+- Keep the tool choice aligned with the workflow step and the risk tier.
 
 ## Common mistakes
 
@@ -66,6 +84,8 @@ This guide uses a simple agile flow to organize agent-assisted work:
 - Starting implementation before the item is refined
 - Making feature items too large to verify
 - Using sprint language without actually selecting a finite set of work
+- Using one tool for every step just because it is familiar
+- Letting the tool choice override the workflow sequence
 
 ## Simple flow
 
