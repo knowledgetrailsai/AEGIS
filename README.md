@@ -23,6 +23,7 @@ This repo gives you:
 | Set up risk gates | [docs/04-governance-risk-tiers.md](docs/04-governance-risk-tiers.md) |
 | Check effort-savings evidence | [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md) |
 | Track whether the process works | [docs/06-metrics.md](docs/06-metrics.md) |
+| Use agile backlog and feature flow | [docs/08-agile-workflow.md](docs/08-agile-workflow.md) |
 | Read a tool comparison | [docs/07-tools-comparison.md](docs/07-tools-comparison.md) |
 | Use a template | [templates/](templates/) |
 | See domain mapping | [domains/domains.csv](domains/domains.csv) |
