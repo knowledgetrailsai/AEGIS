@@ -17,6 +17,7 @@ This page compares current agentic coding tools and where each one fits best. Th
 | GitHub Copilot app / agents | Cloud and local agent sessions tied to GitHub repos | Parallel isolated sessions, plan/interactive/autopilot modes, branch and PR workflows, GitHub-native review loop | Most useful when your code and review flow already live in GitHub | [Copilot app docs](https://docs.github.com/en/copilot/how-tos/github-copilot-app/getting-started) |
 | Claude Code | CLI agent for local repository work | Strong terminal workflow, flexible command-line usage, local file edits, MCP support, approval modes | Better for terminal-first engineers than for UI-centric workflows | [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code/getting-started) |
 | OpenAI Codex CLI | CLI coding agent with approval modes | Local code reading/editing/running, multimodal inputs, configurable approval workflow | CLI-first; less of a full IDE experience than Cursor or Copilot app | [OpenAI Codex CLI help](https://help.openai.com/en/articles/11096431) |
+| Kiro | Unified agent platform across IDE, CLI, web, and mobile | Specs, steering, hooks, MCP, custom agents, shared configuration across surfaces, AWS-native path, built on Bedrock | Newer product, broader surface area, and strongest fit if you want the whole workflow centered on Kiro | [Kiro docs](https://kiro.dev/docs/) |
 | Windsurf | IDE with agentic chat and context-aware suggestions | Cascade chat, context awareness, terminal integration, MCP, memories/rules, editor-native workflow | More opinionated editor experience; best if you want the environment to be centered on Windsurf | [Windsurf docs](https://docs.windsurf.com/) |
 
 ## Detailed comparison
@@ -81,6 +82,21 @@ Watch for:
 - it is not a full editor replacement
 - the experience depends on how well your terminal workflow is set up
 
+### Kiro
+
+Kiro is the broadest surface-area entry in this list. The current docs present it as an agentic development environment that spans IDE, CLI, web, mobile, and Crew, with a shared `.kiro/` configuration. Its core workflow emphasizes specs, steering, hooks, MCP, custom agents, skills, and checkpoints.
+
+Use Kiro when:
+
+- you want one agent system across IDE, CLI, and web
+- you want specs and steering built into the workflow
+- you want an AWS-aligned option with Bedrock-backed infrastructure
+
+Watch for:
+
+- the platform is still newer than the long-established editor-first options
+- the breadth of surfaces makes it more opinionated than a simple coding assistant
+
 ### Windsurf
 
 Windsurf is positioned as an AI IDE with Cascade chat, terminal support, MCP, memories, and context awareness. The official docs lean heavily into editor-native workflows and codebase indexing.
@@ -103,6 +119,7 @@ Watch for:
 | Terminal-first engineering team | Claude Code or OpenAI Codex CLI | Minimal friction, local repo control, easy to script |
 | GitHub-centered team | GitHub Copilot app / agents | Fits issues, branches, PRs, and review loops |
 | Editor-centric team | Cursor or Windsurf | Best if the IDE is where most work already happens |
+| AWS-centered team or multi-surface workflow | Kiro | One shared agent model across IDE, CLI, web, and mobile |
 | Mixed team with heavy review gates | GitHub Copilot app / agents | Strong PR and session isolation model |
 
 ## Selection guide
@@ -123,4 +140,5 @@ Watch for:
 - [Claude Code getting started](https://docs.anthropic.com/en/docs/claude-code/getting-started)
 - [Claude Code CLI reference](https://docs.anthropic.com/en/docs/claude-code/cli-usage)
 - [OpenAI Codex CLI help](https://help.openai.com/en/articles/11096431)
+- [Kiro documentation](https://kiro.dev/docs/)
 - [Windsurf docs](https://docs.windsurf.com/)
