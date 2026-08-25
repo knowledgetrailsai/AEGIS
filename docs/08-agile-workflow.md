@@ -2,7 +2,9 @@
 
 This guide uses a simple agile flow to organize agent-assisted work:
 
-- backlog items capture all requested work
+- requirements capture the need and scope
+- architecture sets the overall shape and boundaries
+- backlog items capture the ordered work
 - features group related backlog items
 - each feature is refined into a small, testable slice
 - the slice moves through spec, design, build, review, test, and release
@@ -11,6 +13,8 @@ This guide uses a simple agile flow to organize agent-assisted work:
 
 | Term | Meaning in this guide |
 |---|---|
+| Requirements | The problem, goals, constraints, and non-goals that define the need |
+| Architecture | The high-level system shape, boundaries, and key decisions |
 | Backlog | The ordered list of work that may be done next |
 | Feature | A user- or system-visible outcome made up of one or more backlog items |
 | Epic | A larger body of work that contains multiple features |
@@ -20,12 +24,14 @@ This guide uses a simple agile flow to organize agent-assisted work:
 
 ## How to run it
 
-1. Put every request into the backlog first.
-2. Group related backlog items into a feature or epic.
-3. Refine the item until it is small enough to finish in one pass.
-4. Write the spec before implementation.
-5. Use the phase guide for design, development, review, testing, and release.
-6. Mark the item done only when the definition of done is met.
+1. Write the requirements first.
+2. Set the overall architecture before breaking the work into tasks.
+3. Put the work into the backlog.
+4. Group related backlog items into a feature or epic.
+5. Refine the item until it is small enough to finish in one pass.
+6. Write the spec before implementation.
+7. Use the phase guide for design, development, review, testing, and release.
+8. Mark the item done only when the definition of done is met.
 
 ## Backlog rules
 
@@ -33,6 +39,7 @@ This guide uses a simple agile flow to organize agent-assisted work:
 - Higher items should be clearer and more ready to work on.
 - Each item should state the goal, scope, acceptance criteria, and risk.
 - Items that are too large should be split before implementation starts.
+- Backlog items should trace back to requirements and architecture decisions.
 
 ## Feature rules
 
@@ -40,9 +47,11 @@ This guide uses a simple agile flow to organize agent-assisted work:
 - Each feature should have one owner and a clear status.
 - A feature can contain multiple backlog items, but each item still needs its own spec.
 - Features should be reviewable in small slices.
+- Features should fit the current architecture or justify an architecture change first.
 
 ## Best practices
 
+- Start with requirements and architecture before backlog refinement.
 - Keep the backlog small enough to review regularly.
 - Use feature names that describe outcomes, not implementation detail.
 - Break work into slices that fit one clear review cycle.
@@ -51,6 +60,8 @@ This guide uses a simple agile flow to organize agent-assisted work:
 
 ## Common mistakes
 
+- Skipping requirements and jumping straight to tasks
+- Skipping architecture and letting the backlog define the system shape
 - Treating the backlog as a dumping ground
 - Starting implementation before the item is refined
 - Making feature items too large to verify
@@ -58,4 +69,4 @@ This guide uses a simple agile flow to organize agent-assisted work:
 
 ## Simple flow
 
-`backlog -> feature -> refined slice -> spec -> design -> development -> review -> testing -> release -> done`
+`requirements -> architecture -> backlog -> feature -> refined slice -> spec -> design -> development -> review -> testing -> release -> done`

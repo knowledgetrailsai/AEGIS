@@ -8,6 +8,7 @@ Modern agent tools can plan, write, test, and review work. The hard part is deci
 
 This repo gives you:
 
+- a requirements-first and architecture-first planning flow
 - a simple SDLC flow for agent-assisted work
 - templates for specs, ADRs, and risk checks
 - governance rules for autonomy and approval
@@ -18,6 +19,7 @@ This repo gives you:
 | If you want to... | Start here |
 |---|---|
 | Understand the core ideas | [docs/01-principles.md](docs/01-principles.md) |
+| Start with requirements and architecture | [docs/08-agile-workflow.md](docs/08-agile-workflow.md) |
 | Decide patch vs. regenerate | [docs/02-patch-vs-regenerate.md](docs/02-patch-vs-regenerate.md) |
 | Follow the SDLC flow | [docs/03-phases/README.md](docs/03-phases/README.md) |
 | Set up risk gates | [docs/04-governance-risk-tiers.md](docs/04-governance-risk-tiers.md) |
