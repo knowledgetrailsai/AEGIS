@@ -11,7 +11,7 @@ A code-level test verifies the output artifact. An eval verifies the agent's *de
 1. **Define the behavior you're testing.** Not "the agent writes good code" — something specific: "given a bug report with a stack trace, the agent's proposed fix addresses the actual root cause, not just the symptom."
 2. **Write input/expected-output pairs.** Real or realistic examples, with a clear pass/fail or scored outcome — not vibes-based grading.
 3. **Automate scoring.** A human-graded eval doesn't scale and doesn't belong in CI. Use programmatic checks (does the output match a schema, pass a test, hit a threshold) or a second model as a grader with an explicit rubric.
-4. **Wire into CI as a hard gate** — see [.github/workflows/ci-eval-gate.yml](../../.github/workflows/ci-eval-gate.yml). A regression in eval score should block merge the same way a failing unit test does.
+4. **Wire into CI as a hard gate** — see [ci-eval-gate.yml](../../.github/workflows/ci-eval-gate.yml). A regression in eval score should block merge the same way a failing unit test does.
 5. **Set a coverage bar before granting higher autonomy.** Don't move a workflow to Tier 1 autonomous status until its eval coverage is high enough that a regression would actually get caught.
 
 ## Common failure modes

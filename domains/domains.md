@@ -109,4 +109,4 @@ For easier navigation, the 40 domains can be grouped into broader categories:
 
 ## Source
 
-This reference is derived from [`domains/domains.csv`](domains/domains.csv).
+This reference is derived from [`domains.csv`](domains.csv).

@@ -1,0 +1,44 @@
+name: CI Eval Gate
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - "domains/*.csv"
+      - ".github/workflows/ci-eval-gate.yml"
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check repository links
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          import urllib.parse
+          root = Path(".").resolve()
+          pat = re.compile(r'\[[^\]]+\]\(([^)]+)\)')
+          broken = []
+          for f in root.rglob("*.md"):
+              text = f.read_text()
+              for m in pat.finditer(text):
+                  href = m.group(1).strip()
+                  if "://" in href or href.startswith("mailto:"):
+                      continue
+                  href = href.split("#", 1)[0]
+                  if not href:
+                      continue
+                  target = (f.parent / urllib.parse.unquote(href)).resolve()
+                  try:
+                      target.relative_to(root)
+                  except ValueError:
+                      continue
+                  if not target.exists():
+                      line = text[:m.start()].count("\n") + 1
+                      broken.append(f"{f.relative_to(root)}:{line}: {m.group(1)}")
+          if broken:
+              print("\n".join(broken))
+              raise SystemExit(1)
+          PY
