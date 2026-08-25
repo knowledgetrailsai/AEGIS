@@ -1,6 +1,6 @@
 # Agentic Engineering Guide
 
-A practical guide for using AI agents across software delivery — from requirements and design through development, review, testing, deployment, and support.
+A practical guide for using AI agents across software delivery end to end — from requirements and architecture through backlog, development, review, testing, deployment, and support.
 
 ## What this guide covers
 
@@ -10,7 +10,7 @@ This repo gives you:
 
 - a requirements-first and architecture-first planning flow
 - a simple SDLC flow for agent-assisted work
-- a workflow that shows where agent tools help at each step
+- a workflow that shows how agent tools support the full lifecycle
 - templates for specs, ADRs, and risk checks
 - governance rules for autonomy and approval
 - a comparison page for current tools

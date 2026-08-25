@@ -1,17 +1,17 @@
 # Agile Work Loop
 
-This guide uses a simple agile flow to organize agent-assisted work:
+This guide uses a simple agile flow to organize end-to-end agent-supported work:
 
-- requirements capture the need and scope
-- architecture sets the overall shape and boundaries
-- backlog items capture the ordered work
-- features group related backlog items
-- each feature is refined into a small, testable slice
-- the slice moves through spec, design, build, review, test, and release
+- requirements are drafted with agent help to capture the need and scope
+- architecture is outlined with agent help to set the overall shape and boundaries
+- backlog items are created and ordered with agent help
+- features group related backlog items with agent help
+- each feature is refined into a small, testable slice with agent help
+- the slice moves through spec, design, build, review, test, release, and support with agent help
 
 ## Tool support
 
-Use the tools in this repo as helpers for the workflow, not as a replacement for the workflow itself.
+Use the tools in this repo to support the workflow end to end. The workflow stays the same; the agent helps carry it out.
 
 | Workflow step | Useful tools |
 |---|---|
@@ -40,13 +40,13 @@ Use the tools in this repo as helpers for the workflow, not as a replacement for
 
 ## How to run it
 
-1. Write the requirements first.
-2. Set the overall architecture before breaking the work into tasks.
-3. Put the work into the backlog.
-4. Group related backlog items into a feature or epic.
-5. Refine the item until it is small enough to finish in one pass.
-6. Write the spec before implementation.
-7. Use the phase guide for design, development, review, testing, and release.
+1. Write the requirements first, with the agent helping capture scope, constraints, and non-goals.
+2. Set the overall architecture before breaking the work into tasks, with the agent helping draft boundaries and options.
+3. Put the work into the backlog, with the agent helping organize and label items.
+4. Group related backlog items into a feature or epic, with the agent helping identify the slice.
+5. Refine the item until it is small enough to finish in one pass, with the agent helping break it down.
+6. Write the spec before implementation, with the agent helping draft the testable contract.
+7. Use the phase guide for design, development, review, testing, release, and support, with the agent helping in each phase.
 8. Mark the item done only when the definition of done is met.
 
 ## Backlog rules
@@ -75,6 +75,7 @@ Use the tools in this repo as helpers for the workflow, not as a replacement for
 - Track status with simple states such as `backlog`, `ready`, `in progress`, `review`, `done`.
 - Use the comparison page to pick the right agent tool for the current step.
 - Keep the tool choice aligned with the workflow step and the risk tier.
+- Treat the agent as part of the delivery team throughout the lifecycle, not as a one-off code generator.
 
 ## Common mistakes
 
@@ -86,6 +87,7 @@ Use the tools in this repo as helpers for the workflow, not as a replacement for
 - Using sprint language without actually selecting a finite set of work
 - Using one tool for every step just because it is familiar
 - Letting the tool choice override the workflow sequence
+- Dropping the agent after implementation and only using it for code generation
 
 ## Simple flow
 
