@@ -14,6 +14,12 @@ This phase proves the change works. Tests verify the code. Evals verify the agen
 4. Review any new acceptance criteria before they become official.
 5. Use a second pass or second agent for higher-risk changes.
 
+## Tool support
+
+- Use Claude Code, Cursor, or GitHub Copilot app / agents to generate tests from the spec.
+- Use eval tooling or a second agent to check repeatable agent behavior.
+- Use CI to make the checks run the same way every time.
+
 ## Best practices
 
 - Build the eval suite before increasing autonomy on a code path.
@@ -21,6 +27,7 @@ This phase proves the change works. Tests verify the code. Evals verify the agen
 - Automate scoring where possible.
 - Require human approval for new acceptance criteria.
 - Add adversarial verification when the change is high stakes.
+- Ask the agent to propose missing coverage, then verify it with the test harness.
 
 ## Common mistakes
 

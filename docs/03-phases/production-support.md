@@ -14,6 +14,12 @@ This phase keeps the system healthy after release. The agent can help with triag
 4. Gate remediation by blast radius.
 5. Prioritize technical debt with human business context.
 
+## Tool support
+
+- Use Claude Code, Cursor, GitHub Copilot app / agents, or Kiro to summarize incidents and propose root causes.
+- Use a second agent or human reviewer to challenge the first hypothesis when the incident is high risk.
+- Use the agent to draft runbook steps, then let the human choose the action.
+
 ## Best practices
 
 - Let agents handle the first pass on incident triage.
@@ -21,6 +27,7 @@ This phase keeps the system healthy after release. The agent can help with triag
 - Use the patch-vs-regenerate rule for modernization work.
 - Review recurring incidents for patterns, not just individual fixes.
 - Keep ownership clear for maintenance decisions.
+- Keep the agent in the triage loop, not the final authority loop.
 
 ## Common mistakes
 

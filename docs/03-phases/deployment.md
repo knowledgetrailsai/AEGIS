@@ -14,6 +14,12 @@ This phase moves the change into production. The job is to make safe releases re
 4. Require human approval for irreversible or high-blast-radius actions.
 5. Release only after the gate is satisfied.
 
+## Tool support
+
+- Use GitHub Copilot app / agents, Claude Code, or Kiro to draft release notes, version bumps, and rollback steps.
+- Use the agent to prepare the deploy checklist.
+- Use human approval to trigger the actual release when the action is irreversible or high risk.
+
 ## Best practices
 
 - Keep deploy triggers behind an approval gate.
@@ -21,6 +27,7 @@ This phase moves the change into production. The job is to make safe releases re
 - Test rollback as part of the release process.
 - Treat schema, financial, and physical control changes as high risk.
 - Use the governance doc to set the approval level.
+- Let the agent prepare the release, but do not let it bypass the gate.
 
 ## Common mistakes
 

@@ -12,6 +12,12 @@ Code review decides whether the change should merge. For agent-assisted work, th
 4. Confirm the rollback path if the change is risky.
 5. Record the result clearly in the PR.
 
+## Tool support
+
+- Use GitHub Copilot app / agents or Cursor to summarize diffs, flag risky changes, and restate the spec.
+- Use the agent to surface review notes and missing checks.
+- Use a human reviewer for the final decision on Tier 2+ work.
+
 ## Best practices
 
 - Use [governance](../04-governance-risk-tiers.md) to set review depth.
@@ -19,6 +25,7 @@ Code review decides whether the change should merge. For agent-assisted work, th
 - Use a named human reviewer for Tier 3 and Tier 4 work.
 - Track override or rejection rate by workflow.
 - Treat a high override rate as a spec or context problem first.
+- Let the agent pre-review the change, then have the human confirm the result.
 
 ## Common mistakes
 

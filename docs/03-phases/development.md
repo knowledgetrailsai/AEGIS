@@ -14,6 +14,13 @@ This phase is where the change gets built. The main goal is to keep the agent pr
 4. Work in an isolated branch, worktree, or sandbox.
 5. Keep prompts and agent configs versioned like code.
 
+## Tool support
+
+- Use Claude Code, Cursor, OpenAI Codex CLI, or Windsurf for local implementation work.
+- Use GitHub Copilot app / agents when the work is best orchestrated through branches and PRs.
+- Use the agent to draft the plan, edit the files, and generate supporting tests.
+- Use worktree isolation so parallel agent tasks do not collide.
+
 ## Best practices
 
 - Use plan-then-execute for anything beyond simple Tier 1 work.
@@ -21,6 +28,7 @@ This phase is where the change gets built. The main goal is to keep the agent pr
 - Give that context file an owner and a review cadence.
 - Keep agent work isolated so parallel tasks do not collide.
 - Treat prompt and config changes like reviewed code changes.
+- Ask the agent to summarize the diff before review.
 
 ## Common mistakes
 

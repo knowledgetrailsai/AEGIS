@@ -1,9 +1,10 @@
 # SDLC Phases Guide
 
-Use this section as the working guide for agent-assisted delivery. Each phase page now follows the same pattern:
+Use this section as the working guide for agent-supported delivery. Each phase page now follows the same pattern:
 
 - what the phase is for
 - how to run it
+- what agent tools help
 - best practices
 - common mistakes
 
@@ -21,10 +22,10 @@ Use this section as the working guide for agent-assisted delivery. Each phase pa
 
 ## How to use it
 
-1. Start with requirements and spec.
-2. Move to design when the work changes boundaries or contracts.
-3. Use development, review, and testing as one loop.
-4. Keep deployment and support gated by blast radius.
+1. Start with requirements and spec, using an agent to draft and tighten the request.
+2. Move to design when the work changes boundaries or contracts, using an agent to compare options.
+3. Use development, review, and testing as one loop, with the agent helping produce code, tests, and diffs.
+4. Keep deployment and support gated by blast radius, with the agent helping prepare but not bypassing approvals.
 
 ## Rule of thumb
 

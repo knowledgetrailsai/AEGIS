@@ -13,17 +13,17 @@ This guide uses a simple agile flow to organize end-to-end agent-supported work:
 
 Use the tools in this repo to support the workflow end to end. The workflow stays the same; the agent helps carry it out.
 
-| Workflow step | Useful tools |
-|---|---|
-| Requirements | Claude Code, Cursor, Kiro, OpenAI Codex CLI |
-| Architecture | Cursor, Claude Code, Kiro, Windsurf |
-| Backlog and feature slicing | GitHub Copilot app / agents, Kiro, Cursor |
-| Spec writing | Claude Code, Cursor, Kiro |
-| Development | Claude Code, Cursor, OpenAI Codex CLI, Windsurf |
-| Review | GitHub Copilot app / agents, Cursor |
-| Testing and QA | Claude Code, Cursor, GitHub Copilot app / agents |
-| Deployment and release | GitHub Copilot app / agents, Claude Code, Kiro |
-| Production support | Claude Code, Cursor, GitHub Copilot app / agents, Kiro |
+| Workflow step | Useful tools | Agent output |
+|---|---|---|
+| Requirements | Claude Code, Cursor, Kiro, OpenAI Codex CLI | Draft requirement notes, constraints, and acceptance criteria |
+| Architecture | Cursor, Claude Code, Kiro, Windsurf | Compare options, boundaries, and risk before the ADR |
+| Backlog and feature slicing | GitHub Copilot app / agents, Kiro, Cursor | Split epics into ordered backlog items and slices |
+| Spec writing | Claude Code, Cursor, Kiro | Turn the slice into a testable contract |
+| Development | Claude Code, Cursor, OpenAI Codex CLI, Windsurf | Produce implementation, tests, and supporting diffs |
+| Review | GitHub Copilot app / agents, Cursor | Summarize diff risk, scope mismatch, missing checks |
+| Testing and QA | Claude Code, Cursor, GitHub Copilot app / agents | Generate tests, evals, and coverage gaps |
+| Deployment and release | GitHub Copilot app / agents, Claude Code, Kiro | Draft release notes, rollback steps, release checklists |
+| Production support | Claude Code, Cursor, GitHub Copilot app / agents, Kiro | Summarize incidents, propose root cause, draft runbook steps |
 
 ## Core terms
 
