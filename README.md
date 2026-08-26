@@ -8,6 +8,7 @@ Modern agentic coding tools can plan, write, test, and review work. The hard par
 
 This repo gives you:
 
+- a git branching/PR/merge workflow with a diagram and a map of what's safe to automate vs. what stays human-gated
 - a requirements-first and architecture-first planning flow
 - a simple SDLC flow for tool-assisted work
 - a workflow that shows how agentic coding tools support the full lifecycle
@@ -19,6 +20,7 @@ This repo gives you:
 
 | If you want to... | Start here |
 |---|---|
+| See the git branching/PR/merge flow and what's automatable (start here first) | [docs/00-git-workflow-and-automation.md](docs/00-git-workflow-and-automation.md) |
 | Understand the core ideas | [docs/01-principles.md](docs/01-principles.md) |
 | Start with requirements and architecture | [docs/08-agile-workflow.md](docs/08-agile-workflow.md) |
 | Decide patch vs. regenerate | [docs/02-patch-vs-regenerate.md](docs/02-patch-vs-regenerate.md) |
