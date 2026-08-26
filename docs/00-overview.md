@@ -1,10 +1,10 @@
-# Overview: The Agentic Engineering Guide, End to End
+# Overview: AEGIS, End to End
 
 **Start here.** This page is the single detailed walkthrough of the whole repo — what it is, how the pieces fit together, and where to go next for depth. Every other page in this repo is a deep dive into one part of the story told here.
 
 ## What this repo is
 
-A practical reference for running software delivery — requirements through production support — when agentic coding tools (Claude Code, Cursor, GitHub Copilot, Kiro, and similar) are doing a meaningful share of the writing, not just autocompleting lines. It is opinionated on purpose: every recommendation here is a default you can override, not a menu of equally-valid options.
+**AEGIS** — Agentic Engineering: Governance, Implementation & Scaling — is a practical reference for running software delivery — requirements through production support — when agentic coding tools (Claude Code, Cursor, GitHub Copilot, Kiro, and similar) are doing a meaningful share of the writing, not just autocompleting lines. It is opinionated on purpose: every recommendation here is a default you can override, not a menu of equally-valid options. AEGIS also implements the "Intelligence and Agent Engineering" discipline of the [OASIS](https://github.com/knowledgetrailsai/OASIS) enterprise-AI-transformation framework, and works entirely standalone for teams not running OASIS — see [09-related-frameworks.md](09-related-frameworks.md) for how the two relate.
 
 The problem this repo solves isn't "how do I prompt a tool." It's the set of decisions that only come up once tools are producing a real volume of change: what can run unattended versus what needs a human explicitly in the loop, how much of a diff to trust without re-deriving it yourself, how to keep a spec tight enough that a tool's output is actually checkable, and how to tell — with numbers, not vibes — whether adopting these tools is making delivery better or just faster-looking.
 

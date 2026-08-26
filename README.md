@@ -1,6 +1,6 @@
-# Agentic Engineering Guide
+# AEGIS
 
-A practical guide for using agentic coding tools across software delivery end to end — from requirements and architecture through backlog, development, review, testing, deployment, and support.
+**A**gentic **E**ngineering: **G**overnance, **I**mplementation & **S**caling — a practical guide for using agentic coding tools across software delivery end to end, from requirements and architecture through backlog, development, review, testing, deployment, and support. AEGIS also implements the "Intelligence and Agent Engineering" discipline of [OASIS](https://github.com/knowledgetrailsai/OASIS) and works standalone for teams not running OASIS at all — see [docs/09-related-frameworks.md](docs/09-related-frameworks.md).
 
 ## Start here
 
@@ -25,7 +25,7 @@ A practical guide for using agentic coding tools across software delivery end to
 | See prompts and outcomes for every phase, worked end to end | [examples/README.md](examples/README.md) |
 | Use a template | [templates/](templates/) |
 | See domain mapping | [domains/domains.md](domains/domains.md) |
-| Compare with BMAD, AI-DLC, and specs.md | [docs/09-related-frameworks.md](docs/09-related-frameworks.md) |
+| Compare with BMAD, AI-DLC, specs.md, and OASIS | [docs/09-related-frameworks.md](docs/09-related-frameworks.md) |
 | Wire this into your repo's CI | [.github/](.github/) |
 
 ## Status
