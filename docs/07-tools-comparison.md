@@ -1,8 +1,28 @@
 # Tools Comparison Guide
 
-This page compares current agentic coding tools and where each one fits best. The goal is not to crown a universal winner. It is to help you choose the right tool for the job, based on the current official product docs that were checked on 2026-08-25.
+This page compares current agentic coding tools and where each one fits best. The goal is not to crown a universal winner. It is to help you choose the right tool for the job, based on the current official product docs that were checked on 2026-08-25 (deployment-model section added 2026-08-26 — verify vendor docs before relying on specifics, this category moves fast).
 
-## How to read this
+## Deployment models — the distinction this repo's earlier docs glossed over
+
+Most of this repo's guidance talks about "agents" as if they're one kind of thing. In practice, the tools that actually do the work fall into four distinct deployment models, and the model matters as much as the vendor when deciding what to adopt:
+
+| Model | What it means | Where it lives | Examples |
+|---|---|---|---|
+| **Standalone IDE** | A dedicated editor, usually a VS Code fork, built agent-first from the ground up | Its own application, replaces your editor | Cursor, Windsurf, Kiro |
+| **IDE plugin / extension** | Installs into an editor you already use (VS Code, JetBrains) — adds agent capability without replacing the editor | Extension inside your existing IDE | GitHub Copilot, Cline, Roo Code, Continue.dev, Amazon Q Developer, Tabnine, Sourcegraph Cody/Amp |
+| **CLI / terminal agent** | Runs in the terminal, no GUI required, scriptable | Shell, CI pipelines, headless automation | Claude Code, OpenAI Codex CLI, Aider |
+| **Cloud / hosted agent** | Runs in a remote workspace, not on the developer's machine at all | GitHub-hosted sessions, cloud sandboxes | GitHub Copilot agent sessions, Copilot Workspace-style cloud agents |
+
+Why this matters for adoption, not just tool choice:
+
+- **Plugin-based tools have the lowest adoption friction** — a developer keeps their existing IDE, workflow, keybindings, and extensions; the agent is additive. This is usually the right first step for a team that hasn't standardized on agentic tooling yet.
+- **Standalone IDEs ask for more commitment** — switching editors is a real cost, but they tend to have the deepest, most integrated agent experience because the whole product is built around it.
+- **CLI agents are what you use for anything that isn't interactive** — CI gates, scheduled maintenance runs, scripted multi-repo work (see [ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml)). A GUI-only tool can't fill this role.
+- **Cloud/hosted agents decouple execution from any single developer's machine** — useful for long-running or parallel work, and for keeping agent execution auditable/centralized, but adds a dependency on the hosting platform.
+
+A mature team typically ends up running more than one model at once — a plugin for day-to-day editing, a CLI agent wired into CI, and possibly a cloud agent for longer autonomous runs — rather than picking exactly one.
+
+## How to read the tables below
 
 - `IDE-native agent` means the tool lives inside your editor and is best for day-to-day coding.
 - `CLI agent` means the tool runs in the terminal and is best for scripted or repo-local workflows.
@@ -11,124 +31,41 @@ This page compares current agentic coding tools and where each one fits best. Th
 
 ## Quick comparison
 
-| Tool | Best fit | Strengths | Tradeoffs | Source |
-|---|---|---|---|---|
-| Cursor | IDE-native agent for active coding sessions | Strong codebase orientation, plan mode, inline edits, background work, MCP support, broad editor workflow coverage | Best when your team is comfortable living in a dedicated editor | [Cursor docs](https://cursor.com/docs) |
-| GitHub Copilot app / agents | Cloud and local agent sessions tied to GitHub repos | Parallel isolated sessions, plan/interactive/autopilot modes, branch and PR workflows, GitHub-native review loop | Most useful when your code and review flow already live in GitHub | [Copilot app docs](https://docs.github.com/en/copilot/how-tos/github-copilot-app/getting-started) |
-| Claude Code | CLI agent for local repository work | Strong terminal workflow, flexible command-line usage, local file edits, MCP support, approval modes | Better for terminal-first engineers than for UI-centric workflows | [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code/getting-started) |
-| OpenAI Codex CLI | CLI coding agent with approval modes | Local code reading/editing/running, multimodal inputs, configurable approval workflow | CLI-first; less of a full IDE experience than Cursor or Copilot app | [OpenAI Codex CLI help](https://help.openai.com/en/articles/11096431) |
-| Kiro | Unified agent platform across IDE, CLI, web, and mobile | Specs, steering, hooks, MCP, custom agents, shared configuration across surfaces, AWS-native path, built on Bedrock | Newer product, broader surface area, and strongest fit if you want the whole workflow centered on Kiro | [Kiro docs](https://kiro.dev/docs/) |
-| Windsurf | IDE with agentic chat and context-aware suggestions | Cascade chat, context awareness, terminal integration, MCP, memories/rules, editor-native workflow | More opinionated editor experience; best if you want the environment to be centered on Windsurf | [Windsurf docs](https://docs.windsurf.com/) |
+| Tool | Deployment model | Best fit | Strengths | Tradeoffs | Source |
+|---|---|---|---|---|---|
+| Cursor | Standalone IDE | Active coding sessions | Strong codebase orientation, plan mode, inline edits, background work, MCP support | Editor lock-in; another tool to standardize on | [Cursor docs](https://cursor.com/docs) |
+| Windsurf | Standalone IDE | Editor-native agentic workflow | Cascade chat, context awareness, terminal integration, MCP, memories/rules | Opinionated environment choice, not just an assistant | [Windsurf docs](https://docs.windsurf.com/) |
+| Kiro | Standalone IDE + CLI + web + mobile | Unified agent platform, AWS-native teams | Specs, steering, hooks, MCP, custom agents, shared config across surfaces, Bedrock-backed | Newer product, broad opinionated surface area | [Kiro docs](https://kiro.dev/docs/) |
+| GitHub Copilot (editor extension) | IDE plugin | Teams that want to keep their existing editor | Inline suggestions plus agent mode inside VS Code/JetBrains, no editor switch | Feature depth varies by host IDE | [Copilot features](https://docs.github.com/en/copilot/get-started/features) |
+| Cline | IDE plugin (VS Code) | Teams wanting an open-source, model-agnostic agent inside VS Code | Autonomous multi-step edits, terminal command execution, MCP support, works with multiple model providers | Younger ecosystem than Copilot; more setup/config choices to make | Vendor docs — verify current at time of adoption |
+| Roo Code | IDE plugin (VS Code, Cline fork) | Teams wanting configurable "modes" (architect, coder, reviewer) in-editor | Mode-based workflows, MCP, model-agnostic | Smaller community than Cline/Copilot; forked-project governance to be aware of | Vendor docs — verify current at time of adoption |
+| Continue.dev | IDE plugin (VS Code, JetBrains) | Teams wanting full control over model/provider choice | Open-source, highly customizable, self-hostable, model-agnostic | More assembly required than a turnkey product | Vendor docs — verify current at time of adoption |
+| Amazon Q Developer | IDE plugin (VS Code, JetBrains, others) | AWS-native teams wanting agent support without leaving their IDE | Deep AWS service awareness, security scanning, transformation agents | Strongest value is AWS-specific; less general-purpose elsewhere | Vendor docs — verify current at time of adoption |
+| Tabnine | IDE plugin (broad IDE support) | Regulated/enterprise teams needing on-prem or private-cloud deployment | Strong privacy/compliance posture, self-hosting options | Historically stronger at completion than deep multi-step agentic tasks — verify current agent capability before relying on it | Vendor docs — verify current at time of adoption |
+| Sourcegraph Cody / Amp | IDE plugin + enterprise code search | Large codebases needing agent grounded in enterprise-wide code search | Deep cross-repo context via Sourcegraph's search/indexing | Most valuable when Sourcegraph is already part of the stack | Vendor docs — verify current at time of adoption |
+| Claude Code | CLI agent | Local repository work, terminal-first engineers, CI/scripted use | Strong terminal workflow, MCP support, approval modes, scriptable | Less visual structure than an IDE-native assistant | [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code/getting-started) |
+| OpenAI Codex CLI | CLI agent | Local agent harness, approval-mode-sensitive workflows | Local code reading/editing/running, multimodal input, configurable approval | Not a full editor replacement | [OpenAI Codex CLI help](https://help.openai.com/en/articles/11096431) |
+| Aider | CLI agent | Git-native pair programming from the terminal | Lightweight, git-commit-centric workflow, model-agnostic | Narrower feature surface than a full IDE or platform | Vendor docs — verify current at time of adoption |
+| GitHub Copilot agent sessions / cloud agents | Cloud / hosted agent | GitHub-centered teams, parallel isolated runs | Isolated sessions, plan/interactive/autopilot modes, PR-native review loop | Strongest when your workflow already lives in GitHub | [Copilot agent sessions](https://docs.github.com/en/copilot/how-tos/github-copilot-app/agent-sessions) |
 
-## Detailed comparison
+## Choosing by deployment model, then by tool
 
-### Cursor
-
-Cursor is strongest when you want a dedicated AI-first editor that still feels close to a normal coding workflow. The official docs emphasize codebase understanding, plan mode, background agents, rules, MCP, and review-oriented workflows.
-
-Use Cursor when:
-
-- you want the editor itself to be the primary agent interface
-- you want plan-first work before execution
-- you frequently move between understanding code, editing code, and reviewing diffs
-
-Watch for:
-
-- editor lock-in if the rest of your team works elsewhere
-- another tool to manage if you already standardize on VS Code or JetBrains
-
-### GitHub Copilot app and agents
-
-Copilot has become more than inline suggestions. The current GitHub docs describe agent sessions that can run in isolated workspaces, use interactive or plan modes, and operate with PR-based review. There is also a cloud agent flow on GitHub itself.
-
-Use Copilot when:
-
-- your repository already lives on GitHub
-- you want agent work to stay close to issues, branches, and pull requests
-- parallel isolated sessions matter
-
-Watch for:
-
-- the strongest experience is tied to GitHub workflows
-- less appeal if your team wants a terminal-first loop
-
-### Claude Code
-
-Claude Code is a strong terminal-native option. The current docs describe a CLI that can start interactive sessions, process piped input, continue prior sessions, and work with MCP servers. That makes it a practical choice for local repo work and automation scripts.
-
-Use Claude Code when:
-
-- you prefer terminal workflows
-- you want local, repo-centric control
-- you care about chaining agent work into shell-based processes
-
-Watch for:
-
-- less visual structure than an IDE-native assistant
-- you need your own repo conventions to keep the workflow organized
-
-### OpenAI Codex CLI
-
-OpenAI’s Codex CLI is also terminal-first, with local code access, multimodal input, and configurable approval modes. It fits the same class as other CLI agents, but is especially useful if your team already uses OpenAI tooling or wants a lightweight local agent harness.
-
-Use Codex CLI when:
-
-- you want a local agent in the terminal
-- approval mode control matters
-- you want a smaller surface area than a full IDE
-
-Watch for:
-
-- it is not a full editor replacement
-- the experience depends on how well your terminal workflow is set up
-
-### Kiro
-
-Kiro is the broadest surface-area entry in this list. The current docs present it as an agentic development environment that spans IDE, CLI, web, mobile, and Crew, with a shared `.kiro/` configuration. Its core workflow emphasizes specs, steering, hooks, MCP, custom agents, skills, and checkpoints.
-
-Use Kiro when:
-
-- you want one agent system across IDE, CLI, and web
-- you want specs and steering built into the workflow
-- you want an AWS-aligned option with Bedrock-backed infrastructure
-
-Watch for:
-
-- the platform is still newer than the long-established editor-first options
-- the breadth of surfaces makes it more opinionated than a simple coding assistant
-
-### Windsurf
-
-Windsurf is positioned as an AI IDE with Cascade chat, terminal support, MCP, memories, and context awareness. The official docs lean heavily into editor-native workflows and codebase indexing.
-
-Use Windsurf when:
-
-- you want the editor to manage a lot of the context flow
-- you like persistent assistant memory and rules
-- you want a more opinionated AI IDE
-
-Watch for:
-
-- it is a broader environment choice, not just a coding assistant
-- teams already standardized on another editor may see more friction
+1. **Decide the deployment model first.** Do you need editor-additive (plugin), editor-replacing (standalone IDE), scriptable/headless (CLI), or centrally-run (cloud)? This eliminates most of the list before you compare individual tools.
+2. **Within a model, compare by workflow fit** — GitHub-centric teams lean Copilot; AWS-centric teams lean Kiro or Amazon Q; teams wanting maximum control lean Continue.dev or Aider.
+3. **Expect to run more than one model.** A CLI agent wired into CI ([ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml)) and a plugin for interactive editing are not competing choices — most real engineering orgs run both.
+4. **Re-test after a quarter.** This category moves faster than almost any other tooling decision you'll make — see [effort-savings-evidence.md](05-effort-savings-evidence.md) for why relying on stale claims (vendor or otherwise) is a real risk here.
 
 ## Recommendation by team shape
 
 | Team shape | Best default | Why |
 |---|---|---|
-| Terminal-first engineering team | Claude Code or OpenAI Codex CLI | Minimal friction, local repo control, easy to script |
-| GitHub-centered team | GitHub Copilot app / agents | Fits issues, branches, PRs, and review loops |
-| Editor-centric team | Cursor or Windsurf | Best if the IDE is where most work already happens |
-| AWS-centered team or multi-surface workflow | Kiro | One shared agent model across IDE, CLI, web, and mobile |
-| Mixed team with heavy review gates | GitHub Copilot app / agents | Strong PR and session isolation model |
-
-## Selection guide
-
-1. Pick the workflow first, not the brand.
-2. Choose an IDE-native tool if your team spends most of the day inside the editor.
-3. Choose a CLI agent if your work is already scripted around the terminal.
-4. Choose a cloud/GitHub agent if issues, branches, and PRs are the center of gravity.
-5. Re-test the choice after a month. The best tool changes when your team’s workflow changes.
+| Team not yet standardized on agentic tooling | An IDE plugin (Copilot, Cline, or Continue.dev) | Lowest-friction entry point — no editor switch, incremental adoption |
+| Terminal-first engineering team | Claude Code, OpenAI Codex CLI, or Aider | Minimal friction, local repo control, easy to script |
+| GitHub-centered team | GitHub Copilot (extension + agent sessions) | Fits issues, branches, PRs, and review loops end to end |
+| Editor-centric team ready to commit | Cursor or Windsurf | Deepest integrated experience once the editor switch is accepted |
+| AWS-centered team or multi-surface workflow | Kiro or Amazon Q Developer | AWS-aligned, Bedrock-backed or AWS-service-aware |
+| Regulated/enterprise team with data residency constraints | Tabnine or a self-hosted Continue.dev setup | Privacy/compliance posture built in |
+| Any team needing CI-integrated, non-interactive agent runs | A CLI agent regardless of what else is adopted | Only CLI agents fill this role — see [ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml) |
 
 ## Sources checked
 
@@ -142,3 +79,4 @@ Watch for:
 - [OpenAI Codex CLI help](https://help.openai.com/en/articles/11096431)
 - [Kiro documentation](https://kiro.dev/docs/)
 - [Windsurf docs](https://docs.windsurf.com/)
+- Entries marked "vendor docs — verify current at time of adoption" (Cline, Roo Code, Continue.dev, Amazon Q Developer, Tabnine, Sourcegraph Cody/Amp, Aider) were not individually re-verified against primary sources on the date this section was added — confirm current capabilities directly with each vendor before relying on the specifics in an adoption decision.
