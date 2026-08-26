@@ -2,6 +2,10 @@
 
 A practical guide for using agentic coding tools across software delivery end to end — from requirements and architecture through backlog, development, review, testing, deployment, and support.
 
+## Start here
+
+**[docs/00-overview.md](docs/00-overview.md)** — one detailed walkthrough of the whole repo: principles, deployment models, how work flows end to end, git workflow, governance/risk tiers, patch-vs-regenerate, metrics, tool comparison, and a ten-minute path through everything else. Read this first.
+
 ## What this guide covers
 
 Modern agentic coding tools can plan, write, test, and review work. The hard part is deciding what to delegate, what to gate, and how to prove the work is actually correct.
@@ -16,11 +20,11 @@ This repo gives you:
 - governance rules for autonomy and approval
 - a comparison page for current tools
 
-## Start here
+## Go deeper
 
-| If you want to... | Start here |
+| If you want to... | Go here |
 |---|---|
-| See the git branching/PR/merge flow and what's automatable (start here first) | [docs/00-git-workflow-and-automation.md](docs/00-git-workflow-and-automation.md) |
+| See the git branching/PR/merge flow and what's automatable | [docs/00-git-workflow-and-automation.md](docs/00-git-workflow-and-automation.md) |
 | Understand the core ideas | [docs/01-principles.md](docs/01-principles.md) |
 | Start with requirements and architecture | [docs/08-agile-workflow.md](docs/08-agile-workflow.md) |
 | Decide patch vs. regenerate | [docs/02-patch-vs-regenerate.md](docs/02-patch-vs-regenerate.md) |
@@ -31,7 +35,7 @@ This repo gives you:
 | Use agile backlog and feature flow | [docs/08-agile-workflow.md](docs/08-agile-workflow.md) |
 | Read a tool comparison | [docs/07-tools-comparison.md](docs/07-tools-comparison.md) |
 | Use a template | [templates/](templates/) |
-| See domain mapping | [domains/domains.csv](domains/domains.csv) |
+| See domain mapping | [domains/domains.md](domains/domains.md) |
 | Wire this into your repo's CI | [.github/](.github/) |
 
 ## Core principles
@@ -48,7 +52,7 @@ Each of these gets a full how-to, not just a mention: [spec-driven development](
 
 ## Status
 
-Living guide. Principles and governance in `docs/` should change only through deliberate review (see [CONTRIBUTING.md](CONTRIBUTING.md)). Tooling references in `domains/domains.csv` go stale fast, so check dates before trusting them and refresh on a schedule.
+Living guide. Principles and governance in `docs/` should change only through deliberate review (see [CONTRIBUTING.md](CONTRIBUTING.md)). Tooling references in `domains/domains.md` go stale fast, so check dates before trusting them and refresh on a schedule.
 
 ## License
 
