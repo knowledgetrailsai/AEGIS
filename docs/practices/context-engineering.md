@@ -14,11 +14,18 @@ Agentic coding tools perform based on what's actually in context, not what exist
 4. **Prune aggressively.** Remove generated files, huge data files, and stale docs from what an agentic coding tool can pull into context by default — they crowd out what actually matters.
 5. **Version the context file like code.** Changes to it are reviewable diffs, same as a prompt change (see [prompt-agent-versioning.md](prompt-agent-versioning.md)).
 
+## Brownfield-first: detect before you generate
+
+Most real tasks aren't greenfield. Before asking an agentic coding tool to propose a design or write a plan for a change to an existing system, have it first identify the codebase's actual conventions: naming patterns, module boundaries, error-handling style, existing abstractions for the kind of problem at hand, and — in a monorepo — which local conventions override the repo-wide ones for the module being touched. A design or plan built on detected conventions is one the tool can extend consistently; a design built without that pass tends to introduce a second, parallel way of doing something the codebase already does one way, which is its own form of unreviewed drift even when each individual change looks fine in isolation.
+
+This is a detection *pass*, not a one-time setup task — re-run it per task, since the "actual conventions" for a fast-moving module can drift from what the repo-level instructions file says. It's what makes principle 4 ([context is engineered, not assumed](../01-principles.md#4-context-is-engineered-not-assumed)) apply correctly to code the tool is extending rather than writing from scratch.
+
 ## Common failure modes
 
 - Treating context setup as a one-time project-kickoff task instead of ongoing maintenance.
 - Dumping the entire codebase into context "to be safe" — this degrades relevance and burns token budget without improving output quality.
 - No single owner for the context file, so it drifts silently until someone notices the agentic coding tool is working from outdated assumptions.
+- Skipping convention detection on brownfield work and getting a design that's individually reasonable but inconsistent with how the rest of the codebase solves the same problem.
 
 ## Signal you're doing this right
 

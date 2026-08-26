@@ -81,7 +81,7 @@ Separately from risk tier, every component-level change is either a **patch** (i
 
 ## What actually gets deep-dived
 
-Ten practices get a full how-to each, not a one-line mention, because these are the mechanics that make the principles above actually work day to day: [spec-driven development](practices/spec-driven-development.md), [context engineering](practices/context-engineering.md), [plan-then-execute](practices/plan-then-execute.md), [human-in-the-loop gating](practices/human-in-the-loop-gating.md), [evals](practices/evals.md), [prompt/agentic coding tool versioning](practices/prompt-agent-versioning.md), [worktree/sandbox isolation](practices/worktree-sandbox-isolation.md), [multi-agent orchestration](practices/multi-agent-orchestration.md), [tool/function-calling design](practices/tool-function-calling-design.md), [memory/state persistence](practices/memory-state-persistence.md).
+Eleven practices get a full how-to each, not a one-line mention, because these are the mechanics that make the principles above actually work day to day: [spec-driven development](practices/spec-driven-development.md), [context engineering](practices/context-engineering.md), [process scaling](practices/process-scaling.md), [plan-then-execute](practices/plan-then-execute.md), [human-in-the-loop gating](practices/human-in-the-loop-gating.md), [evals](practices/evals.md), [prompt/agentic coding tool versioning](practices/prompt-agent-versioning.md), [worktree/sandbox isolation](practices/worktree-sandbox-isolation.md), [multi-agent orchestration](practices/multi-agent-orchestration.md), [tool/function-calling design](practices/tool-function-calling-design.md), [memory/state persistence](practices/memory-state-persistence.md).
 
 ## Does any of this actually work? The evidence, not the pitch
 
@@ -112,6 +112,7 @@ The comparison page is not trying to crown a winner — it maps current tools (C
 - **Worked examples** — [examples/README.md](../examples/README.md) follows one feature through all seven SDLC phases, with the actual prompt given to the tool, its output, the human gate applied, and the outcome at each step.
 - **CI wiring** — [.github/workflows/ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml) and [.github/PULL_REQUEST_TEMPLATE.md](../.github/PULL_REQUEST_TEMPLATE.md) are the mechanical enforcement of the risk-tier and spec-link rules above — policy that lives in a doc nobody checks isn't policy.
 - **Domain mapping** — [domains/domains.md](../domains/domains.md) maps this whole framework across roughly 40 engineering domains (data, API/integration, ERP, game dev, e-commerce, IoT, OT, and more), with the kind of dev involved, example work, and what accelerates or runs autonomously in each.
+- **Related frameworks** — [09-related-frameworks.md](09-related-frameworks.md) compares this guide with BMAD-METHOD, AWS AI-DLC, and specs.md, and names exactly which ideas were adopted from each and where they landed.
 
 ## A ten-minute path through this repo
 
