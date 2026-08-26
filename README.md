@@ -22,6 +22,7 @@ A practical guide for using agentic coding tools across software delivery end to
 | Use agile backlog and feature flow | [docs/08-agile-workflow.md](docs/08-agile-workflow.md) |
 | Read a tool comparison | [docs/07-tools-comparison.md](docs/07-tools-comparison.md) |
 | Read the ten practice deep dives | [docs/practices/](docs/practices/) |
+| See prompts and outcomes for every phase, worked end to end | [examples/README.md](examples/README.md) |
 | Use a template | [templates/](templates/) |
 | See domain mapping | [domains/domains.md](domains/domains.md) |
 | Wire this into your repo's CI | [.github/](.github/) |
