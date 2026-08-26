@@ -2,7 +2,7 @@
 
 ## Changing principles or governance (`docs/01`–`docs/04`)
 
-These require deliberate human review regardless of who drafted the change — including if an agent drafted it. Open a PR, tag it Tier 3 in spirit (even though this repo isn't shipping code), and get at least one maintainer sign-off before merging. Silent drift in these sections is the failure mode this framework exists to prevent elsewhere — don't reintroduce it here.
+These require deliberate human review regardless of who drafted the change — including if an agentic coding tool drafted it. Open a PR, tag it Tier 3 in spirit (even though this repo isn't shipping code), and get at least one maintainer sign-off before merging. Silent drift in these sections is the failure mode this framework exists to prevent elsewhere — don't reintroduce it here.
 
 ## Refreshing evidence and tooling references (`docs/05`, `domains/domains.csv`)
 

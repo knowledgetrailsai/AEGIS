@@ -1,19 +1,19 @@
 # Agile Work Loop
 
-This guide uses a simple agile flow to organize end-to-end agent-supported work:
+This guide uses a simple agile flow to organize end-to-end tool-supported work:
 
-- requirements are drafted with agent help to capture the need and scope
-- architecture is outlined with agent help to set the overall shape and boundaries
-- backlog items are created and ordered with agent help
-- features group related backlog items with agent help
-- each feature is refined into a small, testable slice with agent help
-- the slice moves through spec, design, build, review, test, release, and support with agent help
+- requirements are drafted with tool assistance to capture the need and scope
+- architecture is outlined with tool assistance to set the overall shape and boundaries
+- backlog items are created and ordered with tool assistance
+- features group related backlog items with tool assistance
+- each feature is refined into a small, testable slice with tool assistance
+- the slice moves through spec, design, build, review, test, release, and support with tool assistance
 
 ## Tool support
 
-Use the tools in this repo to support the workflow end to end. The workflow stays the same; the agent helps carry it out. Deployment model (standalone IDE / IDE plugin / CLI / cloud — see [docs/07-tools-comparison.md](07-tools-comparison.md#deployment-models--the-distinction-this-repos-earlier-docs-glossed-over)) is noted alongside each tool, because it changes *how* that tool fits into the step, not just which brand you pick.
+Use the tools in this repo to support the workflow end to end. The workflow stays the same; the agentic coding tool helps carry it out. Deployment model (standalone IDE / IDE plugin / CLI / cloud — see [docs/07-tools-comparison.md](07-tools-comparison.md#deployment-models--the-distinction-this-repos-earlier-docs-glossed-over)) is noted alongside each tool, because it changes *how* that tool fits into the step, not just which brand you pick.
 
-| Workflow step | Useful tools (deployment model) | Agent output |
+| Workflow step | Useful tools (deployment model) | Tool output |
 |---|---|---|
 | Requirements | Claude Code (CLI), Cursor (standalone IDE), Kiro (standalone IDE/CLI/web), OpenAI Codex CLI (CLI), GitHub Copilot / Cline / Continue.dev (IDE plugin) | Draft requirement notes, constraints, and acceptance criteria |
 | Architecture | Cursor (standalone IDE), Claude Code (CLI), Kiro (standalone IDE), Windsurf (standalone IDE) | Compare options, boundaries, and risk before the ADR |
@@ -25,7 +25,7 @@ Use the tools in this repo to support the workflow end to end. The workflow stay
 | Deployment and release | GitHub Copilot app / agents (cloud), Claude Code (CLI, CI-wired), Kiro (standalone IDE) | Draft release notes, rollback steps, release checklists |
 | Production support | Claude Code (CLI), Cursor (standalone IDE), GitHub Copilot app / agents (cloud), Kiro (standalone IDE) | Summarize incidents, propose root cause, draft runbook steps |
 
-**Why the deployment model matters per step:** interactive, exploratory steps (requirements, architecture, development) tend to favor standalone IDEs and IDE plugins where a human is driving alongside the agent in real time. Steps that need to run unattended or as part of a pipeline (CI-gated testing, scheduled release checklist generation, scheduled production-support triage) need a CLI or cloud agent that doesn't require a human sitting in an editor. A team relying only on an IDE plugin has no way to run the CI-gated eval step in [ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml) — that step structurally requires a CLI or cloud-executable agent.
+**Why the deployment model matters per step:** interactive, exploratory steps (requirements, architecture, development) tend to favor standalone IDEs and IDE plugins where a human is driving alongside the agentic coding tool in real time. Steps that need to run unattended or as part of a pipeline (CI-gated testing, scheduled release checklist generation, scheduled production-support triage) need a CLI or cloud agentic coding tool that doesn't require a human sitting in an editor. A team relying only on an IDE plugin has no way to run the CI-gated eval step in [ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml) — that step structurally requires a CLI or cloud-executable agentic coding tool.
 
 ## Core terms
 
@@ -42,13 +42,13 @@ Use the tools in this repo to support the workflow end to end. The workflow stay
 
 ## How to run it
 
-1. Write the requirements first, with the agent helping capture scope, constraints, and non-goals.
-2. Set the overall architecture before breaking the work into tasks, with the agent helping draft boundaries and options.
-3. Put the work into the backlog, with the agent helping organize and label items.
-4. Group related backlog items into a feature or epic, with the agent helping identify the slice.
-5. Refine the item until it is small enough to finish in one pass, with the agent helping break it down.
-6. Write the spec before implementation, with the agent helping draft the testable contract.
-7. Use the phase guide for design, development, review, testing, release, and support, with the agent helping in each phase.
+1. Write the requirements first, with the agentic coding tool helping capture scope, constraints, and non-goals.
+2. Set the overall architecture before breaking the work into tasks, with the agentic coding tool helping draft boundaries and options.
+3. Put the work into the backlog, with the agentic coding tool helping organize and label items.
+4. Group related backlog items into a feature or epic, with the agentic coding tool helping identify the slice.
+5. Refine the item until it is small enough to finish in one pass, with the agentic coding tool helping break it down.
+6. Write the spec before implementation, with the agentic coding tool helping draft the testable contract.
+7. Use the phase guide for design, development, review, testing, release, and support, with the agentic coding tool helping in each phase.
 8. Mark the item done only when the definition of done is met.
 
 ## Backlog rules
@@ -75,10 +75,10 @@ Use the tools in this repo to support the workflow end to end. The workflow stay
 - Break work into slices that fit one clear review cycle.
 - Use the spec template for each slice.
 - Track status with simple states such as `backlog`, `ready`, `in progress`, `review`, `done`.
-- Use the comparison page to pick the right agent tool — and deployment model — for the current step.
+- Use the comparison page to pick the right agentic coding tool — and deployment model — for the current step.
 - Keep the tool choice aligned with the workflow step, the risk tier, and whether the step needs to run unattended (favor CLI/cloud) or interactively (favor standalone IDE/plugin).
-- Treat the agent as part of the delivery team throughout the lifecycle, not as a one-off code generator.
-- Don't assume one deployment model covers the whole lifecycle — most real teams mix an IDE plugin or standalone IDE for interactive work with a CLI agent for anything CI-gated or scheduled.
+- Treat the agentic coding tool as part of the delivery team throughout the lifecycle, not as a one-off code generator.
+- Don't assume one deployment model covers the whole lifecycle — most real teams mix an IDE plugin or standalone IDE for interactive work with a CLI tool for anything CI-gated or scheduled.
 
 ## Common mistakes
 
@@ -90,7 +90,7 @@ Use the tools in this repo to support the workflow end to end. The workflow stay
 - Using sprint language without actually selecting a finite set of work
 - Using one tool for every step just because it is familiar
 - Letting the tool choice override the workflow sequence
-- Dropping the agent after implementation and only using it for code generation
+- Dropping the agentic coding tool after implementation and only using it for code generation
 - Assuming an IDE plugin or standalone IDE can fill a CI-gated or headless automation role it structurally can't
 
 ## Simple flow

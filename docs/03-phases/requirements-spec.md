@@ -4,7 +4,7 @@
 
 ## What this phase does
 
-This phase turns a request into a clear contract. A good spec removes guesswork for both the agent and the reviewer.
+This phase turns a request into a clear contract. A good spec removes guesswork for both the agentic coding tool and the reviewer.
 
 ## Method
 
@@ -18,7 +18,7 @@ This phase turns a request into a clear contract. A good spec removes guesswork 
 ## Tool support
 
 - Use Claude Code, Cursor, Kiro, or OpenAI Codex CLI to turn a rough request into a first-pass spec.
-- Use the agent to find missing constraints and edge cases.
+- Use the agentic coding tool to find missing constraints and edge cases.
 - Use a human reviewer to approve the final scope and acceptance criteria.
 
 ## Best practices
@@ -28,7 +28,7 @@ This phase turns a request into a clear contract. A good spec removes guesswork 
 - Include examples when they reduce ambiguity.
 - Keep the spec close to the code so changes stay reviewable.
 - Treat the spec as the source of truth for the work.
-- Ask the agent to rewrite vague language into measurable criteria.
+- Ask the agentic coding tool to rewrite vague language into measurable criteria.
 
 ## Common mistakes
 

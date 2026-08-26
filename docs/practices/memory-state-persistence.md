@@ -1,6 +1,6 @@
 # Practice: Memory / State Persistence
 
-Persist only the facts the agent will actually need again.
+Persist only the facts the agentic coding tool will actually need again.
 
 ## When to use it
 

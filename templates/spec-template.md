@@ -17,10 +17,10 @@ What problem this solves and why now. One paragraph, no ambiguity.
 - [ ] Criterion 2 — measurable, pass/fail
 
 ## Out of scope
-Explicitly list what the agent should NOT touch. This is what prevents scope creep.
+Explicitly list what the agentic coding tool should NOT touch. This is what prevents scope creep.
 
 ## Risk tier
 Tier: [1 / 2 / 3 / 4] — see [governance-risk-tiers.md](../docs/04-governance-risk-tiers.md)
 
 ## Example inputs/outputs (if applicable)
-Concrete before/after examples an agent can pattern-match against.
+Concrete before/after examples an agentic coding tool can pattern-match against.

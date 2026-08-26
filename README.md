@@ -1,16 +1,16 @@
 # Agentic Engineering Guide
 
-A practical guide for using AI agents across software delivery end to end — from requirements and architecture through backlog, development, review, testing, deployment, and support.
+A practical guide for using agentic coding tools across software delivery end to end — from requirements and architecture through backlog, development, review, testing, deployment, and support.
 
 ## What this guide covers
 
-Modern agent tools can plan, write, test, and review work. The hard part is deciding what to delegate, what to gate, and how to prove the work is actually correct.
+Modern agentic coding tools can plan, write, test, and review work. The hard part is deciding what to delegate, what to gate, and how to prove the work is actually correct.
 
 This repo gives you:
 
 - a requirements-first and architecture-first planning flow
-- a simple SDLC flow for agent-assisted work
-- a workflow that shows how agent tools support the full lifecycle
+- a simple SDLC flow for tool-assisted work
+- a workflow that shows how agentic coding tools support the full lifecycle
 - templates for specs, ADRs, and risk checks
 - governance rules for autonomy and approval
 - a comparison page for current tools
@@ -34,15 +34,15 @@ This repo gives you:
 
 ## Core principles
 
-1. **Verifiability over trust** — accept agent output because it passed a test/eval/diff review, never because it "looks right."
+1. **Verifiability over trust** — accept tool output because it passed a test/eval/diff review, never because it "looks right."
 2. **Reversibility gates autonomy** — the more reversible and low-blast-radius an action, the more autonomy it gets.
-3. **Spec is the contract** — the spec is what the agent is graded against, not the conversation that produced it.
-4. **Context is engineered, not assumed** — what an agent can see is curated deliberately.
+3. **Spec is the contract** — the spec is what the agentic coding tool is graded against, not the conversation that produced it.
+4. **Context is engineered, not assumed** — what an agentic coding tool can see is curated deliberately.
 5. **Humans move up the stack** — less typing, more specifying, reviewing, and deciding.
 
 ## Deep dives
 
-Each of these gets a full how-to, not just a mention: [spec-driven development](docs/practices/spec-driven-development.md), [context engineering](docs/practices/context-engineering.md), [plan-then-execute](docs/practices/plan-then-execute.md), [human-in-the-loop gating](docs/practices/human-in-the-loop-gating.md), [evals](docs/practices/evals.md), [prompt/agent versioning](docs/practices/prompt-agent-versioning.md), [worktree/sandbox isolation](docs/practices/worktree-sandbox-isolation.md), [multi-agent orchestration](docs/practices/multi-agent-orchestration.md), [tool/function-calling design](docs/practices/tool-function-calling-design.md), [memory/state persistence](docs/practices/memory-state-persistence.md).
+Each of these gets a full how-to, not just a mention: [spec-driven development](docs/practices/spec-driven-development.md), [context engineering](docs/practices/context-engineering.md), [plan-then-execute](docs/practices/plan-then-execute.md), [human-in-the-loop gating](docs/practices/human-in-the-loop-gating.md), [evals](docs/practices/evals.md), [prompt/agentic coding tool versioning](docs/practices/prompt-agent-versioning.md), [worktree/sandbox isolation](docs/practices/worktree-sandbox-isolation.md), [multi-agent orchestration](docs/practices/multi-agent-orchestration.md), [tool/function-calling design](docs/practices/tool-function-calling-design.md), [memory/state persistence](docs/practices/memory-state-persistence.md).
 
 ## Status
 

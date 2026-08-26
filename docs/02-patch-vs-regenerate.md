@@ -1,6 +1,6 @@
 # Decision Framework: Patch vs. Regenerate
 
-Two ways an agent can change a system:
+Two ways an agentic coding tool can change a system:
 
 - **Patch** — incremental diffs, same model as human-driven development. Git history, blame, and audit trail stay intact.
 - **Regenerate** — treat a component as a disposable build artifact and rebuild it from spec, the way infrastructure-as-code treats a server: don't patch it, redeploy it.

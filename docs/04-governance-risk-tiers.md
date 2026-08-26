@@ -1,6 +1,6 @@
 # Governance: Risk Tiers & Gates
 
-Every agent-initiated action maps to a tier. This is what turns "how much autonomy" into a repeatable decision instead of a case-by-case argument.
+Every tool-initiated action maps to a tier. This is what turns "how much autonomy" into a repeatable decision instead of a case-by-case argument.
 
 | Tier | Definition | Example | Gate |
 |---|---|---|---|
@@ -11,7 +11,7 @@ Every agent-initiated action maps to a tier. This is what turns "how much autono
 
 ## How to apply this
 
-1. Tier the *action*, not the agent or the project. The same agent can take Tier 1 and Tier 4 actions in the same day.
+1. Tier the *action*, not the agentic coding tool or the project. The same agentic coding tool can take Tier 1 and Tier 4 actions in the same day.
 2. Wire the gate into tooling, not into a policy doc nobody checks — PR templates ([.github/PULL_REQUEST_TEMPLATE.md](../.github/PULL_REQUEST_TEMPLATE.md)), CI required-reviewers, and deploy pipelines should enforce the tier's gate mechanically.
 3. Re-tier when blast radius changes — a module that used to be isolated but now has three downstream consumers has moved tiers even if nothing else changed.
 4. Default to the higher tier when uncertain. Under-gating is the expensive mistake; over-gating just costs review time.

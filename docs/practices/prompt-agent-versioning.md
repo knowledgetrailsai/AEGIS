@@ -1,16 +1,16 @@
-# Practice: Prompt & Agent Versioning
+# Practice: Prompt & Agentic coding tool Versioning
 
-Treating prompts, system instructions, and agent configs like code — versioned, diffed, reviewed, rolled back — since a prompt change can be as impactful as a code change.
+Treating prompts, system instructions, and tool configs like code — versioned, diffed, reviewed, rolled back — since a prompt change can be as impactful as a code change.
 
 ## Why it exists
 
-A prompt edit can silently change agent behavior across every task that workflow touches. Without versioning, there's no way to know what changed, when, or how to revert if a change degrades output quality.
+A prompt edit can silently change tool behavior across every task that workflow touches. Without versioning, there's no way to know what changed, when, or how to revert if a change degrades output quality.
 
 ## How to do it
 
 1. **Store prompts/configs in version control alongside the code they operate on**, not in a separate untracked tool UI.
 2. **Treat every change as a reviewable diff** — same PR process as a code change, including a stated reason for the change.
-3. **Tag or version releases** of a given agent workflow's prompt/config so you can correlate a metrics shift (see [metrics.md](../06-metrics.md)) with a specific change.
+3. **Tag or version releases** of a given tool workflow's prompt/config so you can correlate a metrics shift (see [metrics.md](../06-metrics.md)) with a specific change.
 4. **Keep a rollback path.** If override/rejection rate spikes after a prompt change, you need to revert quickly, not reconstruct the previous version from memory.
 5. **Run the [evals suite](evals.md) against any prompt/config change before it ships** — a prompt change is a behavior change, and behavior changes get evaluated like any other.
 
@@ -22,4 +22,4 @@ A prompt edit can silently change agent behavior across every task that workflow
 
 ## Signal you're doing this right
 
-Any regression in agent behavior can be traced to a specific, dated change in version control — and reverted in minutes, not hours.
+Any regression in tool behavior can be traced to a specific, dated change in version control — and reverted in minutes, not hours.

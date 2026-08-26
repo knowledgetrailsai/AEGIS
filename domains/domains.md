@@ -1,16 +1,16 @@
 # Agentic Engineering Domains
 
-This document maps **40 software and engineering domains** to where agentic engineering practices apply. Each entry describes the kind of development involved, example work, the human role being supported or replaced, what agents can accelerate or do autonomously, recommended tools, and practices to pair with them.
+This document maps **40 software and engineering domains** to where agentic engineering practices apply. Each entry describes the kind of development involved, example work, the human role being supported or replaced, what agentic coding tools can accelerate or do autonomously, recommended tools, and practices to pair with them.
 
 ## How to Read This Document
 
 - **Domain** — The engineering or operational area.
 - **Kind of Dev Involved** — The type of coding, configuration, or scripting work.
-- **Example Work** — Concrete tasks an agent might handle.
+- **Example Work** — Concrete tasks an agentic coding tool might handle.
 - **Human Role It Supports/Replaces** — Who traditionally does this work.
-- **What It Accelerates or Does Autonomously** — The agent's scope of action.
+- **What It Accelerates or Does Autonomously** — The tool's scope of action.
 - **Recommended Agentic Tools/Products** — Tools that currently support this domain.
-- **Practices to Pair With Them** — Guardrails and workflows to keep agents safe and effective.
+- **Practices to Pair With Them** — Guardrails and workflows to keep agentic coding tools safe and effective.
 
 > **Note:** Tool recommendations evolve rapidly. Always validate tool capabilities against your specific stack and compliance requirements before adoption.
 
@@ -40,26 +40,26 @@ This document maps **40 software and engineering domains** to where agentic engi
 | Release/Build Engineering | Build pipeline + packaging config | Version bumps, changelogs, artifact publishing | Release manager | Generates changelogs, manages branching | GitHub Copilot Workspace, Claude Code (changelog/versioning) | Automated changelog + branch policy enforcement |
 | Migration (platform/data) | Transformation scripting + validation | Cloud/DB migrations, data reconciliation | Migration engineer | Scripts transformations, runs reconciliation diffs | Claude Code, Amazon Q, GitHub Copilot | Reconciliation diffs pre/post migration |
 | Localization/i18n | String extraction + translation pipeline | Key extraction, translation sync, locale QA | Localization engineer | Extracts strings, manages translation memory | Lokalise AI, Claude for translation QA | Translation-memory sync, locale-specific evals |
-| Game Development | Gameplay code, engine scripting, asset pipelines | Level scripting, NPC behavior, shaders, build automation | Gameplay/tools programmer | Generates NPC behavior trees, automates asset builds, playtests | Unity Muse, Claude Code (gameplay scripting), Scenario.gg (assets) | Playtesting agents, asset-pipeline automation |
+| Game Development | Gameplay code, engine scripting, asset pipelines | Level scripting, NPC behavior, shaders, build automation | Gameplay/tools programmer | Generates NPC behavior trees, automates asset builds, playtests | Unity Muse, Claude Code (gameplay scripting), Scenario.gg (assets) | Playtesting agentic coding tools, asset-pipeline automation |
 | E-commerce Development | Storefront code + platform config | Product catalog logic, checkout flows, payment integration | Platform developer / merchandising ops | Manages catalog sync, tests checkout flows | Shopify Sidekick, Claude Code + platform APIs | Checkout-flow test automation |
 | Blockchain/Web3 | Smart contract code + on-chain tooling | Contract development, audits, gas optimization | Smart contract developer | Drafts contracts, runs static analysis | OpenZeppelin AI, Claude Code (contract drafting) | Mandatory human audit before mainnet deploy |
-| AR/VR | 3D engine code + spatial interaction design | Scene scripting, spatial UI, performance optimization | 3D/graphics engineer | Scaffolds interaction logic, automates performance profiling | Unity Muse, Claude Code (scene scripting) | Cross-device performance profiling agents |
+| AR/VR | 3D engine code + spatial interaction design | Scene scripting, spatial UI, performance optimization | 3D/graphics engineer | Scaffolds interaction logic, automates performance profiling | Unity Muse, Claude Code (scene scripting) | Cross-device performance profiling agentic coding tools |
 | Robotics | Control systems + simulation code | Motion planning, sensor fusion, simulation testing | Robotics/controls engineer | Iterates motion planning in simulation | NVIDIA Isaac (simulation AI), Claude Code (control logic) | Simulation-only iteration before physical deploy |
-| Fintech/Payments | Transaction logic + compliance-heavy code | Payment gateway integration, fraud rules, ledger systems | Payments engineer | Drafts fraud rules, reconciliation logic | Claude Code + compliance-review agents (mostly custom-built) | Strict human review on money-movement code |
-| Healthtech/EHR | Integration code + compliance (HL7/FHIR) | EHR interoperability, clinical data mapping | Interoperability engineer | Maps HL7/FHIR schemas | Custom agents on HL7/FHIR (nascent vendor tooling) | Human-owned clinical logic, compliance review |
-| Telecom/Networking | Protocol code + network config | Routing config, protocol implementation, network automation | Network engineer | Detects config drift, validates topology | Cisco AI Assistant, custom network-config agents | Change-control gating on live network pushes |
-| Supply Chain/Logistics | Optimization code + system integration | Route optimization, inventory sync, EDI integration | Logistics/supply chain analyst | Monitors inventory sync, drafts optimized routing | o9 Solutions AI agents, Blue Yonder AI, custom pipeline agents | Exception-based human review |
+| Fintech/Payments | Transaction logic + compliance-heavy code | Payment gateway integration, fraud rules, ledger systems | Payments engineer | Drafts fraud rules, reconciliation logic | Claude Code + compliance-review agentic coding tools (mostly custom-built) | Strict human review on money-movement code |
+| Healthtech/EHR | Integration code + compliance (HL7/FHIR) | EHR interoperability, clinical data mapping | Interoperability engineer | Maps HL7/FHIR schemas | Custom agentic coding tools on HL7/FHIR (nascent vendor tooling) | Human-owned clinical logic, compliance review |
+| Telecom/Networking | Protocol code + network config | Routing config, protocol implementation, network automation | Network engineer | Detects config drift, validates topology | Cisco AI Assistant, custom network-config agentic coding tools | Change-control gating on live network pushes |
+| Supply Chain/Logistics | Optimization code + system integration | Route optimization, inventory sync, EDI integration | Logistics/supply chain analyst | Monitors inventory sync, drafts optimized routing | o9 Solutions agentic coding tools, Blue Yonder AI, custom pipeline agentic coding tools | Exception-based human review |
 | Content/CMS | Templating + content pipeline code | Headless CMS integration, content modeling, publishing workflows | Content ops / web producer | Manages content sync, auto-tags/categorizes | Contentful AI, Claude Code + CMS APIs | Auto-tagging with human editorial review |
-| Martech/AdTech | Tracking/pixel code + campaign automation | Tag management, attribution logic, campaign config | Marketing ops engineer | Manages tag deployment, runs A/B test analysis | Claude Code + tag-management APIs, custom attribution agents | A/B test result validation before rollout |
+| Martech/AdTech | Tracking/pixel code + campaign automation | Tag management, attribution logic, campaign config | Marketing ops engineer | Manages tag deployment, runs A/B test analysis | Claude Code + tag-management APIs, custom attribution agentic coding tools | A/B test result validation before rollout |
 | SCADA/ICS (Industrial Control Systems) | Ladder logic, control system programming | PLC/RTU programming, HMI screens, alarm logic | Controls engineer | Drafts logic/HMI screens in simulation | Mostly custom-built (safety-critical, few off-the-shelf agentic tools) | Simulation/digital-twin validation, strict human sign-off |
 | PLC/DCS Automation | Industrial controller programming | Motion/process control sequences, interlocks | Automation engineer | Validates logic in digital twin before deployment | Mostly custom-built + vendor copilots emerging (Siemens, Rockwell) | Digital-twin validation before controller deploy |
-| Manufacturing Execution Systems (MES) | Shop-floor software + system integration | Work order tracking, OEE calculation, machine integration | Plant/process engineer | Monitors OEE/downtime patterns, drafts root-cause analysis | Custom agents on MES data (Siemens Opcenter AI features emerging) | OEE-monitoring agents with human root-cause review |
-| Building Management Systems (BMS) | HVAC/facility control logic + integration | Energy optimization rules, sensor integration, alarm config | Facilities/energy engineer | Tunes energy-optimization rules based on usage patterns | Custom agents (vendor AI features emerging: Honeywell, Johnson Controls) | Continuous tuning with override capability |
-| Energy/Utility Grid Systems | Grid control software + telemetry integration | SCADA telemetry processing, demand response logic | Grid operations analyst | Analyzes telemetry for anomalies, drafts demand-response recommendations | Custom agents (utility-specific, mostly proprietary/in-house) | Human-controlled grid actuation |
-| Industrial IoT (IIoT) | Sensor/edge device code + data pipelines | Predictive maintenance models, edge analytics, telemetry pipelines | Reliability/maintenance engineer | Builds/monitors predictive-maintenance pipelines, flags anomalies | Custom predictive-maintenance agents (PTC ThingWorx AI, Siemens) | Anomaly-flagging with human maintenance review |
-| Digital Twin Engineering | Simulation modeling + integration code | Physics-based models, real-time sync with physical assets | Simulation engineer | Runs "what-if" simulations continuously | NVIDIA Omniverse, custom simulation agents | Scenario testing isolated from live assets |
+| Manufacturing Execution Systems (MES) | Shop-floor software + system integration | Work order tracking, OEE calculation, machine integration | Plant/process engineer | Monitors OEE/downtime patterns, drafts root-cause analysis | Custom agentic coding tools on MES data (Siemens Opcenter AI features emerging) | OEE-monitoring agentic coding tools with human root-cause review |
+| Building Management Systems (BMS) | HVAC/facility control logic + integration | Energy optimization rules, sensor integration, alarm config | Facilities/energy engineer | Tunes energy-optimization rules based on usage patterns | Custom agentic coding tools (vendor AI features emerging: Honeywell, Johnson Controls) | Continuous tuning with override capability |
+| Energy/Utility Grid Systems | Grid control software + telemetry integration | SCADA telemetry processing, demand response logic | Grid operations analyst | Analyzes telemetry for anomalies, drafts demand-response recommendations | Custom agentic coding tools (utility-specific, mostly proprietary/in-house) | Human-controlled grid actuation |
+| Industrial IoT (IIoT) | Sensor/edge device code + data pipelines | Predictive maintenance models, edge analytics, telemetry pipelines | Reliability/maintenance engineer | Builds/monitors predictive-maintenance pipelines, flags anomalies | Custom predictive-maintenance agentic coding tools (PTC ThingWorx AI, Siemens) | Anomaly-flagging with human maintenance review |
+| Digital Twin Engineering | Simulation modeling + integration code | Physics-based models, real-time sync with physical assets | Simulation engineer | Runs "what-if" simulations continuously | NVIDIA Omniverse, custom simulation agentic coding tools | Scenario testing isolated from live assets |
 | OT/Industrial Cybersecurity | Network segmentation + monitoring config | Asset inventory, anomaly detection rules, patch management | OT security analyst | Monitors for anomalous OT traffic, drafts patch/segmentation recommendations | Claroty, Dragos AI-assisted monitoring | Human sign-off before live network changes |
-| Transportation/Fleet OT | Vehicle telematics + control integration | Fleet tracking, predictive maintenance, route/fuel optimization | Fleet operations analyst | Optimizes routing and predicts maintenance | Samsara AI, custom fleet-optimization agents | Predictive maintenance flagging, human dispatch decisions |
+| Transportation/Fleet OT | Vehicle telematics + control integration | Fleet tracking, predictive maintenance, route/fuel optimization | Fleet operations analyst | Optimizes routing and predicts maintenance | Samsara AI, custom fleet-optimization agentic coding tools | Predictive maintenance flagging, human dispatch decisions |
 
 ---
 
@@ -99,11 +99,11 @@ For easier navigation, the 40 domains can be grouped into broader categories:
 
 2. **Human-in-the-loop gating is non-negotiable for money and safety.** Fintech/Payments, OT/Industrial Cybersecurity, and SCADA/ICS mandate human sign-off before production or live-network changes.
 
-3. **Spec-driven development is the most common pairing practice.** Domains from Software/App Dev to API to Mobile all benefit from writing specifications before agents generate code.
+3. **Spec-driven development is the most common pairing practice.** Domains from Software/App Dev to API to Mobile all benefit from writing specifications before agentic coding tools generate code.
 
-4. **Tooling is nascent in safety-critical and regulated industries.** Industrial control, healthcare, and utilities rely heavily on custom-built agents because off-the-shelf tooling does not yet meet compliance or safety requirements.
+4. **Tooling is nascent in safety-critical and regulated industries.** Industrial control, healthcare, and utilities rely heavily on custom-built agentic coding tools because off-the-shelf tooling does not yet meet compliance or safety requirements.
 
-5. **Evals and validation are universal.** Whether it's SQL validation in Analytics/BI, contract testing in APIs, or OEE monitoring in MES, every domain needs a way to verify agent output before it reaches production.
+5. **Evals and validation are universal.** Whether it's SQL validation in Analytics/BI, contract testing in APIs, or OEE monitoring in MES, every domain needs a way to verify tool output before it reaches production.
 
 ---
 
