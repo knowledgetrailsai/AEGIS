@@ -21,9 +21,9 @@
 | Track whether the process works | [docs/06-metrics.md](docs/06-metrics.md) |
 | Use agile backlog and feature flow | [docs/08-agile-workflow.md](docs/08-agile-workflow.md) |
 | Read a tool comparison | [docs/07-tools-comparison.md](docs/07-tools-comparison.md) |
-| Read the eleven practice deep dives | [docs/practices/](docs/practices/context-engineering.md) |
+| Read the eleven practice deep dives | [docs/practices/README.md](docs/practices/README.md) |
 | See prompts and outcomes for every phase, worked end to end | [examples/README.md](examples/README.md) |
-| Use a template | [templates/](templates/adr-template.md) |
+| Use a template | [templates/README.md](templates/README.md) |
 | See domain mapping | [domains/domains.md](domains/domains.md) |
 | Compare with BMAD, AI-DLC, specs.md, and OASIS | [docs/09-related-frameworks.md](docs/09-related-frameworks.md) |
 | Wire this into your repo's CI | [.github/](.github/PULL_REQUEST_TEMPLATE.md) |
