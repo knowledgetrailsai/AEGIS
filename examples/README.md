@@ -1,6 +1,6 @@
 # Worked Examples: One Feature, Every Phase
 
-These seven pages follow a single feature — a caching layer for the product catalog search endpoint — through every phase in [docs/03-phases/](../docs/03-phases/), in order. Each page shows the actual prompt given to the agentic coding tool, what the tool produced, the human gate that was applied (or wasn't needed), and the outcome. Read them in sequence to see how the risk-tier and human-in-the-loop rules from the rest of this repo play out on one real change, start to finish — not just as abstract policy.
+These seven pages follow a single feature — a caching layer for the product catalog search endpoint — through every phase in [docs/03-phases/](../docs/03-phases/README.md), in order. Each page shows the actual prompt given to the agentic coding tool, what the tool produced, the human gate that was applied (or wasn't needed), and the outcome. Read them in sequence to see how the risk-tier and human-in-the-loop rules from the rest of this repo play out on one real change, start to finish — not just as abstract policy.
 
 The scenario is deliberately Tier 2 (reversible, moderate blast radius) for most of its life, with one Tier 1 moment in production support — that spread is intentional, since most real work lives at Tier 1–2 and the repo's governance model earns its keep in exactly that range.
 

@@ -108,7 +108,7 @@ The comparison page is not trying to crown a winner — it maps current tools (C
 
 ## Putting it to work
 
-- **Templates** — [spec-template.md](../templates/spec-template.md), [adr-template.md](../templates/adr-template.md), [risk-tier-checklist.md](../templates/risk-tier-checklist.md) in [templates/](../templates/).
+- **Templates** — [spec-template.md](../templates/spec-template.md), [adr-template.md](../templates/adr-template.md), [risk-tier-checklist.md](../templates/risk-tier-checklist.md) in [templates/](../templates/adr-template.md).
 - **Worked examples** — [examples/README.md](../examples/README.md) follows one feature through all seven SDLC phases, with the actual prompt given to the tool, its output, the human gate applied, and the outcome at each step.
 - **CI wiring** — [.github/workflows/ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml) and [.github/PULL_REQUEST_TEMPLATE.md](../.github/PULL_REQUEST_TEMPLATE.md) are the mechanical enforcement of the risk-tier and spec-link rules above — policy that lives in a doc nobody checks isn't policy.
 - **Domain mapping** — [domains/domains.md](../domains/domains.md) maps this whole framework across roughly 40 engineering domains (data, API/integration, ERP, game dev, e-commerce, IoT, OT, and more), with the kind of dev involved, example work, and what accelerates or runs autonomously in each.
