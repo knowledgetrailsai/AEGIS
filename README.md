@@ -28,6 +28,12 @@
 | Compare with BMAD, AI-DLC, specs.md, and OASIS | [docs/09-related-frameworks.md](docs/09-related-frameworks.md) |
 | Wire this into your repo's CI | [.github/](.github/PULL_REQUEST_TEMPLATE.md) |
 
+## Relationship to companion repositories
+
+AEGIS is the [OASIS](https://github.com/knowledgetrailsai/OASIS) companion for Chapter 14, Intelligence and Agent Engineering, scoped specifically to agentic *coding* delivery. The other eight Part III chapters have their own companions — see the [Companion Repository Index](https://github.com/knowledgetrailsai/OASIS/blob/main/References/companion-repository-index.md) for the full map: [Forge](https://github.com/knowledgetrailsai/Forge) (data and knowledge engineering), [Loom](https://github.com/knowledgetrailsai/Loom) (human-AI workflow), [Helm](https://github.com/knowledgetrailsai/HELM) (deployment, operations, and AgentOps), [Verity](https://github.com/knowledgetrailsai/Verity) (evaluation and reliability), [Compass](https://github.com/knowledgetrailsai/responsible-ai) (responsible AI, security, and governance), and [Fulcrum](https://github.com/knowledgetrailsai/oasis-fulcrum) (FinOps and economics).
+
+A note on terminology: AEGIS's "deployment models" (see [docs/00-overview.md](docs/00-overview.md)) describes how agentic coding tools are rolled out to a delivery team — not model *architecture*. For that sense of "model" — transformer variants, attention mechanisms, embeddings, and the rest of the deep-learning architecture landscape that Chapter 14's model-selection guidance draws on — see [Axiom](https://github.com/knowledgetrailsai/Axiom), a background reference rather than a chapter companion in its own right.
+
 ## Status
 
 Living guide. Principles and governance in `docs/` should change only through deliberate review (see [CONTRIBUTING.md](CONTRIBUTING.md)). Tooling references in `docs/07-tools-comparison.md` and `domains/domains.md` go stale fast, so check the dated caveats before trusting them and refresh on a schedule.
