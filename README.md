@@ -1,10 +1,12 @@
 # AEGIS
 
-**A**gentic **E**ngineering: **G**overnance, **I**mplementation & **S**caling — a practical guide for using agentic coding tools across software delivery end to end, from requirements and architecture through backlog, development, review, testing, deployment, and support. AEGIS also implements the "Intelligence and Agent Engineering" discipline of [OASIS](https://github.com/knowledgetrailsai/OASIS) and works standalone for teams not running OASIS at all — see [docs/09-related-frameworks.md](docs/09-related-frameworks.md).
+**A**gentic **E**ngineering: **G**overnance, **I**mplementation & **S**caling. This is a practical guide for using agentic coding tools across the whole software delivery process — from requirements and architecture, through backlog, development, review, and testing, to deployment and support.
+
+AEGIS also implements the "Intelligence and Agent Engineering" discipline of [OASIS](https://github.com/knowledgetrailsai/OASIS). It works fine on its own too, for teams that aren't running OASIS at all — see [docs/09-related-frameworks.md](docs/09-related-frameworks.md).
 
 ## Start here
 
-**[docs/00-overview.md](docs/00-overview.md)** is the one detailed walkthrough of this repo — what it covers, the core principles, deployment models, how work flows end to end, git workflow, governance/risk tiers, patch-vs-regenerate, metrics, tool comparison, and a ten-minute path through everything else. Read that first; this README is just the index.
+**[docs/00-overview.md](docs/00-overview.md)** is the one detailed walkthrough of this repo. It covers what the repo is for, the core principles, deployment models, how work flows from start to finish, the git workflow, governance and risk tiers, patch-vs-regenerate, metrics, and a tool comparison. It also gives you a ten-minute path through everything else. Read that page first — this README is just an index.
 
 ## Index
 
@@ -32,11 +34,11 @@
 
 AEGIS is the [OASIS](https://github.com/knowledgetrailsai/OASIS) companion for Chapter 14, Intelligence and Agent Engineering, scoped specifically to agentic *coding* delivery. The other eight Part III chapters have their own companions — see the [Companion Repository Index](https://github.com/knowledgetrailsai/OASIS/blob/main/References/companion-repository-index.md) for the full map: [Forge](https://github.com/knowledgetrailsai/Forge) (data and knowledge engineering), [Loom](https://github.com/knowledgetrailsai/Loom) (human-AI workflow), [Helm](https://github.com/knowledgetrailsai/HELM) (deployment, operations, and AgentOps), [Verity](https://github.com/knowledgetrailsai/Verity) (evaluation and reliability), [Compass](https://github.com/knowledgetrailsai/responsible-ai) (responsible AI, security, and governance), and [Fulcrum](https://github.com/knowledgetrailsai/oasis-fulcrum) (FinOps and economics).
 
-A note on terminology: AEGIS's "deployment models" (see [docs/00-overview.md](docs/00-overview.md)) describes how agentic coding tools are rolled out to a delivery team — not model *architecture*. For that sense of "model" — transformer variants, attention mechanisms, embeddings, and the rest of the deep-learning architecture landscape that Chapter 14's model-selection guidance draws on — see [Axiom](https://github.com/knowledgetrailsai/Axiom), a background reference rather than a chapter companion in its own right.
+A note on terminology: in this repo, "deployment models" (see [docs/00-overview.md](docs/00-overview.md)) means how agentic coding tools get rolled out to a delivery team. It does not mean model *architecture*. If you're looking for that sense of "model" — transformer variants, attention mechanisms, embeddings, and the rest of the deep-learning landscape that Chapter 14's model-selection guidance draws on — see [Axiom](https://github.com/knowledgetrailsai/Axiom). Axiom is a background reference, not a chapter companion in its own right.
 
 ## Status
 
-Living guide. Principles and governance in `docs/` should change only through deliberate review (see [CONTRIBUTING.md](CONTRIBUTING.md)). Tooling references in `docs/07-tools-comparison.md` and `domains/domains.md` go stale fast, so check the dated caveats before trusting them and refresh on a schedule.
+Living guide. Principles and governance in `docs/` should change only through deliberate review — see [CONTRIBUTING.md](CONTRIBUTING.md). Tooling references in `docs/07-tools-comparison.md` and `domains/domains.md` go stale fast, so check the dated caveats before trusting them and refresh on a schedule.
 
 ## License
 

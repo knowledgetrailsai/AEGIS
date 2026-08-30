@@ -4,7 +4,7 @@
 Proposed / Accepted / Superseded by ADR-[n]
 
 ## Context
-What forces are at play — technical, organizational, tool-relevant (e.g. does this affect what agentic coding tools can safely touch autonomously?).
+What factors are at play — technical, organizational, and anything tool-relevant (for example, does this affect what agentic coding tools can safely touch on their own?).
 
 ## Decision
 The change being made, stated plainly.

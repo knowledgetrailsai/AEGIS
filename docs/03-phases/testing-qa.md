@@ -4,7 +4,7 @@
 
 ## What this phase does
 
-This phase proves the change works. Tests verify the code. Evals verify the tool behavior. Both matter.
+This phase proves the change works. Tests verify the code itself. Evals (short for evaluations: structured checks on how an AI tool behaves) verify the tool's behavior. You need both.
 
 ## Method
 
@@ -27,7 +27,7 @@ This phase proves the change works. Tests verify the code. Evals verify the tool
 - Automate scoring where possible.
 - Require human approval for new acceptance criteria.
 - Add adversarial verification when the change is high stakes.
-- Ask the agentic coding tool to propose missing coverage, then verify it with the test harness.
+- Ask the agentic coding tool to propose missing coverage. Then verify that coverage with the test harness (the system that runs your tests).
 
 ## Common mistakes
 

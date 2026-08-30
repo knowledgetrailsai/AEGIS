@@ -1,6 +1,6 @@
 # Agentic Engineering Domains
 
-This document maps **40 software and engineering domains** to where agentic engineering practices apply. Each entry describes the kind of development involved, example work, the human role being supported or replaced, what agentic coding tools can accelerate or do autonomously, recommended tools, and practices to pair with them.
+This document maps **40 software and engineering domains** to the places where agentic engineering practices apply. For each one, it describes the kind of development work involved, gives example tasks, names the human role being supported or replaced, explains what agentic coding tools can speed up or do on their own, recommends tools, and lists practices to use alongside them.
 
 ## How to Read This Document
 
@@ -8,11 +8,11 @@ This document maps **40 software and engineering domains** to where agentic engi
 - **Kind of Dev Involved** — The type of coding, configuration, or scripting work.
 - **Example Work** — Concrete tasks an agentic coding tool might handle.
 - **Human Role It Supports/Replaces** — Who traditionally does this work.
-- **What It Accelerates or Does Autonomously** — The tool's scope of action.
+- **What It Accelerates or Does Autonomously** — What the tool can do: speed up a human's work, or do the work by itself.
 - **Recommended Agentic Tools/Products** — Tools that currently support this domain.
-- **Practices to Pair With Them** — Guardrails and workflows to keep agentic coding tools safe and effective.
+- **Practices to Pair With Them** — Guardrails and workflows that keep agentic coding tools safe and effective.
 
-> **Note:** Tool recommendations evolve rapidly. Always validate tool capabilities against your specific stack and compliance requirements before adoption.
+> **Note:** Tool recommendations change quickly. Always check a tool's actual capabilities against your specific stack and compliance requirements before adopting it.
 
 ---
 
@@ -95,15 +95,15 @@ For easier navigation, the 40 domains can be grouped into broader categories:
 
 ## Key Patterns Across Domains
 
-1. **Simulation-first is dominant in safety-critical domains.** Robotics, SCADA/ICS, PLC/DCS, and Digital Twin Engineering all require validation in simulation or digital twins before any physical deployment.
+1. **Safety-critical domains test in simulation first.** Robotics, SCADA/ICS, PLC/DCS, and Digital Twin Engineering all require validation in simulation or in a digital twin before any physical deployment.
 
-2. **Human-in-the-loop gating is non-negotiable for money and safety.** Fintech/Payments, OT/Industrial Cybersecurity, and SCADA/ICS mandate human sign-off before production or live-network changes.
+2. **A human must sign off wherever money or safety is at stake.** Fintech/Payments, OT/Industrial Cybersecurity, and SCADA/ICS all require human sign-off before a change goes to production or touches a live network.
 
 3. **Spec-driven development is the most common pairing practice.** Domains from Software/App Dev to API to Mobile all benefit from writing specifications before agentic coding tools generate code.
 
-4. **Tooling is nascent in safety-critical and regulated industries.** Industrial control, healthcare, and utilities rely heavily on custom-built agentic coding tools because off-the-shelf tooling does not yet meet compliance or safety requirements.
+4. **Tooling is still young in safety-critical and regulated industries.** Industrial control, healthcare, and utilities rely heavily on custom-built agentic coding tools, because off-the-shelf tools don't yet meet their compliance or safety requirements.
 
-5. **Evals and validation are universal.** Whether it's SQL validation in Analytics/BI, contract testing in APIs, or OEE monitoring in MES, every domain needs a way to verify tool output before it reaches production.
+5. **Every domain needs a way to check the tool's work.** Whether it's SQL validation in Analytics/BI, contract testing in APIs, or OEE (overall equipment effectiveness) monitoring in MES, every domain needs a way to verify tool output before it reaches production.
 
 ---
 

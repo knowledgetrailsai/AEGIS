@@ -4,7 +4,7 @@
 
 > "Improve search so it feels faster and gives better results."
 
-Problems: no measurable threshold, "feels" and "better" aren't testable, no out-of-scope boundary, no acceptance criteria an agentic coding tool (or a reviewer) can check against.
+The problem with this spec: it has no measurable threshold. Words like "feels" and "better" can't be tested. It doesn't say what's out of scope. And it gives no acceptance criteria that an agentic coding tool (or a human reviewer) can check against.
 
 ## After (tool-actionable)
 
@@ -29,4 +29,4 @@ Problems: no measurable threshold, "feels" and "better" aren't testable, no out-
 
 **Risk tier:** 2 — reversible, moderate blast radius (shared search endpoint), full test coverage exists.
 
-This is the level of specificity Section [requirements-spec.md](../docs/03-phases/requirements-spec.md) asks for — a reviewer or an agentic coding tool can independently verify "done" from this text alone.
+This is the level of detail Section [requirements-spec.md](../docs/03-phases/requirements-spec.md) asks for. From this text alone, a reviewer or an agentic coding tool can independently check whether the work is "done."

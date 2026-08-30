@@ -1,6 +1,6 @@
 # Risk Tier Checklist
 
-Use before merging or deploying an tool-initiated change. Full definitions: [docs/04-governance-risk-tiers.md](../docs/04-governance-risk-tiers.md).
+Use this before merging or deploying a tool-initiated change. Full definitions: [docs/04-governance-risk-tiers.md](../docs/04-governance-risk-tiers.md).
 
 - [ ] Tier assigned: 1 / 2 / 3 / 4
 - [ ] Reversible? (if no → minimum Tier 3)

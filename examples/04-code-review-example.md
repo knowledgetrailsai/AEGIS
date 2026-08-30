@@ -1,6 +1,6 @@
 # Worked Example: Code Review
 
-Continues from [03-development-example.md](03-development-example.md) — PR is open, Tier 2, so a human reviewer is required before merge.
+Continues from [03-development-example.md](03-development-example.md). The PR is open, at Tier 2, so a human reviewer is required before merge.
 
 ## Prompt given to the tool
 
@@ -18,8 +18,8 @@ Continues from [03-development-example.md](03-development-example.md) — PR is 
 
 ## Human gate
 
-The reviewer agrees with the flag — the rename is harmless but has nothing to do with this spec, and a tool that "helpfully" touches more than asked is exactly the drift [08-agile-workflow.md](../docs/08-agile-workflow.md#common-mistakes) warns about. The reviewer asks for the rename to be reverted into its own follow-up commit (or dropped entirely), rather than approving it inside this PR. Everything else is approved as-is — the tool's summary was accurate enough that the reviewer didn't need to re-derive scope from the raw diff.
+The reviewer agrees with the flag. The rename is harmless, but it has nothing to do with this spec. A tool that reaches beyond what it was asked to do is exactly the kind of drift [08-agile-workflow.md](../docs/08-agile-workflow.md#common-mistakes) warns about, even when the extra change looks helpful. The reviewer asks for the rename to be reverted into its own follow-up commit (or dropped entirely), rather than approving it inside this PR. Everything else is approved as-is. The tool's summary was accurate enough that the reviewer didn't need to re-check the raw diff to confirm scope.
 
 ## Outcome
 
-Tool reverts the unrelated rename in a follow-up commit. PR is approved by the required human reviewer per Tier 2's gate in [04-governance-risk-tiers.md](../docs/04-governance-risk-tiers.md), and squash-merged per the [merge strategy](../docs/00-git-workflow-and-automation.md#merge-strategy). The reverted rename is filed as a separate, unrelated Tier 1 cleanup ticket instead of being silently absorbed.
+The tool reverts the unrelated rename in a follow-up commit. The PR is approved by the required human reviewer per Tier 2's gate in [04-governance-risk-tiers.md](../docs/04-governance-risk-tiers.md), and squash-merged per the [merge strategy](../docs/00-git-workflow-and-automation.md#merge-strategy). The reverted rename is filed as its own separate Tier 1 cleanup ticket, instead of being silently folded into this change.

@@ -4,7 +4,7 @@
 
 ## What this phase does
 
-This phase moves the change into production. The job is to make safe releases repeatable and risky releases gated.
+This phase moves the change into production (the live system real users depend on). The job here has two parts. Safe releases should be repeatable, and risky releases should be gated (require a checkpoint or approval before they go through).
 
 ## Method
 
@@ -27,7 +27,7 @@ This phase moves the change into production. The job is to make safe releases re
 - Test rollback as part of the release process.
 - Treat schema, financial, and physical control changes as high risk.
 - Use the governance doc to set the approval level.
-- Let the agentic coding tool prepare the release, but do not let it bypass the gate.
+- Let the agentic coding tool prepare the release. Do not let it bypass the approval gate, though.
 
 ## Common mistakes
 

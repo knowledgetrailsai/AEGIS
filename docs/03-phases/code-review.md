@@ -2,7 +2,7 @@
 
 ## What this phase does
 
-Code review decides whether the change should merge. For tool-assisted work, the review should match the risk, not the habit.
+Code review decides whether the change should merge (be added to the main codebase). For tool-assisted work, the depth of review should be based on how risky the change is, not on habit or routine.
 
 ## Method
 
@@ -25,7 +25,7 @@ Code review decides whether the change should merge. For tool-assisted work, the
 - Use a named human reviewer for Tier 3 and Tier 4 work.
 - Track override or rejection rate by workflow.
 - Treat a high override rate as a spec or context problem first.
-- Let the agentic coding tool pre-review the change, then have the human confirm the result.
+- Let the agentic coding tool review the change first, as a first pass. Then have a human confirm the result.
 
 ## Common mistakes
 

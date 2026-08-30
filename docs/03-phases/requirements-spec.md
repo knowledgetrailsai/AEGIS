@@ -4,11 +4,11 @@
 
 ## What this phase does
 
-This phase turns a request into a clear contract. A good spec removes guesswork for both the agentic coding tool and the reviewer.
+This phase turns a request into a clear contract (a spec, short for specification: a written description of what needs to be built and how to know it works). A good spec removes guesswork for both the agentic coding tool and the reviewer.
 
 ## Before you start: is the request actually ready for a spec?
 
-If the request is genuinely ambiguous, greenfield, or exploratory — not just under-written — don't jump straight to method step 1 below. Run the exploratory/ideation flow from [process-scaling.md](../practices/process-scaling.md) first: have the agentic coding tool propose a few distinct approaches, evaluate them, and converge on one direction. Writing a confident, well-formed spec for the wrong approach is worse than spending ten minutes diverging first — most bounded, well-understood requests can skip this and start at step 1 directly.
+Sometimes a request is genuinely ambiguous, or it's a greenfield project (brand new work with no existing code to build on), or it's still exploratory. If that's the case, and the request isn't just under-written, don't jump straight to method step 1 below. Instead, run the exploratory/ideation flow from [process-scaling.md](../practices/process-scaling.md) first. That flow has the agentic coding tool propose a few distinct approaches, evaluate them, and converge on one direction. It is worth spending ten minutes diverging first, because a confident, well-formed spec written for the wrong approach still leads you to the wrong place. Most requests are bounded and well understood already, so most of the time you can skip this and start at step 1 directly.
 
 ## Method
 

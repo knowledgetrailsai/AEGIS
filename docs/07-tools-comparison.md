@@ -1,33 +1,33 @@
 # Tools Comparison Guide
 
-This page compares current agentic coding tools and where each one fits best. The goal is not to crown a universal winner. It is to help you choose the right tool for the job, based on the current official product docs that were checked on 2026-08-25 (deployment-model section added 2026-08-26 — verify vendor docs before relying on specifics, this category moves fast).
+This page compares current agentic coding tools and shows where each one fits best. The goal isn't to crown one universal winner — it's to help you choose the right tool for the job. It's based on the official product docs, checked on 2026-08-25 (the deployment-model section was added 2026-08-26). This category moves fast, so verify against vendor docs before relying on any specific detail.
 
 ## Deployment models — the distinction this repo's earlier docs glossed over
 
-Most of this repo's guidance talks about "agentic coding tools" as if they're one kind of thing. In practice, the tools that actually do the work fall into four distinct deployment models, and the model matters as much as the vendor when deciding what to adopt:
+Most of this repo's guidance talks about "agentic coding tools" as if they're all one kind of thing. In practice, the tools that actually do the work fall into four distinct deployment models (a deployment model is simply where and how the tool runs). The model matters as much as the vendor when you're deciding what to adopt.
 
 | Model | What it means | Where it lives | Examples |
 |---|---|---|---|
-| **Standalone IDE** | A dedicated editor, usually a VS Code fork, built tool-first from the ground up | Its own application, replaces your editor | Cursor, Windsurf, Kiro |
-| **IDE plugin / extension** | Installs into an editor you already use (VS Code, JetBrains) — adds agentic coding tool capability without replacing the editor | Extension inside your existing IDE | GitHub Copilot, Cline, Roo Code, Continue.dev, Amazon Q Developer, Tabnine, Sourcegraph Cody/Amp |
-| **CLI / terminal tool** | Runs in the terminal, no GUI required, scriptable | Shell, CI pipelines, headless automation | Claude Code, OpenAI Codex CLI, Aider |
-| **Cloud / hosted tool** | Runs in a remote workspace, not on the developer's machine at all | GitHub-hosted sessions, cloud sandboxes | GitHub Copilot agent sessions, Copilot Workspace-style cloud agentic coding tools |
+| **Standalone IDE** | A dedicated code editor, usually a VS Code fork, built tool-first from the ground up | Its own application, replaces your editor | Cursor, Windsurf, Kiro |
+| **IDE plugin / extension** | Installs into an editor you already use (VS Code, JetBrains) and adds agentic coding tool capability without replacing the editor | An extension inside your existing IDE | GitHub Copilot, Cline, Roo Code, Continue.dev, Amazon Q Developer, Tabnine, Sourcegraph Cody/Amp |
+| **CLI / terminal tool** | Runs in the terminal, needs no graphical interface, and can be scripted | Shell, CI pipelines, headless automation | Claude Code, OpenAI Codex CLI, Aider |
+| **Cloud / hosted tool** | Runs in a remote workspace, not on the developer's own machine at all | GitHub-hosted sessions, cloud sandboxes | GitHub Copilot agent sessions, Copilot Workspace-style cloud agentic coding tools |
 
-Why this matters for adoption, not just tool choice:
+Why this matters for adoption, not just for picking a tool:
 
-- **Plugin-based tools have the lowest adoption friction** — a developer keeps their existing IDE, workflow, keybindings, and extensions; the agentic coding tool is additive. This is usually the right first step for a team that hasn't standardized on agentic tooling yet.
-- **Standalone IDEs ask for more commitment** — switching editors is a real cost, but they tend to have the deepest, most integrated agentic coding tool experience because the whole product is built around it.
-- **CLI agentic coding tools are what you use for anything that isn't interactive** — CI gates, scheduled maintenance runs, scripted multi-repo work (see [ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml)). A GUI-only tool can't fill this role.
-- **Cloud/hosted agentic coding tools decouple execution from any single developer's machine** — useful for long-running or parallel work, and for keeping agentic coding tool execution auditable/centralized, but adds a dependency on the hosting platform.
+- **Plugin-based tools are the easiest to adopt.** A developer keeps their existing IDE, workflow, keybindings, and extensions — the agentic coding tool is just an addition. This is usually the right first step for a team that hasn't standardized on agentic tooling yet.
+- **Standalone IDEs ask for more commitment.** Switching editors is a real cost, but these tools tend to have the deepest, most integrated experience, since the whole product is built around it.
+- **CLI agentic coding tools are what you use for anything that isn't interactive** — CI gates, scheduled maintenance runs, scripted work across multiple repos (see [ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml)). A tool that only has a graphical interface can't fill this role.
+- **Cloud/hosted agentic coding tools separate execution from any single developer's machine.** That's useful for long-running or parallel work, and for keeping execution auditable and centralized, but it adds a dependency on the hosting platform.
 
-A mature team typically ends up running more than one model at once — a plugin for day-to-day editing, a CLI tool wired into CI, and possibly a cloud agentic coding tool for longer autonomous runs — rather than picking exactly one.
+A mature team typically ends up running more than one model at once: a plugin for day-to-day editing, a CLI tool wired into CI, and possibly a cloud agentic coding tool for longer autonomous runs. Most teams don't pick just one.
 
 ## How to read the tables below
 
 - `IDE-native tool` means the tool lives inside your editor and is best for day-to-day coding.
 - `CLI tool` means the tool runs in the terminal and is best for scripted or repo-local workflows.
-- `Cloud tool` means the tool can work from a hosted workspace or GitHub-side session.
-- `Plan mode` means the tool can draft a plan and wait for approval before execution.
+- `Cloud tool` means the tool can work from a hosted workspace or a GitHub-side session.
+- `Plan mode` means the tool can draft a plan and wait for your approval before it starts executing.
 
 ## Quick comparison
 
@@ -50,10 +50,10 @@ A mature team typically ends up running more than one model at once — a plugin
 
 ## Choosing by deployment model, then by tool
 
-1. **Decide the deployment model first.** Do you need editor-additive (plugin), editor-replacing (standalone IDE), scriptable/headless (CLI), or centrally-run (cloud)? This eliminates most of the list before you compare individual tools.
-2. **Within a model, compare by workflow fit** — GitHub-centric teams lean Copilot; AWS-centric teams lean Kiro or Amazon Q; teams wanting maximum control lean Continue.dev or Aider.
-3. **Expect to run more than one model.** A CLI tool wired into CI ([ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml)) and a plugin for interactive editing are not competing choices — most real engineering orgs run both.
-4. **Re-test after a quarter.** This category moves faster than almost any other tooling decision you'll make — see [effort-savings-evidence.md](05-effort-savings-evidence.md) for why relying on stale claims (vendor or otherwise) is a real risk here.
+1. **Decide the deployment model first.** Do you need something editor-additive (a plugin), editor-replacing (a standalone IDE), scriptable and headless (CLI), or centrally run (cloud)? Answering this eliminates most of the list before you even compare individual tools.
+2. **Within a model, compare by workflow fit.** GitHub-centric teams tend to lean toward Copilot; AWS-centric teams toward Kiro or Amazon Q; teams that want maximum control lean toward Continue.dev or Aider.
+3. **Expect to run more than one model.** A CLI tool wired into CI ([ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml)) and a plugin for interactive editing aren't competing choices — most real engineering orgs run both.
+4. **Re-test after a quarter.** This category changes faster than almost any other tooling decision you'll make. See [effort-savings-evidence.md](05-effort-savings-evidence.md) for why relying on stale claims — vendor or otherwise — is a real risk here.
 
 ## Recommendation by team shape
 
@@ -79,4 +79,4 @@ A mature team typically ends up running more than one model at once — a plugin
 - [OpenAI Codex CLI help](https://help.openai.com/en/articles/11096431)
 - [Kiro documentation](https://kiro.dev/docs/)
 - [Windsurf docs](https://docs.windsurf.com/)
-- Entries marked "vendor docs — verify current at time of adoption" (Cline, Roo Code, Continue.dev, Amazon Q Developer, Tabnine, Sourcegraph Cody/Amp, Aider) were not individually re-verified against primary sources on the date this section was added — confirm current capabilities directly with each vendor before relying on the specifics in an adoption decision.
+- Entries marked "vendor docs — verify current at time of adoption" (Cline, Roo Code, Continue.dev, Amazon Q Developer, Tabnine, Sourcegraph Cody/Amp, Aider) were not individually re-checked against primary sources on the date this section was added. Confirm current capabilities directly with each vendor before relying on the specifics in an adoption decision.

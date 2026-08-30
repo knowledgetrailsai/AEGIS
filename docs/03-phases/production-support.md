@@ -4,14 +4,14 @@
 
 ## What this phase does
 
-This phase keeps the system healthy after release. The agentic coding tool can help with triage and proposals, but risky actions should stay gated.
+This phase keeps the system healthy after release. The agentic coding tool can help with triage (sorting and prioritizing issues) and with proposing fixes. But risky actions should stay gated, meaning a human needs to approve them first.
 
 ## Method
 
 1. Triage the issue using logs, metrics, traces, and recent changes.
 2. Ask the agentic coding tool for a root-cause hypothesis.
-3. Have the agentic coding tool propose a runbook action before it executes anything.
-4. Gate remediation by blast radius.
+3. Have the agentic coding tool propose a runbook (a documented set of response steps) action before it executes anything.
+4. Gate remediation (the fix itself) by blast radius (how much damage a mistake could cause).
 5. Prioritize technical debt with human business context.
 
 ## Tool support
@@ -27,7 +27,7 @@ This phase keeps the system healthy after release. The agentic coding tool can h
 - Use the patch-vs-regenerate rule for modernization work.
 - Review recurring incidents for patterns, not just individual fixes.
 - Keep ownership clear for maintenance decisions.
-- Keep the agentic coding tool in the triage loop, not the final authority loop.
+- Keep the agentic coding tool in the triage loop. It should help sort and assess issues, but it should not have the final say.
 
 ## Common mistakes
 

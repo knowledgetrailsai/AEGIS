@@ -1,6 +1,6 @@
 # SDLC Phases Guide
 
-Use this section as the working guide for tool-supported delivery. Each phase page now follows the same pattern:
+This section is your working guide for delivery that uses agentic coding tools (AI assistants that can write code, run commands, and take other actions on your behalf). Every phase page below follows the same pattern, so once you know one page, you know them all:
 
 - what the phase is for
 - how to run it
@@ -25,8 +25,8 @@ Use this section as the working guide for tool-supported delivery. Each phase pa
 1. Start with requirements and spec, using an agentic coding tool to draft and tighten the request.
 2. Move to design when the work changes boundaries or contracts, using an agentic coding tool to compare options.
 3. Use development, review, and testing as one loop, with the agentic coding tool helping produce code, tests, and diffs.
-4. Keep deployment and support gated by blast radius, with the agentic coding tool helping prepare but not bypassing approvals.
+4. Keep deployment and support gated by blast radius (how much damage a mistake could cause), with the agentic coding tool helping prepare but not bypassing approvals.
 
 ## Rule of thumb
 
-If a phase feels vague, make the work more specific before handing it to an agentic coding tool.
+If a phase feels vague or unclear, make the work more specific first. Only hand it to an agentic coding tool once it is clear.

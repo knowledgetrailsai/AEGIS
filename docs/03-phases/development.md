@@ -4,14 +4,14 @@
 
 ## What this phase does
 
-This phase is where the change gets built. The main goal is to keep the agentic coding tool productive without letting it drift outside the agreed scope.
+This phase is where the change actually gets built. The main goal is to keep the agentic coding tool productive, while making sure it stays within the scope you agreed on.
 
 ## Method
 
 1. Start from the spec and design.
 2. Have the agentic coding tool propose a plan before execution.
 3. Give the agentic coding tool only the context it needs.
-4. Work in an isolated branch, worktree, or sandbox.
+4. Work in an isolated branch, worktree (a separate working copy of the code), or sandbox (a safe, contained environment for testing).
 5. Keep prompts and tool configs versioned like code.
 
 ## Tool support
