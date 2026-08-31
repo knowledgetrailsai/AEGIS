@@ -43,3 +43,7 @@ Living guide. Principles and governance in `docs/` should change only through de
 ## License
 
 Internal methodology — adapt freely within your org. No warranty on effort-savings figures; verify against current published sources before using them in planning (see [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md)).
+
+## About Us
+
+**Shripadraj Mujumdar** is Head of Agentic AI and Chief Enterprise Architect — Agentic AI & Intelligent Automation at Godrej Enterprises Group, with 28+ years in enterprise architecture and technology leadership, including 3+ years hands-on in Agentic AI/Generative AI and 10+ years in AI and data-transformation architectures. He is the architect behind Amethyst, Godrej's enterprise multi-cloud Agentic AI platform powering 50+ autonomous agents across 14 business ventures, and previously led Data, AI, and Responsible AI at Michelin, architecting enterprise data and knowledge-graph platforms and AI governance frameworks aligned to the EU AI Act. This methodology ecosystem distills that practitioner experience — architecture, delivery, evaluation, governance, and economics learned across FinTech, industrial, and material-science AI programs — into a single, reusable body of work.
