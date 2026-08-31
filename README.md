@@ -42,9 +42,7 @@ Living guide. Principles and governance in `docs/` should change only through de
 
 ## License
 
-Licensed under [CC BY-SA 4.0](LICENSE). Credit Shripadraj Mujumdar,
-KnowledgeTrails, and AEGIS; indicate changes and release adaptations under
-the same license. No warranty on effort-savings figures; verify against current published sources before using them in planning (see [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md)).
+Licensed under [CC BY-SA 4.0](https://github.com/knowledgetrailsai/OASIS/blob/main/LICENSE.md). Reuse and adaptation are welcome with credit to KnowledgeTrails-OASIS, a link to the license, an indication of changes, and release of adaptations under the same license. No warranty on effort-savings figures; verify against current published sources before using them in planning (see [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md)).
 
 ## About Us
 
