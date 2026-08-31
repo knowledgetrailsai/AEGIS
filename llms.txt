@@ -1,0 +1,37 @@
+# Ageis
+
+> AEGIS — Agentic Engineering: Governance, Implementation & Scaling — a practical guide to running software delivery end to end when agentic coding tools do a meaningful share of the writing. Implements the OASIS methodology's Chapter 14, Intelligence and Agent Engineering, scoped to agentic coding delivery; works standalone otherwise.
+
+Start with [docs/00-overview.md](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/00-overview.md) — the one detailed walkthrough of the whole repo.
+
+## Core docs
+
+- [Overview](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/00-overview.md): the full mental model in one read.
+- [Principles](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/01-principles.md): the five rules everything else derives from.
+- [Git Workflow and Automation](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/00-git-workflow-and-automation.md): branch/PR/merge flow and what's automatable.
+- [Patch vs. Regenerate](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/02-patch-vs-regenerate.md): the other axis of every change.
+- [Governance and Risk Tiers](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/04-governance-risk-tiers.md): how much autonomy an action gets.
+- [Effort-Savings Evidence](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/05-effort-savings-evidence.md): what the data actually shows, including the METR RCT finding.
+- [Metrics](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/06-metrics.md): tool-adoption metrics vs. standard SDLC metrics.
+- [Tools Comparison](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/07-tools-comparison.md): deployment models and current tool landscape.
+- [Agile Workflow](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/08-agile-workflow.md): requirements, architecture, backlog and feature slicing.
+- [Related Frameworks](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/09-related-frameworks.md): comparison with BMAD, AI-DLC, specs.md and OASIS.
+
+## SDLC phases and practices
+
+- [Phases Guide](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/03-phases/README.md): requirements through production support, one page per phase.
+- [Practices Index](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/docs/practices/README.md): eleven deep-dive practices, grouped by when each matters.
+- [Worked Examples](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/examples/README.md): one feature followed through every phase.
+- [Templates](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/templates/README.md): spec, ADR and risk-tier-checklist templates.
+- [Domain Mapping](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/domains/domains.md): 40 engineering domains mapped to agentic-engineering practice.
+
+## Companion repositories
+
+- [OASIS](https://raw.githubusercontent.com/knowledgetrailsai/OASIS/main/llms.txt) — the parent methodology.
+- [Forge](https://raw.githubusercontent.com/knowledgetrailsai/Forge/master/llms.txt), [Loom](https://raw.githubusercontent.com/knowledgetrailsai/LOOM/master/llms.txt), [Helm](https://raw.githubusercontent.com/knowledgetrailsai/HELM/main/llms.txt), [Verity](https://raw.githubusercontent.com/knowledgetrailsai/VERITY/master/llms.txt), [Compass](https://raw.githubusercontent.com/knowledgetrailsai/responsible-ai/main/llms.txt), [Fulcrum](https://raw.githubusercontent.com/knowledgetrailsai/OASIS-AI-FINOPS/main/llms.txt) — sibling chapter companions.
+- [Axiom](https://raw.githubusercontent.com/knowledgetrailsai/AXIOM/master/llms.txt) — background reference for model-architecture terminology used in Chapter 14.
+
+## Optional
+
+- [CHANGELOG](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/CHANGELOG.md)
+- [CONTRIBUTING](https://raw.githubusercontent.com/knowledgetrailsai/Agentic-Engineeering-SDLC/main/CONTRIBUTING.md)
