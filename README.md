@@ -42,8 +42,10 @@ Living guide. Principles and governance in `docs/` should change only through de
 
 ## License
 
-Internal methodology — adapt freely within your org. No warranty on effort-savings figures; verify against current published sources before using them in planning (see [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md)).
+Licensed under [CC BY-SA 4.0](LICENSE). Credit Shripadraj Mujumdar,
+KnowledgeTrails, and AEGIS; indicate changes and release adaptations under
+the same license. No warranty on effort-savings figures; verify against current published sources before using them in planning (see [docs/05-effort-savings-evidence.md](docs/05-effort-savings-evidence.md)).
 
 ## About Us
 
-**Shripadraj Mujumdar** is Head of Agentic AI and Chief Enterprise Architect — Agentic AI & Intelligent Automation at Godrej Enterprises Group, with 28+ years in enterprise architecture and technology leadership, including 3+ years hands-on in Agentic AI/Generative AI and 10+ years in AI and data-transformation architectures. He is the architect behind Amethyst, Godrej's enterprise multi-cloud Agentic AI platform powering 50+ autonomous agents across 14 business ventures, and previously led Data, AI, and Responsible AI at Michelin, architecting enterprise data and knowledge-graph platforms and AI governance frameworks aligned to the EU AI Act. This methodology ecosystem distills that practitioner experience — architecture, delivery, evaluation, governance, and economics learned across FinTech, industrial, and material-science AI programs — into a single, reusable body of work.
+**Shripadraj Mujumdar** is an Agentic AI & Automation Strategist, Advisor, and Responsible AI Expert with 28+ years of experience in enterprise architecture and AI-driven transformation, including deep hands-on work in Agentic AI, Generative AI, and enterprise data and knowledge platforms. His practice spans designing multi-agent systems, knowledge-graph and RAG architectures, accelerated delivery capabilities, and Responsible AI governance frameworks aligned to global regulatory standards. This methodology ecosystem distills that practitioner experience — architecture, delivery, evaluation, governance, and economics — into a single, reusable body of work.
