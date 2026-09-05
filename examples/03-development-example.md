@@ -10,7 +10,7 @@ This follows two practices from the docs. [Plan-then-execute](../docs/practices/
 
 ## Tool's plan (before execution)
 
-1. New file `search/cache/SearchCacheClient` — a thin wrapper around the Redis client, with a normalized-query cache key (lowercased, whitespace-collapsed, sorted filter params).
+1. New file `search/cache/SearchCacheClient`: a thin wrapper around the Redis client, with a normalized-query cache key (lowercased, whitespace-collapsed, sorted filter params).
 2. Wire `SearchCacheClient` into `SearchController` ahead of the existing relevance-ranking call. A cache hit returns immediately; a cache miss falls through to the existing logic and writes the result before returning.
 3. TTL (time-to-live, how long an entry stays cached) of 10 minutes, plus an explicit `invalidate(query_prefix)` call from the existing price-sync completion handler.
 4. Eviction (removing old entries to make room): LFU (least-frequently-used) at 500 entries, per the spec's rolling 7-day window, not simple TTL-only expiry.

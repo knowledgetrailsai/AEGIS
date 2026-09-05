@@ -16,7 +16,7 @@ What the agentic coding tool gets graded against is the spec itself — not the 
 
 ## 4. Context is engineered, not assumed
 
-What an agentic coding tool can see — which files, docs, and prior decisions — should be chosen on purpose, not left to whatever happens to fit in its context window (the information it has available while it works). Repo-level instruction files, like CLAUDE.md or AGENTS.md, need an owner and a regular review schedule. Setting one up once and forgetting about it isn't enough.
+What an agentic coding tool can see (which files, docs, and prior decisions) should be chosen on purpose, not left to whatever happens to fit in its context window (the information it has available while it works). Repo-level instruction files, like CLAUDE.md or AGENTS.md, need an owner and a regular review schedule. Setting one up once and forgetting about it isn't enough.
 
 ## 5. Humans move up the stack
 

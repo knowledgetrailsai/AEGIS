@@ -30,4 +30,4 @@ Eleven short, focused pages, each covering one practice you can adopt independen
 
 ## How to use this
 
-You don't need all eleven on day one. Start with Spec-Driven Development and Human-in-the-Loop Gating — they carry most of the risk reduction — then add the rest as your usage grows. Each page is self-contained: what it is, why it exists, when to use it, and how to apply it.
+You don't need all eleven on day one. Start with Spec-Driven Development and Human-in-the-Loop Gating (they carry most of the risk reduction) then add the rest as your usage grows. Each page is self-contained: what it is, why it exists, when to use it, and how to apply it.

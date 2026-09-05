@@ -10,9 +10,9 @@ Agentic coding tools don't share context the way a teammate who sat in every mee
 
 Use [templates/spec-template.md](../../templates/spec-template.md). These are the sections that matter most:
 
-1. **Goal & context** — one paragraph, with no ambiguity about *why* the work is happening.
-2. **Functional requirements** — what must exist, written as discrete items, not as prose.
-3. **Explicit constraints** — performance, security, style. A human will usually infer something like "don't break the public API" without being told. An agentic coding tool won't, unless it's written down.
+1. **Goal & context**: one paragraph, with no ambiguity about *why* the work is happening.
+2. **Functional requirements**: what must exist, written as discrete items, not as prose.
+3. **Explicit constraints**: performance, security, style. A human will usually infer something like "don't break the public API" without being told. An agentic coding tool won't, unless it's written down.
 4. **Acceptance criteria, and they must be testable.** This is the single highest-leverage section. Reject any criterion that needs human judgment to check, like "looks good" or "feels fast," and replace it with a measurable threshold instead, like "p95 latency under 200ms" or "eval score at or above 0.85 on the labeled set."
 5. **Out of scope.** Without this section, agentic coding tools will "helpfully" touch adjacent code you didn't ask them to touch. This section is what keeps a bounded task actually bounded.
 

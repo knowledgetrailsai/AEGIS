@@ -17,16 +17,16 @@ Ageis is AEGIS, the agentic software-delivery companion implementing OASIS Chapt
 
 This repo is one of ten in the knowledgetrailsai OASIS ecosystem: OASIS, Forge, Loom, Helm, Verity, Compass, Fulcrum, Axiom. When you add a cross-repo link, use the exact repository name and default branch — they are not uniform:
 
-- OASIS (`knowledgetrailsai/OASIS`) — default branch `main`
-- Ageis (`knowledgetrailsai/Agentic-Engineeering-SDLC`) — default branch `main`
-- Forge (`knowledgetrailsai/Forge`) — default branch `master`
-- Loom (`knowledgetrailsai/LOOM`) — default branch `master`
-- Helm (`knowledgetrailsai/HELM`) — default branch `main`
-- Verity (`knowledgetrailsai/VERITY`) — default branch `master`
-- Compass (`knowledgetrailsai/responsible-ai`) — default branch `main`
-- Fulcrum (`knowledgetrailsai/OASIS-AI-FINOPS`) — default branch `main`
-- Nexus (`knowledgetrailsai/Nexus`) — default branch `main`
-- Axiom (`knowledgetrailsai/AXIOM`) — default branch `master`
+- OASIS (`knowledgetrailsai/OASIS`): default branch `main`
+- Ageis (`knowledgetrailsai/Agentic-Engineeering-SDLC`): default branch `main`
+- Forge (`knowledgetrailsai/Forge`): default branch `master`
+- Loom (`knowledgetrailsai/LOOM`): default branch `master`
+- Helm (`knowledgetrailsai/HELM`): default branch `main`
+- Verity (`knowledgetrailsai/VERITY`): default branch `master`
+- Compass (`knowledgetrailsai/responsible-ai`): default branch `main`
+- Fulcrum (`knowledgetrailsai/OASIS-AI-FINOPS`): default branch `main`
+- Nexus (`knowledgetrailsai/Nexus`): default branch `main`
+- Axiom (`knowledgetrailsai/AXIOM`): default branch `master`
 
 Prefer linking to a specific file at the exact section/row a claim maps to, not a generic "see this whole repo" pointer — that is the standard this ecosystem holds itself to.
 

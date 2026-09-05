@@ -13,8 +13,8 @@ What problem this solves and why now. One paragraph, no ambiguity.
 - Style/conventions: link to repo context file
 
 ## Acceptance criteria (must be testable)
-- [ ] Criterion 1 — measurable, pass/fail
-- [ ] Criterion 2 — measurable, pass/fail
+- [ ] Criterion 1: measurable, pass/fail
+- [ ] Criterion 2: measurable, pass/fail
 
 ## Out of scope
 List what the agentic coding tool should NOT touch. Being explicit here is what prevents scope creep.

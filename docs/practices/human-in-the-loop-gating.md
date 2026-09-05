@@ -21,4 +21,4 @@ Autonomy and risk should scale together. A gate isn't there because you distrust
 
 ## Signal you're doing this right
 
-Gates are rare enough that each one gets real scrutiny. And the escalation-trigger list (see [governance-risk-tiers.md](../04-governance-risk-tiers.md)) — personally identifiable information (PII), no test coverage, no rollback plan, or crossing a system-of-record boundary — reliably catches the cases that actually matter.
+Gates are rare enough that each one gets real scrutiny. And the escalation-trigger list (see [governance-risk-tiers.md](../04-governance-risk-tiers.md)) (personally identifiable information (PII), no test coverage, no rollback plan, or crossing a system-of-record boundary) reliably catches the cases that actually matter.

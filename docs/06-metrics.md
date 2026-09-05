@@ -2,7 +2,7 @@
 
 Two different families of metrics matter here. Mixing them up is the most common measurement mistake teams make when adopting agentic tooling.
 
-1. **Tool-adoption metrics** — is the agentic tooling itself working well (Section 1)? These are new to this repo, specific to agent-assisted delivery.
+1. **Tool-adoption metrics**: is the agentic tooling itself working well (Section 1)? These are new to this repo, specific to agent-assisted delivery.
 2. **Standard SDLC (software development life cycle) / Agile / PM metrics** — the efficiency and quality metrics your org already tracks: velocity, cycle time, DORA, defect density, and so on. You still need these once you adopt agentic tools. But several of them **change meaning or become misleading** once a large share of your changes are tool-generated (Section 2).
 
 Track both. Section 1 tells you whether the tooling can be trusted. Section 2 tells you whether the *organization* is actually delivering better outcomes. The two can move in different directions: tool-adoption metrics can look great while delivery outcomes don't improve, or the other way around.
@@ -63,4 +63,4 @@ These are the metrics most engineering orgs already track: DORA (a well-known se
 3. **Always pair an efficiency metric with a quality metric.** A velocity or cycle-time win, reported by itself, is an incomplete result — and can be misleading. Report it alongside change failure rate or escaped-defect rate.
 4. Review monthly, and act on a trend, not on noise. One bad week from a single tool workflow isn't a signal. Three consecutive months of rising override rate or change failure rate is.
 5. Feed a rising override rate or escaped-defect rate back into [requirements-spec.md](03-phases/requirements-spec.md) and [development.md](03-phases/development.md). The fix is almost always spec or context quality — rarely more review headcount.
-6. Re-baseline traditional metrics after adoption, rather than comparing them directly to pre-adoption history. The composition of "who — or what — did the work" has changed, so a raw before/after comparison mixes together two different things.
+6. Re-baseline traditional metrics after adoption, rather than comparing them directly to pre-adoption history. The composition of "who (or what) did the work" has changed, so a raw before/after comparison mixes together two different things.

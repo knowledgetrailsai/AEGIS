@@ -23,7 +23,7 @@ Continues from [05-testing-qa-example.md](05-testing-qa-example.md). Tests and e
 
 ## Human gate
 
-The release manager reviews the draft, and edits the release notes to add the JIRA ticket reference and a customer-facing summary line. One part of this stays human no matter how good the draft is: the release manager is the one who actually flips the deploy trigger. The tool prepared everything, but it didn't — and structurally couldn't — execute the release itself, per [human-in-the-loop gating](../docs/practices/human-in-the-loop-gating.md).
+The release manager reviews the draft, and edits the release notes to add the JIRA ticket reference and a customer-facing summary line. One part of this stays human no matter how good the draft is: the release manager is the one who actually flips the deploy trigger. The tool prepared everything, but it didn't (and structurally couldn't) execute the release itself, per [human-in-the-loop gating](../docs/practices/human-in-the-loop-gating.md).
 
 ## Outcome
 

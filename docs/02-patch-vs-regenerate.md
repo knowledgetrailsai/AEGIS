@@ -2,8 +2,8 @@
 
 Two ways an agentic coding tool can change a system:
 
-- **Patch** — make incremental diffs, the same way a human developer would. Git history, blame, and the audit trail all stay intact.
-- **Regenerate** — treat a component as disposable, and rebuild it from its spec instead of editing it. This is the same idea as infrastructure-as-code treating a server as disposable: instead of patching it, you redeploy it from scratch.
+- **Patch**: make incremental diffs, the same way a human developer would. Git history, blame, and the audit trail all stay intact.
+- **Regenerate**: treat a component as disposable, and rebuild it from its spec instead of editing it. This is the same idea as infrastructure-as-code treating a server as disposable: instead of patching it, you redeploy it from scratch.
 
 Apply this rubric **per component**, not per project. Most real systems are a mix.
 

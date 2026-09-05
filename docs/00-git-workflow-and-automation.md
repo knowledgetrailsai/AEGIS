@@ -41,15 +41,15 @@ The tiers shown here are the same ones defined in [04-governance-risk-tiers.md](
 
 **Recommended default: trunk-based, short-lived branches, one branch or worktree per task.**
 
-- Every task — whether started by a human or a tool — gets its own branch. It's kept isolated using [worktree/sandbox isolation](practices/worktree-sandbox-isolation.md), so agentic and human work happening at the same time never collides on the same working tree.
+- Every task (whether started by a human or a tool) gets its own branch. It's kept isolated using [worktree/sandbox isolation](practices/worktree-sandbox-isolation.md), so agentic and human work happening at the same time never collides on the same working tree.
 - Keep branches short-lived (hours to a couple of days, not weeks). Long-lived branches are where agentic tools drift furthest from a moving `main` and produce the largest, hardest-to-review merge conflicts.
 - Where practical, encode the risk tier and task reference in the branch name — for example `tier2/feat/search-caching-JIRA-4821` or `tier1/fix/typo-readme`. This lets the automation described below route PRs without having to re-figure-out the tier from scratch.
-- By default, avoid long-lived environment branches such as `dev`, `staging`, or `release/x`. They multiply the number of places a tool-authored change has to be re-verified. Where a staged rollout is genuinely needed — Tier 3 or 4 — use feature flags and short-lived release branches instead.
+- By default, avoid long-lived environment branches such as `dev`, `staging`, or `release/x`. They multiply the number of places a tool-authored change has to be re-verified. Where a staged rollout is genuinely needed (Tier 3 or 4) use feature flags and short-lived release branches instead.
 
 ## Commits
 
 - **Atomic commits.** Keep one logical change per commit. This is what makes an agentic tool's diff easy to review and revert on its own, and it's what makes `git bisect` useful when something breaks.
-- **Use conventional commit format** (`feat:`, `fix:`, `refactor:`, `chore:`, and so on). This lets automation — changelog generation, release notes — work directly from commit history, without a separate manual pass.
+- **Use conventional commit format** (`feat:`, `fix:`, `refactor:`, `chore:`, and so on). This lets automation (changelog generation, release notes) work directly from commit history, without a separate manual pass.
 - **State whether a commit is tool-authored, tool-assisted, or human-authored**, either in the commit body or in a trailer (for example, `Tool-Assisted: Claude Code`). This is what lets the [tool-authored change ratio](06-metrics.md) metric be computed straight from git history, instead of relying on someone tracking it separately.
 - Don't squash away the plan-then-execute trail while a PR is still under active review. Keep the intermediate commits until the PR is approved, and squash only at merge time (see below).
 
@@ -63,17 +63,17 @@ The tiers shown here are the same ones defined in [04-governance-risk-tiers.md](
 
 How deeply a change gets reviewed is set by its risk tier, not by habit. See [code-review.md](03-phases/code-review.md) for the full phase guide. In terms of the git flow:
 
-- **Tier 1** — no required human reviewer; branch protection allows auto-merge on green CI, with periodic spot-audits sampled after the fact.
-- **Tier 2** — at least one human reviewer required by branch protection rules.
-- **Tier 3** — a specific, named approver is required, not just "any reviewer." Encode this as a CODEOWNERS entry, so it's enforced by the platform itself rather than by convention.
-- **Tier 4** — multiple required approvers plus a documented rollback plan attached to the PR before merge is allowed.
+- **Tier 1**: no required human reviewer; branch protection allows auto-merge on green CI, with periodic spot-audits sampled after the fact.
+- **Tier 2**: at least one human reviewer required by branch protection rules.
+- **Tier 3**: a specific, named approver is required, not just "any reviewer." Encode this as a CODEOWNERS entry, so it's enforced by the platform itself rather than by convention.
+- **Tier 4**: multiple required approvers plus a documented rollback plan attached to the PR before merge is allowed.
 
 ## Merge strategy
 
 **Recommended default: squash merge, linear history on `main`.**
 
-- Squash merging keeps `main`'s history at the level of one entry per shipped change. That's what most of the [metrics](06-metrics.md) in this repo — cycle time, deployment frequency, change failure rate — are actually measured against.
-- Preserve the pre-squash commit trail in the PR itself — GitHub and GitLab keep this automatically — so the plan-then-execute history stays auditable if you need it later. Squashing for `main` doesn't mean deleting that detail. It just means not carrying it forward into trunk history.
+- Squash merging keeps `main`'s history at the level of one entry per shipped change. That's what most of the [metrics](06-metrics.md) in this repo (cycle time, deployment frequency, change failure rate) are actually measured against.
+- Preserve the pre-squash commit trail in the PR itself (GitHub and GitLab keep this automatically) so the plan-then-execute history stays auditable if you need it later. Squashing for `main` doesn't mean deleting that detail. It just means not carrying it forward into trunk history.
 - Block merge commits (disallow the merge-commit strategy) and disallow rebase-before-merge on shared branches. This avoids an agentic tool rewriting history that other in-flight work depends on.
 
 ## What can be automated, and what needs a human
@@ -92,7 +92,7 @@ How deeply a change gets reviewed is set by its risk tier, not by habit. See [co
 | Stale-branch/worktree cleanup | Yes | — |
 | Branch protection rule changes themselves | No | Changing *the gates* is itself a Tier 3+ action — see [governance-risk-tiers.md](04-governance-risk-tiers.md) |
 
-The general rule here is the same one used throughout this repo. Automate the mechanical, reversible parts of the git flow — branch setup, drafting, running checks, cleanup. Keep a human explicitly involved wherever an action is hard to reverse, or wherever the tool would effectively be grading its own homework — assigning its own risk tier, merging its own Tier 2-or-higher change, or changing the gates that govern it.
+The general rule here is the same one used throughout this repo. Automate the mechanical, reversible parts of the git flow: branch setup, drafting, running checks, cleanup. Keep a human explicitly involved wherever an action is hard to reverse, or wherever the tool would effectively be grading its own homework: assigning its own risk tier, merging its own Tier 2-or-higher change, or changing the gates that govern it.
 
 ## Recommended practices checklist
 

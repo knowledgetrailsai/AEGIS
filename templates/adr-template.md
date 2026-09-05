@@ -10,8 +10,8 @@ What factors are at play — technical, organizational, and anything tool-releva
 The change being made, stated plainly.
 
 ## Alternatives considered
-- Option A — why rejected
-- Option B — why rejected
+- Option A: why rejected
+- Option B: why rejected
 
 ## Consequences
 - Positive

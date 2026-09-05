@@ -4,13 +4,13 @@ This document maps **40 software and engineering domains** to the places where a
 
 ## How to Read This Document
 
-- **Domain** — The engineering or operational area.
-- **Kind of Dev Involved** — The type of coding, configuration, or scripting work.
-- **Example Work** — Concrete tasks an agentic coding tool might handle.
-- **Human Role It Supports/Replaces** — Who traditionally does this work.
-- **What It Accelerates or Does Autonomously** — What the tool can do: speed up a human's work, or do the work by itself.
-- **Recommended Agentic Tools/Products** — Tools that currently support this domain.
-- **Practices to Pair With Them** — Guardrails and workflows that keep agentic coding tools safe and effective.
+- **Domain**: The engineering or operational area.
+- **Kind of Dev Involved**: The type of coding, configuration, or scripting work.
+- **Example Work**: Concrete tasks an agentic coding tool might handle.
+- **Human Role It Supports/Replaces**: Who traditionally does this work.
+- **What It Accelerates or Does Autonomously**: What the tool can do: speed up a human's work, or do the work by itself.
+- **Recommended Agentic Tools/Products**: Tools that currently support this domain.
+- **Practices to Pair With Them**: Guardrails and workflows that keep agentic coding tools safe and effective.
 
 > **Note:** Tool recommendations change quickly. Always check a tool's actual capabilities against your specific stack and compliance requirements before adopting it.
 

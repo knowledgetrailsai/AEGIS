@@ -53,7 +53,7 @@ A mature team typically ends up running more than one model at once: a plugin fo
 1. **Decide the deployment model first.** Do you need something editor-additive (a plugin), editor-replacing (a standalone IDE), scriptable and headless (CLI), or centrally run (cloud)? Answering this eliminates most of the list before you even compare individual tools.
 2. **Within a model, compare by workflow fit.** GitHub-centric teams tend to lean toward Copilot; AWS-centric teams toward Kiro or Amazon Q; teams that want maximum control lean toward Continue.dev or Aider.
 3. **Expect to run more than one model.** A CLI tool wired into CI ([ci-eval-gate.yml](../.github/workflows/ci-eval-gate.yml)) and a plugin for interactive editing aren't competing choices — most real engineering orgs run both.
-4. **Re-test after a quarter.** This category changes faster than almost any other tooling decision you'll make. See [effort-savings-evidence.md](05-effort-savings-evidence.md) for why relying on stale claims — vendor or otherwise — is a real risk here.
+4. **Re-test after a quarter.** This category changes faster than almost any other tooling decision you'll make. See [effort-savings-evidence.md](05-effort-savings-evidence.md) for why relying on stale claims (vendor or otherwise) is a real risk here.
 
 ## Recommendation by team shape
 
@@ -79,4 +79,4 @@ A mature team typically ends up running more than one model at once: a plugin fo
 - [OpenAI Codex CLI help](https://help.openai.com/en/articles/11096431)
 - [Kiro documentation](https://kiro.dev/docs/)
 - [Windsurf docs](https://docs.windsurf.com/)
-- Entries marked "vendor docs — verify current at time of adoption" (Cline, Roo Code, Continue.dev, Amazon Q Developer, Tabnine, Sourcegraph Cody/Amp, Aider) were not individually re-checked against primary sources on the date this section was added. Confirm current capabilities directly with each vendor before relying on the specifics in an adoption decision.
+- Entries marked "vendor docs: verify current at time of adoption" (Cline, Roo Code, Continue.dev, Amazon Q Developer, Tabnine, Sourcegraph Cody/Amp, Aider) were not individually re-checked against primary sources on the date this section was added. Confirm current capabilities directly with each vendor before relying on the specifics in an adoption decision.
