@@ -1,5 +1,7 @@
 # Worked Examples: One Feature, Every Phase
 
+[← Previous: Related Frameworks](../docs/09-related-frameworks.md) · [Contents](../README.md) · [Next: Spec Before/After →](spec-before-after.md)
+
 These seven pages follow a single feature through every phase in [docs/03-phases/](../docs/03-phases/README.md), in order. The feature is a caching layer for the product catalog search endpoint. Each page shows the actual prompt given to the agentic coding tool, what the tool produced, the human check that was applied (or wasn't needed), and the outcome. Read them in order to see how the risk-tier and human-in-the-loop rules from the rest of this repo play out on one real change, start to finish. This is not just abstract policy — it's the policy in action.
 
 The scenario stays at Tier 2 for most of its life (that means the change is reversible and has a moderate blast radius, or scope of impact, if something goes wrong). There is one Tier 1 moment in production support. This mix is intentional: most real work lives at Tier 1–2, and that's where this repo's governance model earns its keep.
@@ -17,3 +19,7 @@ The scenario stays at Tier 2 for most of its life (that means the change is reve
 ## How to use these
 
 Don't copy the prompts word for word. Copy the shape instead: state the constraint (scope, contract, risk tier), ask for a plan or options before execution, and say what "done" looks like in the same message. Every example ties back to the spec and ADR established in the first two pages. That's what makes the later prompts short: the tool doesn't need scope re-explained every time, because it's already written down.
+
+---
+
+[← Previous: Related Frameworks](../docs/09-related-frameworks.md) · [Contents](../README.md) · [Next: Spec Before/After →](spec-before-after.md)

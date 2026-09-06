@@ -1,5 +1,7 @@
 # Overview: AEGIS, End to End
 
+[Contents](../README.md) · [Next: Git Workflow and Automation →](00-git-workflow-and-automation.md)
+
 **Start here.** This page walks through the whole repo in one read: what it is, how the pieces fit together, and where to go for more depth on each part. Every other page in this repo digs deeper into one piece of the story told here.
 
 ## What this repo is
@@ -139,3 +141,7 @@ If you're reading this just once and want the shortest path to the full mental m
 ## Keeping this current
 
 This repo is a living guide. Principles and governance in `docs/` change only through deliberate review — see [CONTRIBUTING.md](../CONTRIBUTING.md). Tool names, vendor claims, and domain tooling references go stale fast. Check the dated caveats on [07-tools-comparison.md](07-tools-comparison.md) and [domains/domains.md](../domains/domains.md) before treating them as current, and verify effort-savings figures against published sources before using them in planning.
+
+---
+
+[Contents](../README.md) · [Next: Git Workflow and Automation →](00-git-workflow-and-automation.md)

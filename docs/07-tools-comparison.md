@@ -1,5 +1,7 @@
 # Tools Comparison Guide
 
+[← Previous: Metrics](06-metrics.md) · [Contents](../README.md) · [Next: Agile Workflow →](08-agile-workflow.md)
+
 This page compares current agentic coding tools and shows where each one fits best. The goal isn't to crown one universal winner — it's to help you choose the right tool for the job. It's based on the official product docs, checked on 2026-08-25 (the deployment-model section was added 2026-08-26). This category moves fast, so verify against vendor docs before relying on any specific detail.
 
 ## Deployment models — the distinction this repo's earlier docs glossed over
@@ -80,3 +82,7 @@ A mature team typically ends up running more than one model at once: a plugin fo
 - [Kiro documentation](https://kiro.dev/docs/)
 - [Windsurf docs](https://docs.windsurf.com/)
 - Entries marked "vendor docs: verify current at time of adoption" (Cline, Roo Code, Continue.dev, Amazon Q Developer, Tabnine, Sourcegraph Cody/Amp, Aider) were not individually re-checked against primary sources on the date this section was added. Confirm current capabilities directly with each vendor before relying on the specifics in an adoption decision.
+
+---
+
+[← Previous: Metrics](06-metrics.md) · [Contents](../README.md) · [Next: Agile Workflow →](08-agile-workflow.md)

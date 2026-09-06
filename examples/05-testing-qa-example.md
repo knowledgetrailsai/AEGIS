@@ -1,5 +1,7 @@
 # Worked Example: Testing & QA
 
+[← Previous: Code Review Example](04-code-review-example.md) · [Contents](../README.md) · [Next: Deployment Example →](06-deployment-example.md)
+
 Continues from [04-code-review-example.md](04-code-review-example.md). The PR is approved. Now the work is to prove the change actually meets the spec's acceptance criteria before it's allowed to merge.
 
 ## Prompt given to the tool
@@ -22,3 +24,7 @@ The engineer checks that the eval thresholds the tool wired in actually match th
 ## Outcome
 
 CI run: p95 latency for cached queries is **42ms** (spec required < 50ms), and the relevance eval score is **0.87** (spec required ≥ 0.85). The full existing API contract test suite is green. Both new evals pass and are now required checks, so future changes to this code path can't silently regress either number without CI catching it. This is what [05-effort-savings-evidence.md](../docs/05-effort-savings-evidence.md) means by closing the loop: the gain from tool-generated tests is only real once it's checked against the spec's actual numbers, not just "tests were added."
+
+---
+
+[← Previous: Code Review Example](04-code-review-example.md) · [Contents](../README.md) · [Next: Deployment Example →](06-deployment-example.md)

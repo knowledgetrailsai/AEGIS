@@ -1,5 +1,7 @@
 # Phase: Production Support & Maintenance
 
+[← Previous: Deployment](deployment.md) · [Contents](../../README.md) · [Next: Governance & Risk Tiers →](../04-governance-risk-tiers.md)
+
 > Related deep dives: [human-in-the-loop gating](../practices/human-in-the-loop-gating.md), [multi-agent orchestration](../practices/multi-agent-orchestration.md), [memory/state persistence](../practices/memory-state-persistence.md)
 
 ## What this phase does
@@ -35,3 +37,7 @@ This phase keeps the system healthy after release. The agentic coding tool can h
 - Letting tech-debt reports pile up without prioritization
 - Executing a runbook step automatically when the blast radius is unclear
 - Treating one incident as proof the system is healthy
+
+---
+
+[← Previous: Deployment](deployment.md) · [Contents](../../README.md) · [Next: Governance & Risk Tiers →](../04-governance-risk-tiers.md)

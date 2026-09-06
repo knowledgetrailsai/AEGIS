@@ -1,5 +1,7 @@
 # Worked Example: Production Support & Maintenance
 
+[← Previous: Deployment Example](06-deployment-example.md) · [Contents](../README.md) · [Next: Templates Overview →](../templates/README.md)
+
 Continues from [06-deployment-example.md](06-deployment-example.md). Two weeks after release, the search cache is at 100% of traffic. An incident comes in: customers report stale prices in search results after that morning's price sync.
 
 ## Prompt given to the tool
@@ -25,3 +27,7 @@ The engineer approves remediation option 1 (Tier 1, TTL reduction) as the immedi
 ## Outcome
 
 TTL is reduced from 10 minutes to 2 minutes, auto-merged per Tier 1's gate (green CI, spot-audited afterward). The incident is resolved within the hour. The Tier 2 follow-up (wiring invalidation to the per-SKU event) is tracked as its own ticket with the incident as context, so the real fix goes through the normal design-development-review cycle instead of being skipped once the immediate pain stops. This is the [technical debt ratio](../docs/06-metrics.md#quality-metrics) metric in practice: the quick mitigation isn't treated as done.
+
+---
+
+[← Previous: Deployment Example](06-deployment-example.md) · [Contents](../README.md) · [Next: Templates Overview →](../templates/README.md)

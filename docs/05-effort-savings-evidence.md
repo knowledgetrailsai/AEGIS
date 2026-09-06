@@ -1,5 +1,7 @@
 # How Much Effort Can Be Saved — What the Evidence Says
 
+[← Previous: Governance & Risk Tiers](04-governance-risk-tiers.md) · [Contents](../README.md) · [Next: Metrics →](06-metrics.md)
+
 This section starts with the evidence, not a sales pitch. Treat the figures below as rough, directional ranges by task type. **Verify them against current published sources before using them in planning** — this field moves fast.
 
 ## Where the gains are real and largest
@@ -35,3 +37,7 @@ This section starts with the evidence, not a sales pitch. Treat the figures belo
 - METR developer productivity studies (metr.org/research)
 - Vendor-published productivity studies (treat these as an upper bound, not the typical case)
 - Your own [metrics](06-metrics.md) — these are the only figures that actually apply to your team
+
+---
+
+[← Previous: Governance & Risk Tiers](04-governance-risk-tiers.md) · [Contents](../README.md) · [Next: Metrics →](06-metrics.md)

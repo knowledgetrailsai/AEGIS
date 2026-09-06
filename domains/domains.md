@@ -1,5 +1,7 @@
 # Agentic Engineering Domains
 
+[← Previous: Spec Template](../templates/spec-template.md) · [Contents](../README.md)
+
 This document maps **40 software and engineering domains** to the places where agentic engineering practices apply. For each one, it describes the kind of development work involved, gives example tasks, names the human role being supported or replaced, explains what agentic coding tools can speed up or do on their own, recommends tools, and lists practices to use alongside them.
 
 ## How to Read This Document
@@ -110,3 +112,7 @@ For easier navigation, the 40 domains can be grouped into broader categories:
 ## Source
 
 This reference is derived from [`domains.csv`](domains.csv).
+
+---
+
+[← Previous: Spec Template](../templates/spec-template.md) · [Contents](../README.md)

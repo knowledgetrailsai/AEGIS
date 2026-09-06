@@ -1,5 +1,7 @@
 # Practice: Evals
 
+[← Previous: Human-in-the-Loop Gating](human-in-the-loop-gating.md) · [Contents](../../README.md) · [Next: Prompt and Agentic Coding Tool Versioning →](prompt-agent-versioning.md)
+
 Evals are test suites for how an agentic coding tool behaves, written and run the same way you'd write unit tests. An eval checks that the tool does the right thing, not just that the code compiles. Evals run in CI (continuous integration, the automated pipeline that checks changes before they ship) and block a tool or prompt change from shipping if it fails.
 
 ## Why it exists
@@ -23,3 +25,7 @@ A code-level test checks the output artifact: the file, the function, the result
 ## Signal you're doing this right
 
 The override/rejection rate (see [metrics](../06-metrics.md), how often a human overrides or rejects the tool's output) goes down as eval coverage for a given workflow goes up. If it doesn't, your evals aren't measuring the same things human review is catching.
+
+---
+
+[← Previous: Human-in-the-Loop Gating](human-in-the-loop-gating.md) · [Contents](../../README.md) · [Next: Prompt and Agentic Coding Tool Versioning →](prompt-agent-versioning.md)

@@ -1,5 +1,7 @@
 # Phase: Testing & QA
 
+[← Previous: Code Review](code-review.md) · [Contents](../../README.md) · [Next: Deployment →](deployment.md)
+
 > Deep dive: [evals](../practices/evals.md)
 
 ## What this phase does
@@ -35,3 +37,7 @@ This phase proves the change works. Tests verify the code itself. Evals (short f
 - Letting evals stay manual when they should be automated
 - Moving autonomy ahead of coverage
 - Ignoring repeated review or QA failures
+
+---
+
+[← Previous: Code Review](code-review.md) · [Contents](../../README.md) · [Next: Deployment →](deployment.md)

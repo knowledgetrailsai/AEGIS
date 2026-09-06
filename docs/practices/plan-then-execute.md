@@ -1,5 +1,7 @@
 # Practice: Plan-Then-Execute
 
+[← Previous: Spec-Driven Development](spec-driven-development.md) · [Contents](../../README.md) · [Next: Process Scaling →](process-scaling.md)
+
 The agentic coding tool proposes a plan before it touches anything. A human approves or edits that plan before execution starts. This separates "thinking" from "doing," so mistakes get caught before they turn into actual file changes.
 
 ## Why it exists
@@ -24,3 +26,7 @@ Reviewing a diff (a set of changed code) after the fact means the agentic coding
 ## Signal you're doing this right
 
 Rejected or heavily-edited plans happen often and cost little, a few minutes each, while rejected diffs after execution are rare. Most of the correction work happens at the cheap stage, not the expensive one. Plans that come back with a genuine clarifying question in them are a good sign, not a stall. It means the tool is surfacing ambiguity instead of quietly absorbing it.
+
+---
+
+[← Previous: Spec-Driven Development](spec-driven-development.md) · [Contents](../../README.md) · [Next: Process Scaling →](process-scaling.md)

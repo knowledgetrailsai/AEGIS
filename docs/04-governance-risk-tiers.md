@@ -1,5 +1,7 @@
 # Governance: Risk Tiers & Gates
 
+[← Previous: Production Support](03-phases/production-support.md) · [Contents](../README.md) · [Next: Effort-Savings Evidence →](05-effort-savings-evidence.md)
+
 Every action a tool takes maps to a tier. Tiers turn "how much autonomy should this have" into a repeatable decision, instead of an argument you have to have every time.
 
 | Tier | Definition | Example | Gate |
@@ -19,3 +21,7 @@ Every action a tool takes maps to a tier. Tiers turn "how much autonomy should t
 ## Escalation triggers
 
 Any of the following bumps an action up at least one tier, no matter what its default tier would be: it touches customer PII (personally identifiable information, like names or account numbers) or payment data; it has no automated test coverage; it has no rollback path; or it crosses a system-of-record boundary (a system that holds the official version of important data, like an ERP, a ledger, a clinical record, or an OT/operational-technology controller).
+
+---
+
+[← Previous: Production Support](03-phases/production-support.md) · [Contents](../README.md) · [Next: Effort-Savings Evidence →](05-effort-savings-evidence.md)

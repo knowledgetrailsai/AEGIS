@@ -1,5 +1,7 @@
 # Related Frameworks: How AEGIS Relates to OASIS, BMAD, AI-DLC, and specs.md
 
+[← Previous: Prompt and Agentic Coding Tool Versioning](practices/prompt-agent-versioning.md) · [Contents](../README.md) · [Next: Worked Examples Overview →](../examples/README.md)
+
 AEGIS isn't the only attempt at a methodology for agentic software delivery. It also isn't standalone by accident; it's designed to work both on its own and as a piece of a larger framework. This page covers both relationships: how AEGIS fits inside [OASIS](https://github.com/knowledgetrailsai/OASIS), and how it compares with three peer frameworks (BMAD-METHOD, AWS's AI-DLC, and specs.md). It names what's shared, what's genuinely different, and which specific ideas were pulled in from each one, so you can see where the borrowing happened instead of having it hidden.
 
 ## AEGIS and OASIS
@@ -38,3 +40,7 @@ A couple of ideas were considered and deliberately left out. BMAD's named role-p
 ## Keeping this current
 
 Like [07-tools-comparison.md](07-tools-comparison.md), this page is a snapshot in time. OASIS and all three peer frameworks are actively evolving, so re-check their current state before treating anything compared here as still accurate.
+
+---
+
+[← Previous: Prompt and Agentic Coding Tool Versioning](practices/prompt-agent-versioning.md) · [Contents](../README.md) · [Next: Worked Examples Overview →](../examples/README.md)

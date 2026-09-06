@@ -1,5 +1,7 @@
 # Practice: Context Engineering
 
+[← Previous: Process Scaling](process-scaling.md) · [Contents](../../README.md) · [Next: Tool and Function-Calling Design →](tool-function-calling-design.md)
+
 Context engineering means choosing on purpose what an agentic coding tool gets to see: files, docs, prior decisions. The alternative is letting whatever happens to fit in the context window (the chunk of text the tool can actually read at once) decide by accident.
 
 ## Why it exists
@@ -30,3 +32,7 @@ This detection step is a pass you repeat, not a one-time setup task. Run it agai
 ## Signal you're doing this right
 
 An agentic coding tool working in an unfamiliar part of the codebase produces output with the same orientation a competent new hire would have after a good onboarding. That is, in effect, what the context file gives it.
+
+---
+
+[← Previous: Process Scaling](process-scaling.md) · [Contents](../../README.md) · [Next: Tool and Function-Calling Design →](tool-function-calling-design.md)

@@ -1,5 +1,7 @@
 # Practice: Prompt & Agentic coding tool Versioning
 
+[← Previous: Evals](evals.md) · [Contents](../../README.md) · [Next: Related Frameworks →](../09-related-frameworks.md)
+
 Treat prompts, system instructions, and tool configs like code: versioned, diffed, reviewed, and able to be rolled back. A prompt change can affect behavior just as much as a code change can.
 
 ## Why it exists
@@ -23,3 +25,7 @@ A single prompt edit can silently change tool behavior across every task that wo
 ## Signal you're doing this right
 
 Any regression in tool behavior can be traced to a specific, dated change in version control, and reverted in minutes rather than hours.
+
+---
+
+[← Previous: Evals](evals.md) · [Contents](../../README.md) · [Next: Related Frameworks →](../09-related-frameworks.md)

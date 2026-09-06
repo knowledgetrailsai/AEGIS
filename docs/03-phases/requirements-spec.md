@@ -1,5 +1,7 @@
 # Phase: Requirements & Spec
 
+[← Previous: Phases Overview](README.md) · [Contents](../../README.md) · [Next: Design →](design.md)
+
 > Deep dive: [spec-driven development](../practices/spec-driven-development.md)
 
 ## What this phase does
@@ -45,3 +47,7 @@ Sometimes a request is genuinely ambiguous, or it's a greenfield project (brand 
 ## Done means
 
 A reviewer who did not write the request can read the spec and know exactly what success looks like.
+
+---
+
+[← Previous: Phases Overview](README.md) · [Contents](../../README.md) · [Next: Design →](design.md)

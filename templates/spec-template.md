@@ -1,5 +1,7 @@
 # Spec: [Feature/Change Name]
 
+[← Previous: Risk Tier Checklist](risk-tier-checklist.md) · [Contents](../README.md) · [Next: Domains →](../domains/domains.md)
+
 ## Goal & context
 What problem this solves and why now. One paragraph, no ambiguity.
 
@@ -24,3 +26,7 @@ Tier: [1 / 2 / 3 / 4] — see [governance-risk-tiers.md](../docs/04-governance-r
 
 ## Example inputs/outputs (if applicable)
 Concrete before/after examples an agentic coding tool can pattern-match against.
+
+---
+
+[← Previous: Risk Tier Checklist](risk-tier-checklist.md) · [Contents](../README.md) · [Next: Domains →](../domains/domains.md)

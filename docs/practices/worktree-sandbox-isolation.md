@@ -1,5 +1,7 @@
 # Practice: Worktree / Sandbox Isolation
 
+[← Previous: Multi-Agent Orchestration](multi-agent-orchestration.md) · [Contents](../../README.md) · [Next: Memory and State Persistence →](memory-state-persistence.md)
+
 Agentic coding tools do their work in isolated git worktrees (separate working copies of a repo) or containers, so that parallel tools don't clobber each other or the main branch. This lets you run several agentic coding tools on the same codebase at the same time without them conflicting.
 
 ## Why it exists
@@ -21,3 +23,7 @@ Two agentic coding tools, or a tool and a human, editing the same branch at the 
 ## Signal you're doing this right
 
 Parallel tool workstreams never produce a merge conflict caused by simultaneous editing. When conflicts do happen, they come from genuinely overlapping feature work, the same as they would between two human contributors.
+
+---
+
+[← Previous: Multi-Agent Orchestration](multi-agent-orchestration.md) · [Contents](../../README.md) · [Next: Memory and State Persistence →](memory-state-persistence.md)

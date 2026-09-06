@@ -1,5 +1,7 @@
 # Practice: Tool / Function-Calling Design
 
+[← Previous: Context Engineering](context-engineering.md) · [Contents](../../README.md) · [Next: Multi-Agent Orchestration →](multi-agent-orchestration.md)
+
 Design the tools an agentic coding tool has access to (their names, schemas, error messages) the same careful way you'd design a public API. Bad tool design causes bad tool behavior.
 
 ## Why it exists
@@ -23,3 +25,7 @@ An agentic coding tool can only act as well as its tools let it. A tool with an 
 ## Signal you're doing this right
 
 When a tool's first attempt fails, its second attempt, informed only by the error message, succeeds, with no human needing to explain the fix.
+
+---
+
+[← Previous: Context Engineering](context-engineering.md) · [Contents](../../README.md) · [Next: Multi-Agent Orchestration →](multi-agent-orchestration.md)

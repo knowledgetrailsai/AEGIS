@@ -1,5 +1,7 @@
 # Phase: Development
 
+[← Previous: Design](design.md) · [Contents](../../README.md) · [Next: Code Review →](code-review.md)
+
 > Deep dives: [plan-then-execute](../practices/plan-then-execute.md), [context engineering](../practices/context-engineering.md), [worktree/sandbox isolation](../practices/worktree-sandbox-isolation.md), [prompt/agentic coding tool versioning](../practices/prompt-agent-versioning.md), [tool/function-calling design](../practices/tool-function-calling-design.md)
 
 ## What this phase does
@@ -36,3 +38,7 @@ This phase is where the change actually gets built. The main goal is to keep the
 - Giving the agentic coding tool too much repo context
 - Letting context files drift out of date
 - Changing prompts without review or rollback
+
+---
+
+[← Previous: Design](design.md) · [Contents](../../README.md) · [Next: Code Review →](code-review.md)

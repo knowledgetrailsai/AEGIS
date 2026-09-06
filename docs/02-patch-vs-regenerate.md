@@ -1,5 +1,7 @@
 # Decision Framework: Patch vs. Regenerate
 
+[← Previous: Principles](01-principles.md) · [Contents](../README.md) · [Next: Phases Overview →](03-phases/README.md)
+
 Two ways an agentic coding tool can change a system:
 
 - **Patch**: make incremental diffs, the same way a human developer would. Git history, blame, and the audit trail all stay intact.
@@ -31,3 +33,7 @@ Ask three questions about the component in front of you:
 3. Does the spec fully determine correct behavior on its own, with no unwritten "tribal knowledge" needed to fill in the gaps? → If no, patch.
 
 Only regenerate if all three answers point that way.
+
+---
+
+[← Previous: Principles](01-principles.md) · [Contents](../README.md) · [Next: Phases Overview →](03-phases/README.md)

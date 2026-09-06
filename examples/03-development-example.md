@@ -1,5 +1,7 @@
 # Worked Example: Development
 
+[← Previous: Design Example](02-design-example.md) · [Contents](../README.md) · [Next: Code Review Example →](04-code-review-example.md)
+
 Continues from [02-design-example.md](02-design-example.md). ADR-0032 is recorded, and the spec now includes the invalidation constraint.
 
 ## Prompt given to the tool
@@ -34,3 +36,7 @@ test(search): add cache hit/miss/eviction/invalidation tests
 ## Outcome
 
 The branch is ready for review with a clean, atomic commit history that maps directly back to the approved plan. A reviewer can check each commit against one plan step, instead of reconstructing intent from a single large diff. A PR (pull request) is opened per the [git workflow](../docs/00-git-workflow-and-automation.md), with the risk tier and spec link filled in from the PR template.
+
+---
+
+[← Previous: Design Example](02-design-example.md) · [Contents](../README.md) · [Next: Code Review Example →](04-code-review-example.md)

@@ -1,5 +1,7 @@
 # Principles
 
+[← Previous: Git Workflow and Automation](00-git-workflow-and-automation.md) · [Contents](../README.md) · [Next: Patch vs. Regenerate →](02-patch-vs-regenerate.md)
+
 Five rules that everything else in this repo derives from.
 
 ## 1. Verifiability over trust
@@ -25,3 +27,7 @@ The goal is a shift in what engineers spend time on. Less time producing text by
 ## How these principles interact
 
 These principles build on each other. Principle 1 (verifiability) is what makes principle 2 (reversibility-gated autonomy) safe to grant: you can only extend a tool's autonomy on a type of action once you have a way to check that it went right. Principle 3 (spec is the contract) is what makes principle 1 possible in the first place: you can't verify anything against a spec that doesn't exist, or one too vague to test against. Principle 4 (context engineering) decides how well an agentic coding tool can act on that spec. Principle 5 is simply what happens organizationally once you get principles 1 through 4 right.
+
+---
+
+[← Previous: Git Workflow and Automation](00-git-workflow-and-automation.md) · [Contents](../README.md) · [Next: Patch vs. Regenerate →](02-patch-vs-regenerate.md)

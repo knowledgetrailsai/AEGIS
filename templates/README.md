@@ -1,5 +1,7 @@
 # Templates
 
+[← Previous: Production Support Example](../examples/07-production-support-example.md) · [Contents](../README.md) · [Next: ADR Template →](adr-template.md)
+
 Three copy-and-fill templates referenced throughout this repo.
 
 | Template | Use it for | Referenced from |
@@ -9,3 +11,7 @@ Three copy-and-fill templates referenced throughout this repo.
 | [risk-tier-checklist.md](risk-tier-checklist.md) | Confirming risk tier and gates before merging or deploying a tool-initiated change | [Governance & Risk Tiers](../docs/04-governance-risk-tiers.md) |
 
 Copy the template into your own repo or PR description and fill in the brackets — don't edit these files in place.
+
+---
+
+[← Previous: Production Support Example](../examples/07-production-support-example.md) · [Contents](../README.md) · [Next: ADR Template →](adr-template.md)

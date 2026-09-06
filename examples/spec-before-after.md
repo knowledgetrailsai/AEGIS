@@ -1,5 +1,7 @@
 # Worked Example: Making a Spec Tool-Actionable
 
+[← Previous: Worked Examples Overview](README.md) · [Contents](../README.md) · [Next: Design Example →](02-design-example.md)
+
 ## Before (not tool-actionable)
 
 > "Improve search so it feels faster and gives better results."
@@ -30,3 +32,7 @@ The problem with this spec: it has no measurable threshold. Words like "feels" a
 **Risk tier:** 2 — reversible, moderate blast radius (shared search endpoint), full test coverage exists.
 
 This is the level of detail Section [requirements-spec.md](../docs/03-phases/requirements-spec.md) asks for. From this text alone, a reviewer or an agentic coding tool can independently check whether the work is "done."
+
+---
+
+[← Previous: Worked Examples Overview](README.md) · [Contents](../README.md) · [Next: Design Example →](02-design-example.md)

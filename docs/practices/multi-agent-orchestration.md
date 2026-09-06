@@ -1,5 +1,7 @@
 # Practice: Multi-Agent Orchestration
 
+[← Previous: Tool and Function-Calling Design](tool-function-calling-design.md) · [Contents](../../README.md) · [Next: Worktree and Sandbox Isolation →](worktree-sandbox-isolation.md)
+
 Multi-agent orchestration means breaking a task into separate sub-agents, such as a planner, a coder, a reviewer, and a verifier, that each do their part and pass structured output to the next one. This is different from having one agentic coding tool do everything itself. One key piece is adversarial verification: a second tool whose whole job is to try to disprove the first tool's output, not to rubber-stamp it.
 
 ## Why it exists
@@ -22,3 +24,7 @@ A single agentic coding tool grading its own work has a blind spot. Whatever mis
 ## Signal you're doing this right
 
 Adversarial verification catches a meaningful share of errors that would otherwise have looked plausible and made it past human review. If the verifier never disagrees with the original tool, it isn't contributing independent judgment.
+
+---
+
+[← Previous: Tool and Function-Calling Design](tool-function-calling-design.md) · [Contents](../../README.md) · [Next: Worktree and Sandbox Isolation →](worktree-sandbox-isolation.md)

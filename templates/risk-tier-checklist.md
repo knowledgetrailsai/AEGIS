@@ -1,5 +1,7 @@
 # Risk Tier Checklist
 
+[← Previous: ADR Template](adr-template.md) · [Contents](../README.md) · [Next: Spec Template →](spec-template.md)
+
 Use this before merging or deploying a tool-initiated change. Full definitions: [docs/04-governance-risk-tiers.md](../docs/04-governance-risk-tiers.md).
 
 - [ ] Tier assigned: 1 / 2 / 3 / 4
@@ -10,3 +12,7 @@ Use this before merging or deploying a tool-initiated change. Full definitions: 
 - [ ] Crosses a system-of-record boundary (ERP, ledger, clinical record, OT controller)? (if yes → escalation trigger, raise one tier)
 - [ ] Named human approver assigned (required for Tier 3–4)
 - [ ] Audit trail / change log entry created (required for Tier 4)
+
+---
+
+[← Previous: ADR Template](adr-template.md) · [Contents](../README.md) · [Next: Spec Template →](spec-template.md)

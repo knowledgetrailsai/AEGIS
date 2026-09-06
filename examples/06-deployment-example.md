@@ -1,5 +1,7 @@
 # Worked Example: Deployment & Release
 
+[← Previous: Testing & QA Example](05-testing-qa-example.md) · [Contents](../README.md) · [Next: Production Support Example →](07-production-support-example.md)
+
 Continues from [05-testing-qa-example.md](05-testing-qa-example.md). Tests and evals are green, and the PR is merged to `main`. This is still Tier 2, so the release needs human approval before it goes out, even though no reviewer sign-off is required a second time.
 
 ## Prompt given to the tool
@@ -28,3 +30,7 @@ The release manager reviews the draft, and edits the release notes to add the JI
 ## Outcome
 
 Released behind `search_cache_enabled`, off by default, enabled for 5% of traffic as a canary. The rollback plan is attached to the release ticket, not just left in a chat transcript, so on-call has it ready without needing to reconstruct it during an actual incident. That readiness is exactly what the next example needs.
+
+---
+
+[← Previous: Testing & QA Example](05-testing-qa-example.md) · [Contents](../README.md) · [Next: Production Support Example →](07-production-support-example.md)

@@ -1,5 +1,7 @@
 # Git Workflow & Automation Overview
 
+[← Previous: Overview](00-overview.md) · [Contents](../README.md) · [Next: Principles →](01-principles.md)
+
 This page explains how branching, commits, pull requests, review, and merging work when agentic coding tools are writing a meaningful share of the code. It also covers which parts of that flow can safely be automated, and which parts need a human in the loop. Read this first — everything else in this repo, including specs, risk tiers, and the individual practices, plugs into the flow described here.
 
 ## The end-to-end flow
@@ -106,3 +108,7 @@ The general rule here is the same one used throughout this repo. Automate the me
 - [ ] Tier 3–4 branch protection requires multiple named approvers and a documented rollback plan
 - [ ] Automated changelog generation wired to conventional commits
 - [ ] Automated stale-branch/worktree cleanup on a schedule
+
+---
+
+[← Previous: Overview](00-overview.md) · [Contents](../README.md) · [Next: Principles →](01-principles.md)

@@ -1,5 +1,7 @@
 # Metrics: Adoption, Efficiency, and Quality
 
+[← Previous: Effort-Savings Evidence](05-effort-savings-evidence.md) · [Contents](../README.md) · [Next: Tools Comparison →](07-tools-comparison.md)
+
 Two different families of metrics matter here. Mixing them up is the most common measurement mistake teams make when adopting agentic tooling.
 
 1. **Tool-adoption metrics**: is the agentic tooling itself working well (Section 1)? These are new to this repo, specific to agent-assisted delivery.
@@ -64,3 +66,7 @@ These are the metrics most engineering orgs already track: DORA (a well-known se
 4. Review monthly, and act on a trend, not on noise. One bad week from a single tool workflow isn't a signal. Three consecutive months of rising override rate or change failure rate is.
 5. Feed a rising override rate or escaped-defect rate back into [requirements-spec.md](03-phases/requirements-spec.md) and [development.md](03-phases/development.md). The fix is almost always spec or context quality — rarely more review headcount.
 6. Re-baseline traditional metrics after adoption, rather than comparing them directly to pre-adoption history. The composition of "who (or what) did the work" has changed, so a raw before/after comparison mixes together two different things.
+
+---
+
+[← Previous: Effort-Savings Evidence](05-effort-savings-evidence.md) · [Contents](../README.md) · [Next: Tools Comparison →](07-tools-comparison.md)

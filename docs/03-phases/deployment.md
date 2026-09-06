@@ -1,5 +1,7 @@
 # Phase: Deployment & Release
 
+[← Previous: Testing & QA](testing-qa.md) · [Contents](../../README.md) · [Next: Production Support →](production-support.md)
+
 > Deep dive: [human-in-the-loop gating](../practices/human-in-the-loop-gating.md)
 
 ## What this phase does
@@ -35,3 +37,7 @@ This phase moves the change into production (the live system real users depend o
 - Assuming a previous successful deploy proves this one is safe
 - Skipping rollback validation
 - Treating release automation as a substitute for review
+
+---
+
+[← Previous: Testing & QA](testing-qa.md) · [Contents](../../README.md) · [Next: Production Support →](production-support.md)

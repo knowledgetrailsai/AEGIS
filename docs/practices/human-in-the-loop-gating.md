@@ -1,5 +1,7 @@
 # Practice: Human-in-the-Loop Gating
 
+[← Previous: Memory and State Persistence](memory-state-persistence.md) · [Contents](../../README.md) · [Next: Evals →](evals.md)
+
 A gate is an explicit checkpoint: before an irreversible action happens, a human has to confirm it, even if the agentic coding tool is otherwise working autonomously. Gating is what separates a tool that recommends an action from a tool that executes one.
 
 ## Why it exists
@@ -22,3 +24,7 @@ Autonomy and risk should scale together. A gate isn't there because you distrust
 ## Signal you're doing this right
 
 Gates are rare enough that each one gets real scrutiny. And the escalation-trigger list (see [governance-risk-tiers.md](../04-governance-risk-tiers.md)) (personally identifiable information (PII), no test coverage, no rollback plan, or crossing a system-of-record boundary) reliably catches the cases that actually matter.
+
+---
+
+[← Previous: Memory and State Persistence](memory-state-persistence.md) · [Contents](../../README.md) · [Next: Evals →](evals.md)

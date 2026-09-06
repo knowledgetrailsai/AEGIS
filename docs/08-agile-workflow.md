@@ -1,5 +1,7 @@
 # Agile Work Loop
 
+[← Previous: Tools Comparison](07-tools-comparison.md) · [Contents](../README.md) · [Next: Practices Overview →](practices/README.md)
+
 This guide uses a simple agile flow to organize end-to-end tool-supported work:
 
 - requirements are drafted with tool assistance to capture the need and scope
@@ -98,3 +100,7 @@ Use the tools in this repo to support the workflow end to end. The workflow itse
 ## Simple flow
 
 `requirements -> architecture -> backlog -> feature -> refined slice -> spec -> design -> development -> review -> testing -> release -> done`
+
+---
+
+[← Previous: Tools Comparison](07-tools-comparison.md) · [Contents](../README.md) · [Next: Practices Overview →](practices/README.md)

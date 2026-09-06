@@ -1,5 +1,7 @@
 # Practice: Process Scaling (Right-Sizing the Flow)
 
+[← Previous: Plan-Then-Execute](plan-then-execute.md) · [Contents](../../README.md) · [Next: Context Engineering →](context-engineering.md)
+
 Process scaling means matching how much ceremony a task gets to how much it actually needs, instead of running every change through the same full sequence of spec, design, plan-review, and multi-stage sign-off no matter how small it is.
 
 ## Why it exists
@@ -30,3 +32,7 @@ When you're extending an existing codebase rather than starting from a blank sla
 ## Signal you're doing this right
 
 Cycle time for Tier 1 work is visibly and consistently shorter than cycle time for Tier 3–4 work. If the two are roughly the same regardless of risk, that's the tell that process is being applied out of habit rather than by tier.
+
+---
+
+[← Previous: Plan-Then-Execute](plan-then-execute.md) · [Contents](../../README.md) · [Next: Context Engineering →](context-engineering.md)

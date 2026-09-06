@@ -1,5 +1,7 @@
 # Practices: The Eleven Deep Dives
 
+[← Previous: Agile Workflow](../08-agile-workflow.md) · [Contents](../../README.md) · [Next: Spec-Driven Development →](spec-driven-development.md)
+
 Eleven short, focused pages, each covering one practice you can adopt independently — pick what your team needs, skip the rest. Grouped below by when each one matters most.
 
 ## Before you start a change
@@ -31,3 +33,7 @@ Eleven short, focused pages, each covering one practice you can adopt independen
 ## How to use this
 
 You don't need all eleven on day one. Start with Spec-Driven Development and Human-in-the-Loop Gating (they carry most of the risk reduction) then add the rest as your usage grows. Each page is self-contained: what it is, why it exists, when to use it, and how to apply it.
+
+---
+
+[← Previous: Agile Workflow](../08-agile-workflow.md) · [Contents](../../README.md) · [Next: Spec-Driven Development →](spec-driven-development.md)

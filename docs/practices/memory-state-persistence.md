@@ -1,5 +1,7 @@
 # Practice: Memory / State Persistence
 
+[← Previous: Worktree and Sandbox Isolation](worktree-sandbox-isolation.md) · [Contents](../../README.md) · [Next: Human-in-the-Loop Gating →](human-in-the-loop-gating.md)
+
 Store only the facts the agentic coding tool will actually need again later. Not everything from a task is worth keeping.
 
 ## When to use it
@@ -54,3 +56,7 @@ Store only the facts the agentic coding tool will actually need again later. Not
 ## Output artifact
 
 A small, curated memory store that helps with the next task, instead of burying it in noise.
+
+---
+
+[← Previous: Worktree and Sandbox Isolation](worktree-sandbox-isolation.md) · [Contents](../../README.md) · [Next: Human-in-the-Loop Gating →](human-in-the-loop-gating.md)

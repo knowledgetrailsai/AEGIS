@@ -1,5 +1,7 @@
 # Practice: Spec-Driven Development
 
+[← Previous: Practices Overview](README.md) · [Contents](../../README.md) · [Next: Plan-Then-Execute →](plan-then-execute.md)
+
 Write a detailed spec first. The agentic coding tool implements against it and gets graded against it. The spec is the source of truth, not the conversation that led to it.
 
 ## Why it exists
@@ -34,3 +36,7 @@ Low-value, skip the ceremony: Tier 1 mechanical changes, like formatting or depe
 ## Relationship to other practices
 
 A good spec is what [evals](evals.md) get written against. It's what [context engineering](context-engineering.md) curates supporting material for. And it's what a [plan-then-execute](plan-then-execute.md) review checks the tool's plan against before execution starts.
+
+---
+
+[← Previous: Practices Overview](README.md) · [Contents](../../README.md) · [Next: Plan-Then-Execute →](plan-then-execute.md)

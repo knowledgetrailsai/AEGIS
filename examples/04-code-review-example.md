@@ -1,5 +1,7 @@
 # Worked Example: Code Review
 
+[← Previous: Development Example](03-development-example.md) · [Contents](../README.md) · [Next: Testing & QA Example →](05-testing-qa-example.md)
+
 Continues from [03-development-example.md](03-development-example.md). The PR is open, at Tier 2, so a human reviewer is required before merge.
 
 ## Prompt given to the tool
@@ -23,3 +25,7 @@ The reviewer agrees with the flag. The rename is harmless, but it has nothing to
 ## Outcome
 
 The tool reverts the unrelated rename in a follow-up commit. The PR is approved by the required human reviewer per Tier 2's gate in [04-governance-risk-tiers.md](../docs/04-governance-risk-tiers.md), and squash-merged per the [merge strategy](../docs/00-git-workflow-and-automation.md#merge-strategy). The reverted rename is filed as its own separate Tier 1 cleanup ticket, instead of being silently folded into this change.
+
+---
+
+[← Previous: Development Example](03-development-example.md) · [Contents](../README.md) · [Next: Testing & QA Example →](05-testing-qa-example.md)

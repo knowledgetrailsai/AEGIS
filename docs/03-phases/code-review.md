@@ -1,5 +1,7 @@
 # Phase: Code Review
 
+[← Previous: Development](development.md) · [Contents](../../README.md) · [Next: Testing & QA →](testing-qa.md)
+
 ## What this phase does
 
 Code review decides whether the change should merge (be added to the main codebase). For tool-assisted work, the depth of review should be based on how risky the change is, not on habit or routine.
@@ -33,3 +35,7 @@ Code review decides whether the change should merge (be added to the main codeba
 - Trusting the agentic coding tool’s self-assessment of risk
 - Accepting a change because it “looks fine”
 - Ignoring repeated review churn
+
+---
+
+[← Previous: Development](development.md) · [Contents](../../README.md) · [Next: Testing & QA →](testing-qa.md)

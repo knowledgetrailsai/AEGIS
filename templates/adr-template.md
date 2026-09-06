@@ -1,5 +1,7 @@
 # ADR-[number]: [Decision Title]
 
+[← Previous: Templates Overview](README.md) · [Contents](../README.md) · [Next: Risk Tier Checklist →](risk-tier-checklist.md)
+
 ## Status
 Proposed / Accepted / Superseded by ADR-[n]
 
@@ -17,3 +19,7 @@ The change being made, stated plainly.
 - Positive
 - Negative / tradeoffs accepted
 - Impact on risk tiering (does this raise or lower the tier of related components? see [governance-risk-tiers.md](../docs/04-governance-risk-tiers.md))
+
+---
+
+[← Previous: Templates Overview](README.md) · [Contents](../README.md) · [Next: Risk Tier Checklist →](risk-tier-checklist.md)

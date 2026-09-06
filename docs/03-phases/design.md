@@ -1,5 +1,7 @@
 # Phase: Architecture & Design
 
+[← Previous: Requirements & Spec](requirements-spec.md) · [Contents](../../README.md) · [Next: Development →](development.md)
+
 ## What this phase does
 
 This phase decides how the system should be shaped before implementation (the actual coding) starts. The goal is to make the change easy to build. It should also be easy to review, and safe to change further later on.
@@ -33,3 +35,7 @@ This phase decides how the system should be shaped before implementation (the ac
 - Interfaces that humans can easily improvise around, but that are hard for agentic coding tools to use safely
 - Treating design notes as optional
 - Designing for implementation speed only, not long-term maintenance
+
+---
+
+[← Previous: Requirements & Spec](requirements-spec.md) · [Contents](../../README.md) · [Next: Development →](development.md)

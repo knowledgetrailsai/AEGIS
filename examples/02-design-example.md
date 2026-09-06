@@ -1,5 +1,7 @@
 # Worked Example: Architecture & Design
 
+[← Previous: Spec Before/After](spec-before-after.md) · [Contents](../README.md) · [Next: Development Example →](03-development-example.md)
+
 Continues from [spec-before-after.md](spec-before-after.md). The spec is approved, at Tier 2, for adding a caching layer to the product catalog search endpoint.
 
 ## Prompt given to the tool
@@ -25,3 +27,7 @@ Design review, with the tool's three options on screen. The engineer picks the R
 ## Outcome
 
 ADR-0032 (`docs/adrs/0032-search-cache-redis.md` in a real repo — see [adr-template.md](../templates/adr-template.md)) records the decision: Redis-backed cache, patch not regenerate, explicit invalidation on price-sync completion. The spec is amended with the invalidation constraint. Both are committed together before any implementation branch is opened. That means development starts from a design that has already been through one round of human correction, not from the tool's first draft.
+
+---
+
+[← Previous: Spec Before/After](spec-before-after.md) · [Contents](../README.md) · [Next: Development Example →](03-development-example.md)

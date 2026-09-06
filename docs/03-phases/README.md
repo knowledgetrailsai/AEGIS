@@ -1,5 +1,7 @@
 # SDLC Phases Guide
 
+[← Previous: Patch vs. Regenerate](../02-patch-vs-regenerate.md) · [Contents](../../README.md) · [Next: Requirements & Spec →](requirements-spec.md)
+
 This section is your working guide for delivery that uses agentic coding tools (AI assistants that can write code, run commands, and take other actions on your behalf). Every phase page below follows the same pattern, so once you know one page, you know them all:
 
 - what the phase is for
@@ -30,3 +32,7 @@ This section is your working guide for delivery that uses agentic coding tools (
 ## Rule of thumb
 
 If a phase feels vague or unclear, make the work more specific first. Only hand it to an agentic coding tool once it is clear.
+
+---
+
+[← Previous: Patch vs. Regenerate](../02-patch-vs-regenerate.md) · [Contents](../../README.md) · [Next: Requirements & Spec →](requirements-spec.md)
