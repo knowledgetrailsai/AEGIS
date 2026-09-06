@@ -4,6 +4,9 @@
 
 AEGIS also implements the "Intelligence and Agent Engineering" discipline of [OASIS](https://github.com/knowledgetrailsai/OASIS). It works fine on its own too, for teams that aren't running OASIS at all. See [docs/09-related-frameworks.md](docs/09-related-frameworks.md).
 
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-yellow.svg)](LICENSE)
+![Status](https://img.shields.io/badge/status-living%20guide-brightgreen)
+
 ## Start here
 
 **[docs/00-overview.md](docs/00-overview.md)** is the one detailed walkthrough of this repo. It covers what the repo is for, the core principles, deployment models, how work flows from start to finish, the git workflow, governance and risk tiers, patch-vs-regenerate, metrics, and a tool comparison. It also gives you a ten-minute path through everything else. Read that page first: this README is just an index.
